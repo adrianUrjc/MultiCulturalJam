@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pause
 {
-    public static UnityEvent OnPause;
-    public static UnityEvent OnResume;
+    public static UnityEvent OnPause = new ();
+    public static UnityEvent OnResume= new();
 
     public static void PauseGame()
     {

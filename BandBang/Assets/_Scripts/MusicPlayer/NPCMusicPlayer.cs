@@ -8,6 +8,7 @@ public enum NPCs
     b,
     c, d, e, f,
 }
+
 public class NPCMusicPlayer
 {
 
@@ -62,25 +63,10 @@ public class NPCMusicPlayerInScene : MonoBehaviour
             var player = go.AddComponent<AudioSource>();
             player.clip = NPCMusicPlayer.npcMusicDict[n];
             player.outputAudioMixerGroup = NPCMusicPlayer.NPCAudioMixer.FindMatchingGroups("Master")[0];
-
             player.loop = true;
             player.Play();
 
         }
 
     }
-}
-[CreateAssetMenu(fileName = "NPCMusicDB", menuName = "ScriptableObjects/NPCMusicDB", order = 1)]
-public class NPCMusicDB : ScriptableObject
-{
-    public AudioMixer NPCAudioMixer;
-    [CustomLabel("")]
-    public List<NPCMusicEntry> npcMusicEntries;
-
-}
-[System.Serializable]
-public class NPCMusicEntry
-{
-    public NPCs npc;
-    public AudioClip musicClip;
 }
