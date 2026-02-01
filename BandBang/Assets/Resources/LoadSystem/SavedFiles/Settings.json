@@ -1,0 +1,98 @@
+{
+    "fields": [
+        {
+            "fieldName": "Controls",
+            "entries": []
+        },
+        {
+            "fieldName": "Viewport",
+            "entries": []
+        },
+        {
+            "fieldName": "Sound",
+            "entries": [
+                {
+                    "name": "MasterVolume",
+                    "type": 1,
+                    "value": {
+                        "rid": 1000
+                    }
+                },
+                {
+                    "name": "MusicVolume",
+                    "type": 1,
+                    "value": {
+                        "rid": 1001
+                    }
+                },
+                {
+                    "name": "SFXVolume",
+                    "type": 1,
+                    "value": {
+                        "rid": 1002
+                    }
+                },
+                {
+                    "name": "InterfaceVolume",
+                    "type": 1,
+                    "value": {
+                        "rid": 1003
+                    }
+                }
+            ]
+        },
+        {
+            "fieldName": "",
+            "entries": []
+        }
+    ],
+    "references": {
+        "version": 2,
+        "RefIds": [
+            {
+                "rid": 1000,
+                "type": {
+                    "class": "FloatSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 42.599998474121097
+                }
+            },
+            {
+                "rid": 1001,
+                "type": {
+                    "class": "FloatSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0.0
+                }
+            },
+            {
+                "rid": 1002,
+                "type": {
+                    "class": "FloatSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0.0
+                }
+            },
+            {
+                "rid": 1003,
+                "type": {
+                    "class": "FloatSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0.0
+                }
+            }
+        ]
+    }
+}

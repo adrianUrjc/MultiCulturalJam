@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ff33d0506ccc2489ba83afee1d69a9, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  fields:
+  - fieldName: Controls
+    entries: []
+  - fieldName: Viewport
+    entries: []
+  - fieldName: Sound
+    entries:
+    - name: MasterVolume
+      type: 1
+      value:
+        rid: 3917340059985510406
+    - name: MusicVolume
+      type: 1
+      value:
+        rid: 3917340059985510401
+    - name: SFXVolume
+      type: 1
+      value:
+        rid: 3917340059985510402
+    - name: InterfaceVolume
+      type: 1
+      value:
+        rid: 3917340059985510403
+  - fieldName: 
+    entries: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3917340059985510401
+      type: {class: FloatSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340059985510402
+      type: {class: FloatSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340059985510403
+      type: {class: FloatSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340059985510406
+      type: {class: FloatSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 42.6
