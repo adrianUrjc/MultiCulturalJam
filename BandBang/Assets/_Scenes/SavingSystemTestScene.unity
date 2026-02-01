@@ -421,7 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loader: {fileID: 1179384245}
   valueName: MasterVolume
-  valueType: 1
+  valueType: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

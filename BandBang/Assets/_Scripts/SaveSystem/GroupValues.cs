@@ -9,13 +9,13 @@ using UnityEngine.Scripting.APIUpdating;
 public enum VALUE_TYPE
 {
     BOOL,
-    INT,
     FLOAT,
     DOUBLE,
-    LONG,
     SHORT,
+    INT,
+    LONG,
+    STRING,
     BYTE,
-    STRING
 }
 [CreateAssetMenu(menuName = "ScriptableObject/GenericValues")]
 public partial class GroupValues : ScriptableObject
@@ -181,26 +181,56 @@ public class SettingValue<T> : SettingValue
         => SettingValueFactory.GetEnum(typeof(T));
 
     public override SettingValue Clone()
-        => new SettingValue<T> { value = value };
+    {
+        var clone = SettingValueFactory.Create(GetValueType());
+        clone.SetValue(value);
+        return clone;
+    }
 
     public override bool Equals(object obj)
         => obj is SettingValue<T> other &&
            EqualityComparer<T>.Default.Equals(value, other.value);
 }
+#region SUBCLASSES
+[Serializable] public class BoolSettingValue : SettingValue<bool> { }
+[Serializable] public class IntSettingValue : SettingValue<int> { }
+[Serializable] public class FloatSettingValue : SettingValue<float> { }
+[Serializable] public class DoubleSettingValue : SettingValue<double> { }
+[Serializable] public class LongSettingValue : SettingValue<long> { }
+[Serializable] public class ShortSettingValue : SettingValue<short> { }
+[Serializable] public class ByteSettingValue : SettingValue<byte> { }
+[Serializable] public class StringSettingValue : SettingValue<string> { }
+
+#endregion
 public static class SettingValueFactory
 {
-    public static SettingValue Create(VALUE_TYPE type)
+    // public static SettingValue Create(VALUE_TYPE type) a Unity no le gustan los genericos en el inspector
+    // {
+    //     return type switch
+    //     {
+    //         VALUE_TYPE.BOOL => new SettingValue<bool>(),
+    //         VALUE_TYPE.INT => new SettingValue<int>(),
+    //         VALUE_TYPE.FLOAT => new SettingValue<float>(),
+    //         VALUE_TYPE.DOUBLE => new SettingValue<double>(),
+    //         VALUE_TYPE.LONG => new SettingValue<long>(),
+    //         VALUE_TYPE.SHORT => new SettingValue<short>(),
+    //         VALUE_TYPE.BYTE => new SettingValue<byte>(),
+    //         VALUE_TYPE.STRING => new SettingValue<string>(),
+    //         _ => throw new NotSupportedException()
+    //     };
+    // }
+    public static SettingValue Create(VALUE_TYPE t)
     {
-        return type switch
+        return t switch
         {
-            VALUE_TYPE.BOOL => new SettingValue<bool>(),
-            VALUE_TYPE.INT => new SettingValue<int>(),
-            VALUE_TYPE.FLOAT => new SettingValue<float>(),
-            VALUE_TYPE.DOUBLE => new SettingValue<double>(),
-            VALUE_TYPE.LONG => new SettingValue<long>(),
-            VALUE_TYPE.SHORT => new SettingValue<short>(),
-            VALUE_TYPE.BYTE => new SettingValue<byte>(),
-            VALUE_TYPE.STRING => new SettingValue<string>(),
+            VALUE_TYPE.BOOL => new BoolSettingValue(),
+            VALUE_TYPE.INT => new IntSettingValue(),
+            VALUE_TYPE.FLOAT => new FloatSettingValue(),
+            VALUE_TYPE.DOUBLE => new DoubleSettingValue(),
+            VALUE_TYPE.LONG => new LongSettingValue(),
+            VALUE_TYPE.SHORT => new ShortSettingValue(),
+            VALUE_TYPE.BYTE => new ByteSettingValue(),
+            VALUE_TYPE.STRING => new StringSettingValue(),
             _ => throw new NotSupportedException()
         };
     }
@@ -219,79 +249,80 @@ public static class SettingValueFactory
         throw new NotSupportedException($"Tipo no soportado: {t}");
     }
 }
+#region ALTERNATIVE IMPLEMENTATIONS
+// [Serializable]
+// public class BoolSettingValue : SettingValue
+// {
+//     [SerializeField]
+//     public bool value;
 
-[Serializable]
-public class BoolSettingValue : SettingValue
-{
-    [SerializeField]
-    public bool value;
+//     public override object GetValue() => value;
+//     public override void SetValue(object val) => value = Convert.ToBoolean(val);
+//     public override VALUE_TYPE GetValueType() => VALUE_TYPE.BOOL;
+//     public BoolSettingValue()
+//     {
+//         value = false;
+//     }
+//     public override SettingValue Clone()
+//     {
+//         return new BoolSettingValue { value = this.value };
+//     }
+//     public override bool Equals(object obj)
+//     {
+//         if (obj is BoolSettingValue other) return value == other.value;
+//         return false;
+//     }
+// }
 
-    public override object GetValue() => value;
-    public override void SetValue(object val) => value = Convert.ToBoolean(val);
-    public override VALUE_TYPE GetValueType() => VALUE_TYPE.BOOL;
-    public BoolSettingValue()
-    {
-        value = false;
-    }
-    public override SettingValue Clone()
-    {
-        return new BoolSettingValue { value = this.value };
-    }
-    public override bool Equals(object obj)
-    {
-        if (obj is BoolSettingValue other) return value == other.value;
-        return false;
-    }
-}
+// [Serializable]
+// public class FloatSettingValue : SettingValue
+// {
+//     [SerializeField]
+//     public float value;
 
-[Serializable]
-public class FloatSettingValue : SettingValue
-{
-    [SerializeField]
-    public float value;
+//     public override object GetValue() => value;
+//     public override void SetValue(object val) => value = Convert.ToSingle(val);
+//     public override VALUE_TYPE GetValueType() => VALUE_TYPE.FLOAT;
+//     public FloatSettingValue()
+//     {
+//         value = 0f;
+//     }
+//     public override SettingValue Clone()
+//     {
+//         return new FloatSettingValue { value = this.value };
+//     }
+//     public override bool Equals(object obj)
+//     {
+//         if (obj is FloatSettingValue other) return value == other.value;
+//         return false;
+//     }
+// }
 
-    public override object GetValue() => value;
-    public override void SetValue(object val) => value = Convert.ToSingle(val);
-    public override VALUE_TYPE GetValueType() => VALUE_TYPE.FLOAT;
-    public FloatSettingValue()
-    {
-        value = 0f;
-    }
-    public override SettingValue Clone()
-    {
-        return new FloatSettingValue { value = this.value };
-    }
-    public override bool Equals(object obj)
-    {
-        if (obj is FloatSettingValue other) return value == other.value;
-        return false;
-    }
-}
+// [Serializable]
+// public class StringSettingValue : SettingValue
+// {
+//     [SerializeField]
+//     public string value;
 
-[Serializable]
-public class StringSettingValue : SettingValue
-{
-    [SerializeField]
-    public string value;
+//     public override object GetValue() => value;
+//     public override void SetValue(object val) => value = val?.ToString();
+//     public override VALUE_TYPE GetValueType() => VALUE_TYPE.STRING;
+//     public StringSettingValue()
+//     {
+//         value = "";
+//     }
+//     public override SettingValue Clone()
+//     {
+//         return new StringSettingValue { value = this.value };
+//     }
+//     public override bool Equals(object obj)
+//     {
+//         if (obj is BoolSettingValue other) return value.Equals(other.value);
+//         return false;
+//     }
 
-    public override object GetValue() => value;
-    public override void SetValue(object val) => value = val?.ToString();
-    public override VALUE_TYPE GetValueType() => VALUE_TYPE.STRING;
-    public StringSettingValue()
-    {
-        value = "";
-    }
-    public override SettingValue Clone()
-    {
-        return new StringSettingValue { value = this.value };
-    }
-    public override bool Equals(object obj)
-    {
-        if (obj is BoolSettingValue other) return value.Equals(other.value);
-        return false;
-    }
-
-}
+// }
+#endregion
 [Serializable]
 
 public class SettingEntry

@@ -6,35 +6,31 @@
         },
         {
             "fieldName": "Viewport",
-            "entries": []
-        },
-        {
-            "fieldName": "Sound",
             "entries": [
                 {
-                    "name": "MasterVolume",
+                    "name": "Brightness",
                     "type": 1,
                     "value": {
                         "rid": 1000
                     }
                 },
                 {
-                    "name": "MusicVolume",
+                    "name": "Contrast",
                     "type": 1,
                     "value": {
                         "rid": 1001
                     }
                 },
                 {
-                    "name": "SFXVolume",
-                    "type": 1,
+                    "name": "ScreenResolution",
+                    "type": 4,
                     "value": {
                         "rid": 1002
                     }
                 },
                 {
-                    "name": "InterfaceVolume",
-                    "type": 1,
+                    "name": "",
+                    "type": 4,
                     "value": {
                         "rid": 1003
                     }
@@ -42,8 +38,56 @@
             ]
         },
         {
-            "fieldName": "",
-            "entries": []
+            "fieldName": "Sound",
+            "entries": [
+                {
+                    "name": "MasterVolume",
+                    "type": 4,
+                    "value": {
+                        "rid": 1004
+                    }
+                },
+                {
+                    "name": "MusicVolume",
+                    "type": 4,
+                    "value": {
+                        "rid": 1005
+                    }
+                },
+                {
+                    "name": "SFXVolume",
+                    "type": 4,
+                    "value": {
+                        "rid": 1006
+                    }
+                },
+                {
+                    "name": "InterfaceVolume",
+                    "type": 4,
+                    "value": {
+                        "rid": 1007
+                    }
+                }
+            ]
+        },
+        {
+            "fieldName": "Accesibility",
+            "entries": [
+                {
+                    "name": "CameraShake",
+                    "type": 0,
+                    "value": {
+                        "rid": 1008
+                    }
+                },
+                {
+                    "name": "ControllerRumble",
+                    "type": 0,
+                    "value": {
+                        "rid": 1009
+                    }
+                }
+            ]
         }
     ],
     "references": {
@@ -57,7 +101,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 42.599998474121097
+                    "value": 0.0
                 }
             },
             {
@@ -74,23 +118,89 @@
             {
                 "rid": 1002,
                 "type": {
-                    "class": "FloatSettingValue",
+                    "class": "IntSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0.0
+                    "value": 0
                 }
             },
             {
                 "rid": 1003,
                 "type": {
-                    "class": "FloatSettingValue",
+                    "class": "IntSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0.0
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1004,
+                "type": {
+                    "class": "IntSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1005,
+                "type": {
+                    "class": "IntSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1006,
+                "type": {
+                    "class": "IntSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1007,
+                "type": {
+                    "class": "IntSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1008,
+                "type": {
+                    "class": "BoolSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": false
+                }
+            },
+            {
+                "rid": 1009,
+                "type": {
+                    "class": "BoolSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": false
                 }
             }
         ]

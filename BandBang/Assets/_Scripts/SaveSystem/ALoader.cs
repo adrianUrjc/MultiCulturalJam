@@ -22,9 +22,9 @@ public class ALoader : MonoBehaviour
     protected GroupValues values;
 
     // ---------------------------------------------------------------------------------------
-    // CARGAR
+    // LOAD
     // ---------------------------------------------------------------------------------------
-    [ContextMenu("Cargar Datos")]
+    [ContextMenu("Load Data")]
     public GroupValues LoadValues()
     {
         // Solo cargamos el SO una vez
@@ -73,7 +73,7 @@ public class ALoader : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("El path no contiene 'Resources/'");
+            Debug.LogWarning("Path doesn't contain 'Resources/'");
             return fullPath;
         }
     }
@@ -81,7 +81,7 @@ public class ALoader : MonoBehaviour
     // ---------------------------------------------------------------------------------------
     // GUARDAR
     // ---------------------------------------------------------------------------------------
-    [ContextMenu("Guardar Datos")]
+    [ContextMenu("Save Data")]
     public void SaveValues()
     {
         if (values == null) return;
@@ -94,7 +94,7 @@ public class ALoader : MonoBehaviour
             valuesToSave = values;
         if (values.IsTheSame(valuesToSave))
         {
-            Debug.Log("[Loader] El dato introducido es el mismo");
+            Debug.Log("[Loader] The data introduced is the same as the current one. No changes made.");
             return;
         }
 
@@ -117,12 +117,12 @@ public class ALoader : MonoBehaviour
 
         if (!File.Exists(path))
         {
-            Debug.LogWarning("[Loader] No existe JSON en: " + path);
+            Debug.LogWarning("[Loader] JSON doesn't exist in: " + path);
             CreateJsonFile(path);
             return;
         }
 
-        Debug.Log("[Loader] JSON encontrado en: " + path);
+        Debug.Log("[Loader] JSON found in: " + path);
 
         string json = File.ReadAllText(path);
         SerializableGroupSettings sgs = new SerializableGroupSettings();
@@ -144,7 +144,7 @@ public class ALoader : MonoBehaviour
         string json = JsonUtility.ToJson(sgs, true);
         File.WriteAllText(path, json);
 
-        Debug.Log("[SettingsSerializer] Guardado en " + path);
+        Debug.Log("[SettingsSerializer] Saved in " + path);
     }
 
     // ---------------------------------------------------------------------------------------
@@ -176,7 +176,7 @@ public class ALoader : MonoBehaviour
 
         if (File.Exists(fullPath))
         {
-            Debug.Log($"[Loader] El archivo JSON ya existe en: {fullPath}");
+            Debug.Log($"[Loader] JSON file already exists in: {fullPath}");
             return;
         }
 
@@ -187,7 +187,7 @@ public class ALoader : MonoBehaviour
         string json = JsonUtility.ToJson(defaults, true);
         File.WriteAllText(fullPath, json);
 
-        Debug.Log($"[Loader] JSON creado en: {fullPath}");
+        Debug.Log($"[Loader] JSON created in: {fullPath}");
     }
 
     internal void SetValue<T>(string key, T value)
