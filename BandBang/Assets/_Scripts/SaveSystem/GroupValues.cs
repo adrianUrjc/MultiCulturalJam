@@ -14,6 +14,7 @@ public enum VALUE_TYPE
     SHORT,
     INT,
     LONG,
+    VECTOR2,
     STRING,
     BYTE,
 }
@@ -200,6 +201,8 @@ public class SettingValue<T> : SettingValue
 [Serializable] public class ShortSettingValue : SettingValue<short> { }
 [Serializable] public class ByteSettingValue : SettingValue<byte> { }
 [Serializable] public class StringSettingValue : SettingValue<string> { }
+[Serializable] public class Vector2SettingValue : SettingValue<Vector2> { }
+
 
 #endregion
 public static class SettingValueFactory
@@ -231,6 +234,7 @@ public static class SettingValueFactory
             VALUE_TYPE.SHORT => new ShortSettingValue(),
             VALUE_TYPE.BYTE => new ByteSettingValue(),
             VALUE_TYPE.STRING => new StringSettingValue(),
+            VALUE_TYPE.VECTOR2 => new Vector2SettingValue(),
             _ => throw new NotSupportedException()
         };
     }
@@ -327,7 +331,7 @@ public static class SettingValueFactory
 
 public class SettingEntry
 {
-    public string name= "MyVariable";
+    public string name = "MyVariable";
     [CustomLabel("")]
 
     public VALUE_TYPE type;

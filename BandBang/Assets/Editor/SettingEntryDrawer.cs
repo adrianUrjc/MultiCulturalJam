@@ -54,6 +54,7 @@ public class SettingEntryDrawer : PropertyDrawer
                 VALUE_TYPE.LONG => new LongSettingValue(),
                 VALUE_TYPE.SHORT => new ShortSettingValue(),
                 VALUE_TYPE.BYTE => new ByteSettingValue(),
+                VALUE_TYPE.VECTOR2 => new Vector2SettingValue(),
 
                 _ => null
             };
