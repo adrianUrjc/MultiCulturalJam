@@ -17,7 +17,7 @@ public class Pause
     public static void ResumeGame()
     {
         Time.timeScale = 1.0f;
-        Cursor.visible = false;
+        //Cursor.visible = false; de momento necesito el raton :)
         Cursor.lockState = CursorLockMode.Locked;
         OnResume?.Invoke();
     }

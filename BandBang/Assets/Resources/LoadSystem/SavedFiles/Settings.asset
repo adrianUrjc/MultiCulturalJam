@@ -20,87 +20,87 @@ MonoBehaviour:
     - name: Brightness
       type: 1
       value:
-        rid: 3917340065069531151
+        rid: 3917340087494901895
     - name: Contrast
       type: 1
       value:
-        rid: 3917340065069531152
+        rid: 3917340087494901896
     - name: ScreenResolution
-      type: 4
+      type: 6
       value:
-        rid: 3917340065069531154
+        rid: 3917340087494901897
     - name: 
       type: 4
       value:
-        rid: 3917340065069531155
+        rid: 3917340087494901898
   - fieldName: Sound
     entries:
     - name: MasterVolume
       type: 4
       value:
-        rid: 3917340065069531147
+        rid: 3917340087494901899
     - name: MusicVolume
       type: 4
       value:
-        rid: 3917340065069531148
+        rid: 3917340087494901900
     - name: SFXVolume
       type: 4
       value:
-        rid: 3917340065069531149
+        rid: 3917340087494901901
     - name: InterfaceVolume
       type: 4
       value:
-        rid: 3917340065069531150
+        rid: 3917340087494901902
   - fieldName: Accesibility
     entries:
     - name: CameraShake
       type: 0
       value:
-        rid: 3917340065069531157
+        rid: 3917340087494901903
     - name: ControllerRumble
       type: 0
       value:
-        rid: 3917340065069531159
+        rid: 3917340087494901904
   references:
     version: 2
     RefIds:
-    - rid: 3917340065069531147
-      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340065069531148
-      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340065069531149
-      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340065069531150
-      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340065069531151
+    - rid: 3917340087494901895
       type: {class: FloatSettingValue, ns: , asm: Assembly-CSharp}
       data:
-        value: 0
-    - rid: 3917340065069531152
+        value: 1
+    - rid: 3917340087494901896
       type: {class: FloatSettingValue, ns: , asm: Assembly-CSharp}
       data:
-        value: 0
-    - rid: 3917340065069531154
+        value: 0.9
+    - rid: 3917340087494901897
+      type: {class: Vector2SettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: {x: 1, y: 0}
+    - rid: 3917340087494901898
       type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 0
-    - rid: 3917340065069531155
+    - rid: 3917340087494901899
       type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 0
-    - rid: 3917340065069531157
+    - rid: 3917340087494901900
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340087494901901
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340087494901902
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340087494901903
       type: {class: BoolSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 0
-    - rid: 3917340065069531159
+    - rid: 3917340087494901904
       type: {class: BoolSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 0

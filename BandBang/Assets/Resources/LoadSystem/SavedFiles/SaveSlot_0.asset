@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ff33d0506ccc2489ba83afee1d69a9, type: 3}
+  m_Name: SaveSlot_0
+  m_EditorClassIdentifier: 
+  fields:
+  - fieldName: GeneralValues
+    entries:
+    - name: CurrentCountry
+      type: 4
+      value:
+        rid: 3917340087494901810
+  - fieldName: Country1
+    entries:
+    - name: FirstTime
+      type: 0
+      value:
+        rid: 3917340087494901811
+    - name: PlayerPos
+      type: 6
+      value:
+        rid: 3917340087494901812
+    - name: KnownWords
+      type: 7
+      value:
+        rid: 3917340087494901813
+  - fieldName: NPCsRecruited
+    entries:
+    - name: NPCsRecruited
+      type: 7
+      value:
+        rid: 3917340087494901814
+  references:
+    version: 2
+    RefIds:
+    - rid: 3917340087494901810
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340087494901811
+      type: {class: BoolSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340087494901812
+      type: {class: Vector2SettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: {x: 0, y: 0}
+    - rid: 3917340087494901813
+      type: {class: StringSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 
+    - rid: 3917340087494901814
+      type: {class: StringSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 

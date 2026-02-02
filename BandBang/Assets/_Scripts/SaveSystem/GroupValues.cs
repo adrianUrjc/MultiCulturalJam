@@ -21,18 +21,22 @@ public enum VALUE_TYPE
 [CreateAssetMenu(menuName = "ScriptableObject/GenericValues")]
 public partial class GroupValues : ScriptableObject
 {
-    private Dictionary<string, SettingEntry> _cache;
+    //TODO: optimizar con diccionario, de momento no funciona bien
+    // private Dictionary<string, SettingEntry> _cache;
 
-    void BuildCache()
-    {
-        _cache = new Dictionary<string, SettingEntry>();
-        foreach (var field in fields)
-            foreach (var entry in field.entries)
-                _cache[entry.name] = entry;
-    }
+    // void BuildCache()
+    // {
+    //     _cache = new Dictionary<string, SettingEntry>();
+    //     foreach (var field in fields)
+    //         foreach (var entry in field.entries)
+    //             _cache[entry.name] = entry;
+    // }
 
-    void OnEnable() => BuildCache();
-
+    // void OnEnable() => BuildCache();
+    // void OnDisable()
+    // {
+    //     _cache?.Clear();
+    // }
 
     public List<SettingField> fields = new();
     public T GetValue<T>(string field, string name)
@@ -43,11 +47,14 @@ public partial class GroupValues : ScriptableObject
     }
     public T GetValue<T>(string name)
     {
-        if (_cache == null) BuildCache();
-        if (!_cache.TryGetValue(name, out var e))
-            throw new KeyNotFoundException(name);
-
-        return (T)e.value.GetValue();
+           foreach (var field in fields)
+        {
+            var entry = field.entries.Find(e => e.name == name);
+            if (entry != null)
+                return (T)entry.value.GetValue();
+        }
+        throw new KeyNotFoundException($"No se encontr� ning�n valor con el nombre '{name}' en los campos.");
+    
     }
 
 
@@ -76,11 +83,21 @@ public partial class GroupValues : ScriptableObject
         else
             v = (T)Convert.ChangeType(v, typeof(T));
 
-        if (_cache == null) BuildCache();
-        if (!_cache.TryGetValue(name, out var e))
-            throw new KeyNotFoundException(name);
+          foreach (var field in fields)
+        {
+            var entry = field.entries.Find(e => e.name == name);
+            if (entry != null)
+            {
+                entry.value.SetValue(v);
+                return; // Salimos cuando encontramos y actualizamos el valor
+            }
+        }
+        // Si quieres, aqu� podr�as lanzar excepci�n o log si no se encontr� el nombre
+        Debug.LogError($"[GroupValues] No se encontr� ning�n valor con el nombre '{name}' en los campos.");
+                throw new KeyNotFoundException($"No se encontr� ning�n valor con el nombre '{name}' en los campos.");
+    
 
-        e.value.SetValue(v);
+
     }
     public void SetEntryValue(SettingEntry newEntry)
     {
@@ -111,12 +128,13 @@ public partial class GroupValues : ScriptableObject
 
     public GroupValues Clone()
     {
-        var g = CreateInstance<GroupValues>();
-        g.fields = new List<SettingField>();
-        foreach (var f in fields)
-            g.fields.Add(f.Clone());
-        g.BuildCache();
-        return g;
+        var clone = ScriptableObject.CreateInstance<GroupValues>();
+        clone.fields = new List<SettingField>();
+        foreach (var field in fields)
+        {
+            clone.fields.Add(field.Clone());
+        }
+        return clone;
     }
 
 
@@ -249,6 +267,7 @@ public static class SettingValueFactory
         if (t == typeof(short)) return VALUE_TYPE.SHORT;
         if (t == typeof(byte)) return VALUE_TYPE.BYTE;
         if (t == typeof(string)) return VALUE_TYPE.STRING;
+        if (t == typeof(Vector2)) return VALUE_TYPE.VECTOR2;
 
         throw new NotSupportedException($"Tipo no soportado: {t}");
     }

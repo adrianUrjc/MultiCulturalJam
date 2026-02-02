@@ -11,11 +11,20 @@ public class SaveSlot : MonoBehaviour
     
     int currentSlot = 0;
     [SerializeField]
+    [ReadOnly]
     public ALoader loader;
- 
+    void Start()
+    {
+        loader = GetComponent<ALoader>();
+    }
+
     public void SelectSlot(int slot)
     {
-       //loader.route(Path.Combine("SaveSlot_", slot.ToString()));
+        currentSlot = slot;
+        loader.ChangeAssetName("SaveSlot_" + slot.ToString());
+        loader.RemoveLoadedValues();
+        loader.LoadValues();
+        GameManager.Instance.LoadLevel(loader.GetValue<int>("CurrentCountry"));
     }
 }
 

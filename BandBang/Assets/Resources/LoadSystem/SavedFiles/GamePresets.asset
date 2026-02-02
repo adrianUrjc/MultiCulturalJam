@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ff33d0506ccc2489ba83afee1d69a9, type: 3}
+  m_Name: GamePresets
+  m_EditorClassIdentifier: 
+  fields:
+  - fieldName: GameData
+    entries:
+    - name: HasPlayedBefore
+      type: 0
+      value:
+        rid: 3917340087494902025
+    - name: CurrentSaveSlot
+      type: 4
+      value:
+        rid: 3917340087494902026
+    - name: TimePlayed
+      type: 5
+      value:
+        rid: 3917340087494902027
+    - name: FirstTimePlayed
+      type: 5
+      value:
+        rid: 3917340087494902028
+    - name: LastTimePlayed
+      type: 5
+      value:
+        rid: 3917340087494902029
+  references:
+    version: 2
+    RefIds:
+    - rid: 3917340087494902025
+      type: {class: BoolSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340087494902026
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340087494902027
+      type: {class: LongSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340087494902028
+      type: {class: LongSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 1770071967
+    - rid: 3917340087494902029
+      type: {class: LongSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0

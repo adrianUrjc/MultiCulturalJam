@@ -11,5 +11,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/MigTesting.unity
     guid: 93443b1df1c85e545bd906d5897d117c
+  - enabled: 1
+    path: Assets/DialogGraphSystem/DemoScenes/ActionDialogDemo.unity
+    guid: 25247d490125a794aa3e4b03dc688fbd
+  - enabled: 1
+    path: Assets/DialogGraphSystem/DemoScenes/DialogDemo.unity
+    guid: 705545d4f7f5058409679c92e8c9d4f1
+  - enabled: 1
+    path: Assets/_Scenes/MainMenu.unity
+    guid: f4472368e40b64c418c6b7f9fd36b886
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fce6cef1c4a24f24fad2a0922a2c0544, type: 3}

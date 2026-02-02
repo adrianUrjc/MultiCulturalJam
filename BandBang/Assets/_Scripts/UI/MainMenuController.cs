@@ -22,7 +22,7 @@ public class MainMenuController : MonoBehaviour
     GameObject Credits;
 
     [SerializeField]
-    GameObject SaveSlots;
+public    GameObject SaveSlots;
 
     [SerializeField]
     GameObject Settings;
@@ -31,7 +31,7 @@ public class MainMenuController : MonoBehaviour
     MenuStates currentState = MenuStates.MAINMENU;
     void Start()
     {
-        Pause.ResumeGame();
+       // Pause.ResumeGame();
 
         foreach (Transform childButton in MainMenuButtons.transform)
         {

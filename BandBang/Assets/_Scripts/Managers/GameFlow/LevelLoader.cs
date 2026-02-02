@@ -20,6 +20,7 @@ public class LevelLoader : MonoBehaviour
     [SerializeField]
     SimpleScene france;
     // Start is called before the first frame update
+    [ContextMenu("Load Main Menu")]
     public void LoadMainMenu()
     {
         SceneManager.LoadScene(mainMenu.Index);
@@ -49,5 +50,6 @@ public class LevelLoader : MonoBehaviour
         return;
 
     }
+
 
 }

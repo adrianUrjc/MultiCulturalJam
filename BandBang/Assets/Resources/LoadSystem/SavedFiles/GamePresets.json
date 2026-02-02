@@ -1,0 +1,104 @@
+{
+    "fields": [
+        {
+            "fieldName": "GameData",
+            "entries": [
+                {
+                    "name": "HasPlayedBefore",
+                    "type": 0,
+                    "value": {
+                        "rid": 1000
+                    }
+                },
+                {
+                    "name": "CurrentSaveSlot",
+                    "type": 4,
+                    "value": {
+                        "rid": 1001
+                    }
+                },
+                {
+                    "name": "TimePlayed",
+                    "type": 5,
+                    "value": {
+                        "rid": 1002
+                    }
+                },
+                {
+                    "name": "FirstTimePlayed",
+                    "type": 5,
+                    "value": {
+                        "rid": 1003
+                    }
+                },
+                {
+                    "name": "LastTimePlayed",
+                    "type": 5,
+                    "value": {
+                        "rid": 1004
+                    }
+                }
+            ]
+        }
+    ],
+    "references": {
+        "version": 2,
+        "RefIds": [
+            {
+                "rid": 1000,
+                "type": {
+                    "class": "BoolSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": true
+                }
+            },
+            {
+                "rid": 1001,
+                "type": {
+                    "class": "IntSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1002,
+                "type": {
+                    "class": "LongSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 2387
+                }
+            },
+            {
+                "rid": 1003,
+                "type": {
+                    "class": "LongSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 1770072356
+                }
+            },
+            {
+                "rid": 1004,
+                "type": {
+                    "class": "LongSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 1770074743
+                }
+            }
+        ]
+    }
+}

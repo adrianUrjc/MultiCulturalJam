@@ -18,8 +18,17 @@ public class ALoader : MonoBehaviour
     [Header("JSON")]
     [SerializeField] protected string jsonFileName = "GameAssets.json";
 
-    [SerializeField][ExposedScriptableObject]
+    [SerializeField]
+    [ExposedScriptableObject]
     protected GroupValues values;
+    //summary>
+    //Change the asset name for both SO and JSON, no extension needed
+    ///</summary>
+    public void ChangeAssetName(string newName)
+    {
+        soName = newName + ".asset";
+        jsonFileName = newName + ".json";
+    }
 
     // ---------------------------------------------------------------------------------------
     // LOAD
@@ -62,6 +71,10 @@ public class ALoader : MonoBehaviour
 
         return values.Clone();
     }
+    public void RemoveLoadedValues()
+    {
+        values = null;
+    }
     public static string GetPathFromResources(string fullPath)
     {
         string keyword = "Resources/";
@@ -88,7 +101,7 @@ public class ALoader : MonoBehaviour
         SaveToJsonFile();
     }
 
-    public void SaveValues(GroupValues valuesToSave=null)
+    public void SaveValues(GroupValues valuesToSave = null)
     {
         if (valuesToSave == null)
             valuesToSave = values;
@@ -105,7 +118,7 @@ public class ALoader : MonoBehaviour
     {
         values.ResetToDefaults();
         SaveToJsonFile();
-      
+
     }
 
     // ---------------------------------------------------------------------------------------
@@ -193,13 +206,29 @@ public class ALoader : MonoBehaviour
     internal void SetValue<T>(string key, T value)
     {
         if (values == null) return;
-        values.SetValue<T>(key, value);
+        values.SetValue(key, value);
+#if UNITY_EDITOR
+        EditorUtility.SetDirty(values);
+       // Debug.Log("[ALoader] IsDirty: " + EditorUtility.IsDirty(values));
+        UnityEditor.SceneView.RepaintAll();
+        UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
+
+#endif
     }
 
     internal T GetValue<T>(string key)
     {
         if (values == null) return default(T);
         return values.GetValue<T>(key);
+    }
+    // ---------------------------------------------------------------------------------------
+    // RESET TO DEFAULTS
+    // ---------------------------------------------------------------------------------------
+    [ContextMenu("Reset To Defaults")]
+    public void ResetToDefaults()
+    {
+        if (values == null) return;
+        values.ResetToDefaults();
     }
 }
 

@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8937667966531746129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
+  m_Name: ActionNode
+  m_EditorClassIdentifier: 
+  GUID: af54f0d086984e6c8dd96e8273e397e8
+  nodePosition: {x: 2584, y: -1200}
+  actionId: 
+  payloadJson: 
+  waitForCompletion: 0
+  waitSeconds: 0
 --- !u!114 &-6257216801451351822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,7 +31,7 @@ MonoBehaviour:
   m_Name: ActionNode
   m_EditorClassIdentifier: 
   GUID: 9d45be749cfc4a46a9b3dcf32cb99f23
-  nodePosition: {x: 864.6667, y: -486}
+  nodePosition: {x: 933.3333, y: -502}
   actionId: 0
   payloadJson: 
   waitForCompletion: 0
@@ -31,7 +49,7 @@ MonoBehaviour:
   m_Name: ActionNode
   m_EditorClassIdentifier: 
   GUID: 6c7c1285fa31447691cae0188726e20a
-  nodePosition: {x: 884.6667, y: 288}
+  nodePosition: {x: 897.3333, y: 306}
   actionId: 2
   payloadJson: 
   waitForCompletion: 0
@@ -49,12 +67,46 @@ MonoBehaviour:
   m_Name: Node_New Dialog
   m_EditorClassIdentifier: 
   GUID: 8f26fbed362843a68277d2afe9f97fd0
-  nodePosition: {x: -123.333336, y: -90.666664}
+  nodePosition: {x: -196.66667, y: -140}
   speakerName: 
   speakerPortrait: {fileID: 0}
   questionText: 
   dialogAudio: {fileID: 0}
   displayTime: 0
+--- !u!114 &-86293577581574936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: ca78552777ba45e3a708927d2dc44358
+  nodePosition: {x: 1940.6365, y: -883.1213}
+  text: 
+  choices:
+  - answerText: New Choice
+    nextNodeGUID: 24e8d3e8c9ff4b7f9e32eaf2d190b0f3
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: New Choice
+    nextNodeGUID: 
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: New Choice
+    nextNodeGUID: 
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,9 +129,6 @@ MonoBehaviour:
   - fromGuid: 24e8d3e8c9ff4b7f9e32eaf2d190b0f3
     toGuid: 9d45be749cfc4a46a9b3dcf32cb99f23
     fromPortIndex: 0
-  - fromGuid: 9d45be749cfc4a46a9b3dcf32cb99f23
-    toGuid: 901ea5937c964fdfbb0cdf98437c1d2b
-    fromPortIndex: 0
   - fromGuid: 6c7c1285fa31447691cae0188726e20a
     toGuid: 901ea5937c964fdfbb0cdf98437c1d2b
     fromPortIndex: 0
@@ -89,23 +138,54 @@ MonoBehaviour:
   - fromGuid: 24e8d3e8c9ff4b7f9e32eaf2d190b0f3
     toGuid: 6c7c1285fa31447691cae0188726e20a
     fromPortIndex: 2
+  - fromGuid: 9d45be749cfc4a46a9b3dcf32cb99f23
+    toGuid: ded2a7ccd3e54a24bde402344d415417
+    fromPortIndex: 0
+  - fromGuid: ded2a7ccd3e54a24bde402344d415417
+    toGuid: ca78552777ba45e3a708927d2dc44358
+    fromPortIndex: 0
+  - fromGuid: ca78552777ba45e3a708927d2dc44358
+    toGuid: 24e8d3e8c9ff4b7f9e32eaf2d190b0f3
+    fromPortIndex: 0
   - fromGuid: c53603ee4526482a9ba76f4125653b56
-    toGuid: 8f26fbed362843a68277d2afe9f97fd0
+    toGuid: ca78552777ba45e3a708927d2dc44358
     fromPortIndex: 0
   nodes:
   - {fileID: -2401379249505784382}
+  - {fileID: 4175696749646394865}
   choiceNodes:
   - {fileID: 6881154856978610871}
+  - {fileID: -86293577581574936}
   actionNodes:
   - {fileID: -6257216801451351822}
   - {fileID: 6785612888921526340}
   - {fileID: -6154656630177347557}
+  - {fileID: -8937667966531746129}
   startGuid: b78102a54b2e4d7fae1d6f0526066476
   startPosition: {x: -517.3333, y: -17.333332}
   startInitialized: 1
   endGuid: 901ea5937c964fdfbb0cdf98437c1d2b
-  endPosition: {x: 1573.3334, y: -169.33333}
+  endPosition: {x: 1937.3334, y: -168}
   endInitialized: 1
+--- !u!114 &4175696749646394865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_Answer1
+  m_EditorClassIdentifier: 
+  GUID: ded2a7ccd3e54a24bde402344d415417
+  nodePosition: {x: 1250.6666, y: -1231.3334}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: 
+  dialogAudio: {fileID: 0}
+  displayTime: 0
 --- !u!114 &6785612888921526340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +199,7 @@ MonoBehaviour:
   m_Name: ActionNode
   m_EditorClassIdentifier: 
   GUID: c53603ee4526482a9ba76f4125653b56
-  nodePosition: {x: 884.6667, y: -98.666664}
+  nodePosition: {x: 897.3333, y: -67.33333}
   actionId: 1
   payloadJson: 
   waitForCompletion: 0
