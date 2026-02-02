@@ -31,6 +31,7 @@ public class MainMenuController : MonoBehaviour
     MenuStates currentState = MenuStates.MAINMENU;
     void Start()
     {
+        Pause.ResumeGame();
 
         foreach (Transform childButton in MainMenuButtons.transform)
         {

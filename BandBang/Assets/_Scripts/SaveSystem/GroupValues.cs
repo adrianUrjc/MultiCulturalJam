@@ -327,7 +327,9 @@ public static class SettingValueFactory
 
 public class SettingEntry
 {
-    public string name;
+    public string name= "MyVariable";
+    [CustomLabel("")]
+
     public VALUE_TYPE type;
 
     [SerializeReference] public SettingValue value;
