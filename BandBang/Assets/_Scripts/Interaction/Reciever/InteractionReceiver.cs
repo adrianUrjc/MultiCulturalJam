@@ -5,7 +5,11 @@ using UnityEngine.Events;
 public class InteractionReceiver : MonoBehaviour
 {
     public UnityEvent onInteract;
-    public void Interact()
+    public virtual void Interact()
+    {
+        onInteract?.Invoke();
+    }
+    public virtual void Interact(GameObject interactor)
     {
         onInteract?.Invoke();
     }
