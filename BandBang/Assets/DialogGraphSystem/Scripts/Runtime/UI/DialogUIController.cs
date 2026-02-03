@@ -67,7 +67,7 @@ namespace DialogSystem.Runtime.UI
 
         #region ---------------- Choices (simple build) ----------------
         /// <summary>Destroys existing children and rebuilds one prefab per choice. No pooling.</summary>
-        public void BuildChoices(ChoiceNode node, DialogChoiceSettings settings, Action<int> onPick)
+        public virtual void BuildChoices(ChoiceNode node, DialogChoiceSettings settings, Action<int> onPick)
         {
             if (!choicesContainer || !choiceButtonPrefab)
             {
