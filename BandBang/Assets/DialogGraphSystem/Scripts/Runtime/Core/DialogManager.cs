@@ -537,9 +537,9 @@ namespace DialogSystem.Runtime.Core
             if (InputHelper.WasSubmitPressedThisFrame() ||
                 InputHelper.WasLetterPressedThisFrame(choiceSettings.keyboardConfirmLetter[0]))
             {
-                int pick = _selectedChoiceIndex;
-                if (pick < 0 && _choiceViews.Count > 0) pick = 0;
-                if (pick >= 0 && pick < _choiceViews.Count) { OnChoiceSelected(pick); return; }
+                // int pick = _selectedChoiceIndex;not needed
+                // if (pick < 0 && _choiceViews.Count > 0) pick = 0;
+                // if (pick >= 0 && pick < _choiceViews.Count) { OnChoiceSelected(pick); return; }
             }
         }
 

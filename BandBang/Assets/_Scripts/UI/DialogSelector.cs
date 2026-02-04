@@ -11,7 +11,8 @@ public class DialogSelector : DialogUIController
 {
   //necesita la referencia al translator
   [SerializeField] private int maxOptions = 4;
-  [SerializeField] private
+  [SerializeField]
+  private
   Translator translator;
   //DialogManager necesita override para tomar el texto en ingles y traducirlo a la traducción del jugador
 
@@ -25,8 +26,8 @@ public class DialogSelector : DialogUIController
   {
     //antes de setear el texto, traducirlo
     string translatedText = translator.TranslateTextToSymbolsReal(text);
-//    Debug.Log("Translated dialog text: " + translatedText);
-   
+    //    Debug.Log("Translated dialog text: " + translatedText);
+
     base.SetText(translatedText);
   }
   public override void BuildChoices(ChoiceNode node, DialogChoiceSettings settings, Action<int> onPick)
@@ -51,22 +52,25 @@ public class DialogSelector : DialogUIController
 
       var go = Instantiate(choiceButtonPrefab, choicesContainer);
       var view = go.GetComponent<ChoiceButtonView>() ?? go.AddComponent<ChoiceButtonView>();
-      view.Init(DialogManager.Instance, idx, settings);
+
       view.SetHotkey(string.Empty);
       //aqui preguntar al translator, que me de el string traducido segun la información
       Debug.Log("Original choice text: " + ch.answerText);
       string choiceText = translator.TranslateTextToSymbolsPlayer(ch.answerText);
-     
+
 
       //mirar en el dialog manager si hay ese string en las opciones
       //si existe asignar el idx verdadero
       string englishPlayersChoice = translator.TranslateTextToEnglishPlayer(ch.answerText);
-       int newIndex = choiceIndexOfText(englishPlayersChoice, node);
 
-       Debug.Log("Original choice text: " + ch.answerText);    
-       Debug.Log("Translated into player's symbols choice text: " + choiceText);
-        Debug.Log("Real english choice player would respond with: " + englishPlayersChoice + " (option: "+ newIndex+ ")");
-        //Aqui poner que si el texto tiene una traduccion sin solucion no se pueda pulsar
+      int newIndex = choiceIndexOfText(englishPlayersChoice, node);
+      
+      view.Init(DialogManager.Instance, newIndex, settings);
+
+      Debug.Log("Original choice text: " + ch.answerText);
+      Debug.Log("Translated into player's symbols choice text: " + choiceText);
+      Debug.Log("Real english choice player would respond with: " + englishPlayersChoice + " (option: " + newIndex + ")");
+      //Aqui poner que si el texto tiene una traduccion sin solucion no se pueda pulsar
       view.SetContent(choiceText, string.Empty, /*interactable*/ true, () => onPick?.Invoke(newIndex));
     }
 
@@ -79,22 +83,24 @@ public class DialogSelector : DialogUIController
     // }
 
   }
-   public int choiceIndexOfText(string text, ChoiceNode currentChoice)
-        {
-            if (currentChoice == null) {
-                Debug.Log("Esto no deberia pasar");
-               
-                return -1;
-            }
-            for (int i = 0; i < currentChoice.choices.Count; i++)
-            {
-                if (currentChoice.choices[i].answerText.Equals(text))
-                {
-                    return i;
-                }
-            }
-           
-            return currentChoice.choices.Count - 1; // Default to last option if not found
-        }
+  public int choiceIndexOfText(string text, ChoiceNode currentChoice)
+  {
+    if (currentChoice == null)
+    {
+      Debug.Log("Esto no deberia pasar");
+
+      return -1;
+    }
+    for (int i = 0; i < currentChoice.choices.Count; i++)
+    {
+      if (currentChoice.choices[i].answerText.Equals(text))
+      {
+        Debug.Log("[DialogSelector] Found matching choice text at index: " + i + " with text: " + text);
+        return i;
+      }
+    }
+
+    return currentChoice.choices.Count - 1; // Default to last option if not found
+  }
 
 }

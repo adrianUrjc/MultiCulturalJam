@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5792784591282919432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 9ea1713f89704a95819ccfef24ea3cb1
+  nodePosition: {x: 924.6667, y: 78.66667}
+  text: 
+  choices:
+  - answerText: dog
+    nextNodeGUID: 84e9638b846c4552900d834fb12bc1ad
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: cat
+    nextNodeGUID: 7fea9cea3a974caf80b2b2f231735dba
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: apple
+    nextNodeGUID: 
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: banana
+    nextNodeGUID: 
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: wronganswer
+    nextNodeGUID: eeef02e077904ef1acde39b4c122c967
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-3450451738033597942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 7fea9cea3a974caf80b2b2f231735dba
+  nodePosition: {x: 1429.3334, y: 45.333332}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Noo, that wordmeans cat
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c45c6e4622be54698e67e4868db7e5, type: 3}
+  m_Name: TranslationActionDialogDemo
+  m_EditorClassIdentifier: 
+  links:
+  - fromGuid: ba0559a606ce435dbbf917e92fb01291
+    toGuid: 00d1b9c05f884944abccf7f32b812d19
+    fromPortIndex: 0
+  - fromGuid: 024321c179a24deb98ac20703656f875
+    toGuid: 9ea1713f89704a95819ccfef24ea3cb1
+    fromPortIndex: 0
+  - fromGuid: 9ea1713f89704a95819ccfef24ea3cb1
+    toGuid: 84e9638b846c4552900d834fb12bc1ad
+    fromPortIndex: 0
+  - fromGuid: 84e9638b846c4552900d834fb12bc1ad
+    toGuid: 27cdeacce87d4599a3c3ba8ebaa343cc
+    fromPortIndex: 0
+  - fromGuid: 9ea1713f89704a95819ccfef24ea3cb1
+    toGuid: eeef02e077904ef1acde39b4c122c967
+    fromPortIndex: 4
+  - fromGuid: 27cdeacce87d4599a3c3ba8ebaa343cc
+    toGuid: 9ba2b075cfcb40cf87c84c56b755ad59
+    fromPortIndex: 0
+  - fromGuid: eeef02e077904ef1acde39b4c122c967
+    toGuid: 2846f8923b9e44fb86ba35bb69a3a714
+    fromPortIndex: 0
+  - fromGuid: 2846f8923b9e44fb86ba35bb69a3a714
+    toGuid: 9ba2b075cfcb40cf87c84c56b755ad59
+    fromPortIndex: 0
+  - fromGuid: 00d1b9c05f884944abccf7f32b812d19
+    toGuid: 024321c179a24deb98ac20703656f875
+    fromPortIndex: 0
+  - fromGuid: 9ea1713f89704a95819ccfef24ea3cb1
+    toGuid: 7fea9cea3a974caf80b2b2f231735dba
+    fromPortIndex: 1
+  - fromGuid: 7fea9cea3a974caf80b2b2f231735dba
+    toGuid: eeef02e077904ef1acde39b4c122c967
+    fromPortIndex: 0
+  nodes:
+  - {fileID: 1146833657734649961}
+  - {fileID: 1843951630682615965}
+  - {fileID: 1309069122479431191}
+  - {fileID: 2833996371144436898}
+  - {fileID: -3450451738033597942}
+  choiceNodes:
+  - {fileID: -5792784591282919432}
+  actionNodes:
+  - {fileID: 792579027628113133}
+  - {fileID: 1771148365025057968}
+  startGuid: ba0559a606ce435dbbf917e92fb01291
+  startPosition: {x: -320, y: 80}
+  startInitialized: 1
+  endGuid: 9ba2b075cfcb40cf87c84c56b755ad59
+  endPosition: {x: 2582, y: 178}
+  endInitialized: 1
+--- !u!114 &792579027628113133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
+  m_Name: ActionNode
+  m_EditorClassIdentifier: 
+  GUID: 84e9638b846c4552900d834fb12bc1ad
+  nodePosition: {x: 1476, y: -271.33334}
+  actionId: RightAnswer
+  payloadJson: 
+  waitForCompletion: 1
+  waitSeconds: 0
+--- !u!114 &1146833657734649961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 00d1b9c05f884944abccf7f32b812d19
+  nodePosition: {x: -99.22695, y: 79.11339}
+  speakerName: Sumo
+  speakerPortrait: {fileID: 21300000, guid: 120fc66cca9311d40a80ca044a8dc68c, type: 3}
+  questionText: Hi! I see you found me inside this room
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &1309069122479431191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_RighChoice
+  m_EditorClassIdentifier: 
+  GUID: 27cdeacce87d4599a3c3ba8ebaa343cc
+  nodePosition: {x: 1932.1771, y: 123.36328}
+  speakerName: 
+  speakerPortrait: {fileID: 21300000, guid: 120fc66cca9311d40a80ca044a8dc68c, type: 3}
+  questionText: Thats right see you around
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &1771148365025057968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
+  m_Name: ActionNode
+  m_EditorClassIdentifier: 
+  GUID: eeef02e077904ef1acde39b4c122c967
+  nodePosition: {x: 1686.6666, y: 473.99997}
+  actionId: WrongAnswer
+  payloadJson: 
+  waitForCompletion: 0
+  waitSeconds: 0
+--- !u!114 &1843951630682615965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 024321c179a24deb98ac20703656f875
+  nodePosition: {x: 320, y: 78.66667}
+  speakerName: Sumo
+  speakerPortrait: {fileID: 21300000, guid: 120fc66cca9311d40a80ca044a8dc68c, type: 3}
+  questionText: Lets check if you know the meaning of dog
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &2833996371144436898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_WrongChoice
+  m_EditorClassIdentifier: 
+  GUID: 2846f8923b9e44fb86ba35bb69a3a714
+  nodePosition: {x: 2080, y: 473.99997}
+  speakerName: 
+  speakerPortrait: {fileID: 21300000, guid: 120fc66cca9311d40a80ca044a8dc68c, type: 3}
+  questionText: I think you need to learn that word young one
+  dialogAudio: {fileID: 0}
+  displayTime: 0
