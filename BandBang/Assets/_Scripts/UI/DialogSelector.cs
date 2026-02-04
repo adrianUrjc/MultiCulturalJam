@@ -61,7 +61,7 @@ public class DialogSelector : DialogUIController
       //mirar en el dialog manager si hay ese string en las opciones
       //si existe asignar el idx verdadero
       string englishPlayersChoice = translator.TranslateTextToEnglishPlayer(ch.answerText);
-       int newIndex = DialogManager.Instance.choiceIndexOfText(englishPlayersChoice);
+       int newIndex = choiceIndexOfText(englishPlayersChoice, node);
 
        Debug.Log("Original choice text: " + ch.answerText);    
        Debug.Log("Translated into player's symbols choice text: " + choiceText);
@@ -79,5 +79,22 @@ public class DialogSelector : DialogUIController
     // }
 
   }
+   public int choiceIndexOfText(string text, ChoiceNode currentChoice)
+        {
+            if (currentChoice == null) {
+                Debug.Log("Esto no deberia pasar");
+               
+                return -1;
+            }
+            for (int i = 0; i < currentChoice.choices.Count; i++)
+            {
+                if (currentChoice.choices[i].answerText.Equals(text))
+                {
+                    return i;
+                }
+            }
+           
+            return currentChoice.choices.Count - 1; // Default to last option if not found
+        }
 
 }
