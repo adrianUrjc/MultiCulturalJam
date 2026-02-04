@@ -7,7 +7,9 @@ using System;
 
 public class Translator : MonoBehaviour
 {
+    [SerializeField]
     PlayerJournal playerJournal;
+    [SerializeField]
     RealDictionary realDictionary;
     Dictionary<string, string> translations = new()
 {

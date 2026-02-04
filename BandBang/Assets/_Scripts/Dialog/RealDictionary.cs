@@ -7,7 +7,7 @@ using UnityEngine;
 public class RealDictionary : ScriptableObject
 {
     [SerializeField]
-    private List<Entry> dictionary;
+    private List<DictionarySymbolEntry> dictionary;
     Dictionary<string, string> englishToSymbol = new Dictionary<string, string>();
     Dictionary<string, string> symbolToEnglish = new Dictionary<string, string>();
 
@@ -37,24 +37,44 @@ public class RealDictionary : ScriptableObject
     void initLookUp()
     {
         englishToSymbol = new Dictionary<string, string>();
-       /* foreach (var entry in items)
+        symbolToEnglish = new Dictionary<string, string>();
+        foreach (var entry in dictionary)
         {
-            if (!itemLookup.ContainsKey(entry.itemID))
+            if (!englishToSymbol.ContainsKey(entry.english))
             {
-                itemLookup[entry.itemID] = entry.prefab;
+                englishToSymbol[entry.english] = entry.symbol;
             }
             else
             {
-                Debug.LogWarning($"Duplicate ItemID found: {entry.itemID}. Only the first prefab will be used.");
+                Debug.LogWarning($"Duplicate English word found: {entry.english}. Only the first symbol will be used.");
             }
+            if (!symbolToEnglish.ContainsKey(entry.symbol))
+            {
+                symbolToEnglish[entry.symbol] = entry.english;
+            }
+            else
+            {
+                Debug.LogWarning($"Duplicate Symbol found: {entry.symbol}. Only the first English word will be used.");
+            }
+        }
+        /* foreach (var entry in items)
+         {
+             if (!itemLookup.ContainsKey(entry.itemID))
+             {
+                 itemLookup[entry.itemID] = entry.prefab;
+             }
+             else
+             {
+                 Debug.LogWarning($"Duplicate ItemID found: {entry.itemID}. Only the first prefab will be used.");
+             }
 
-        }*/
+         }*/
     }
 }
 
 [System.Serializable]
-public class Entry
+public class DictionarySymbolEntry
 {
     public string english;
-    public Sprite symbol;
+    public string symbol;
 }
