@@ -453,6 +453,23 @@ namespace DialogSystem.Runtime.Core
             }
             return false;
         }
+        public int choiceIndexOfText(string text)
+        {
+            if (currentChoice == null) {
+                Debug.Log("Esto no deberia pasar");
+               
+                return -1;
+            }
+            for (int i = 0; i < currentChoice.choices.Count; i++)
+            {
+                if (currentChoice.choices[i].answerText.Equals(text))
+                {
+                    return i;
+                }
+            }
+           
+            return -1;
+        }
         public string GetLastChoiceText()
         {
             if (currentChoice != null && currentChoice.choices.Count > 0)

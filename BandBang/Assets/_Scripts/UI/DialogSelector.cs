@@ -60,16 +60,14 @@ public class DialogSelector : DialogUIController
 
       //mirar en el dialog manager si hay ese string en las opciones
       //si existe asignar el idx verdadero
-      if (!DialogManager.Instance.isChoiceInChoiceNode(choiceText))
-      {
-        //si no default->ultima opcion, ultimo de node.choices
-        idx = node.choices.Count - 1;
-        Debug.Log("This choice isn't known by the player, assigning last option idx: " + idx);
+      string englishPlayersChoice = translator.TranslateTextToEnglishPlayer(ch.answerText);
+       int newIndex = DialogManager.Instance.choiceIndexOfText(englishPlayersChoice);
 
-      }
-       Debug.Log("Translated choice text: " + choiceText);
-
-      view.SetContent(choiceText, string.Empty, /*interactable*/ true, () => onPick?.Invoke(idx));
+       Debug.Log("Original choice text: " + ch.answerText);    
+       Debug.Log("Translated into player's symbols choice text: " + choiceText);
+        Debug.Log("Real english choice player would respond with: " + englishPlayersChoice + " (option: "+ newIndex+ ")");
+        //Aqui poner que si el texto tiene una traduccion sin solucion no se pueda pulsar
+      view.SetContent(choiceText, string.Empty, /*interactable*/ true, () => onPick?.Invoke(newIndex));
     }
 
     SetChoicesVisible(true);

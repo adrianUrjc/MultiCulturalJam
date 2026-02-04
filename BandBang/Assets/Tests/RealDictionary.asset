@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dictionary:
   - english: dog
-    symbol: (dog symbol)
+    symbol: dogSymbol
   - english: cat
-    symbol: (cat symbol)
+    symbol: catSymbol
   - english: apple
-    symbol: (apple symbol)
+    symbol: appleSymbol
   - english: banana
-    symbol: (banana symbol)
+    symbol: bananaSymbol

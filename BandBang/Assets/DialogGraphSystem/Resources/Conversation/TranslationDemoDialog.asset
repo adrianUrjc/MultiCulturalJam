@@ -33,7 +33,7 @@ MonoBehaviour:
   m_Name: ChoiceNode
   m_EditorClassIdentifier: 
   GUID: 9eb33a6f5d434f65ac018965a79bee4d
-  nodePosition: {x: 736.6667, y: -133.33333}
+  nodePosition: {x: 785.3333, y: -133.33333}
   text: 
   choices:
   - answerText: apple
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: Node_Intro
   m_EditorClassIdentifier: 
   GUID: 89d5e0724eb642f9981950f060b61d01
-  nodePosition: {x: -210.66667, y: -133.33333}
+  nodePosition: {x: -221.33333, y: -133.33333}
   speakerName: Jeff
   speakerPortrait: {fileID: 21300000, guid: f1559ebc9ca919e4ea96a439ea8bb817, type: 3}
   questionText: Hello, this is testing the translation system. For exaple we have
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: Node_Right answer
   m_EditorClassIdentifier: 
   GUID: a963fbf4a2694dffa3e5c82da05b138f
-  nodePosition: {x: 1394.6666, y: -284.66666}
+  nodePosition: {x: 1431.3334, y: -312}
   speakerName: Jeff
   speakerPortrait: {fileID: 21300000, guid: f1559ebc9ca919e4ea96a439ea8bb817, type: 3}
   questionText: That's right good job

@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 7987658541158677290}
   - component: {fileID: 1036795670578556777}
   m_Layer: 0
-  m_Name: PlayerJOurnal
+  m_Name: PlayerJournal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,7 +591,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   realDict: {fileID: 11400000, guid: 9c366ec8d56f5bd459527ed34eac8767, type: 2}
-  discoveredSymbols: []
+  discoveredSymbols:
+  - (cat symbol)
 --- !u!114 &1036795670578556777
 MonoBehaviour:
   m_ObjectHideFlags: 0
