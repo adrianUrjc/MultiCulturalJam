@@ -25,14 +25,14 @@
                     }
                 },
                 {
-                    "name": "FirstTimePlayed",
+                    "name": "LastTimePlayed",
                     "type": 5,
                     "value": {
                         "rid": 1003
                     }
                 },
                 {
-                    "name": "LastTimePlayed",
+                    "name": "FirstTimePlayed",
                     "type": 5,
                     "value": {
                         "rid": 1004
@@ -52,7 +52,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": true
+                    "value": false
                 }
             },
             {
@@ -74,7 +74,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 2387
+                    "value": 0
                 }
             },
             {
@@ -85,7 +85,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 1770072356
+                    "value": 0
                 }
             },
             {
@@ -96,7 +96,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 1770074743
+                    "value": 0
                 }
             }
         ]

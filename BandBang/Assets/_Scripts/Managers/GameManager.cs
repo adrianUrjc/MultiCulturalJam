@@ -63,7 +63,7 @@ public class GameManager : ASingleton<GameManager>, IManager
             MainMenuController mainMenuController = FindAnyObjectByType<MainMenuController>();
 
                 int slotIndex = 0;
-
+            GetComponentInChildren<SaveSlot>().SaveSlotSave();
             foreach (Transform child in mainMenuController.SaveSlots.transform.Find("HorizontalLayout"))
             {
                 var buttonComp = child.GetComponent<Button>();
