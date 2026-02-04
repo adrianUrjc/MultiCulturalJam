@@ -11,14 +11,6 @@ public class Translator : MonoBehaviour
     PlayerJournal playerJournal;
     [SerializeField]
     RealDictionary realDictionary;
-    Dictionary<string, string> translations = new()
-{
-    { "I like", "Me gusta" },
-    { "I", "Yo" },
-    { "like", "gustar" },
-    { "cats", "gatos" }
-};
-    string input = "I like cats. I like dogs.";
 
     private void Start()
     {
@@ -31,8 +23,8 @@ public class Translator : MonoBehaviour
     /// <returns></returns>
     public string TranslateTextToSymbolsReal(string dialogOption)
     {
-       // var temp = TranslateWithDict(dialogOption, realDictionary.EnglishToSymbol);
-        return dialogOption + " **with player symbols **";
+        var temp = TranslateWithDict(dialogOption, realDictionary.EnglishToSymbol);
+        return temp;
     }
     /// <summary>
     /// Para las opciones del jugador
@@ -41,9 +33,9 @@ public class Translator : MonoBehaviour
     /// <returns></returns>
     public string TranslateTextToSymbols(string dialogOption)
     {
-       // var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol);
+        var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol);
 
-        return dialogOption + " **with symbols **";
+        return temp;
     }
     /// <summary>
     /// Para cuando el jugador elige una opci�n
@@ -52,10 +44,10 @@ public class Translator : MonoBehaviour
     /// <returns></returns>
     public string TranslateTextToEnglishWithPlayerDict(string dialogOption)
     {
-//        var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol) ;
+        var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol) ;
 
-  //      var temp2 = TranslateWithDict(temp, realDictionary.SymbolToEnglish);
-        return dialogOption;
+       var temp2 = TranslateWithDict(temp, realDictionary.SymbolToEnglish);
+        return temp2;
     }
 
     private string TranslateWithDict(string s, Dictionary<string,string> dict)
@@ -69,7 +61,7 @@ public class Translator : MonoBehaviour
         string result = Regex.Replace(
             s,
             pattern,
-            match => translations[match.Value]
+            match => dict[match.Value]
         );
 
         Debug.Log(result);
