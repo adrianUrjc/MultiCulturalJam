@@ -23,7 +23,7 @@ public class DialogSelector : DialogUIController
   public override void SetText(string text)
   {
     //antes de setear el texto, traducirlo
-    string translatedText = translator.TranslateTextToSymbols(text);
+    string translatedText = translator.TranslateTextToSymbolsReal(text);
     Debug.Log("Translated dialog text: " + translatedText);
    
     base.SetText(translatedText);
@@ -52,7 +52,7 @@ public class DialogSelector : DialogUIController
       view.SetHotkey(string.Empty);
       //aqui preguntar al translator, que me de el string traducido segun la información
       Debug.Log("Original choice text: " + ch.answerText);
-      string choiceText = translator.TranslateTextToSymbols(ch.answerText);
+      string choiceText = translator.TranslateTextToSymbolsPlayer(ch.answerText);
       Debug.Log("Translated choice text: " + choiceText);
 
       //mirar en el dialog manager si hay ese string en las opciones

@@ -31,7 +31,7 @@ public class Translator : MonoBehaviour
     /// </summary>
     /// <param name="dialogOption"></param>
     /// <returns></returns>
-    public string TranslateTextToSymbols(string dialogOption)
+    public string TranslateTextToSymbolsPlayer(string dialogOption)
     {
         var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol);
 
@@ -42,7 +42,7 @@ public class Translator : MonoBehaviour
     /// </summary>
     /// <param name="dialogOption"></param>
     /// <returns></returns>
-    public string TranslateTextToEnglishWithPlayerDict(string dialogOption)
+    public string TranslateTextToEnglishPlayer(string dialogOption)
     {
         var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol) ;
 
