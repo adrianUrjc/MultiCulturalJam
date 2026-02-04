@@ -15,6 +15,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 namespace DialogSystem.Runtime.Core
 {
     [DisallowMultipleComponent]
@@ -185,6 +186,18 @@ namespace DialogSystem.Runtime.Core
             else if (doDebug)
             {
                 Debug.LogWarning($"[DialogManager] No dialog found for id: {targetDialogID}");
+            }
+        }
+        public void PlayDialogByDialogGraph( DialogGraph graph, Action onDialogEnded = null)
+        {
+            currentDialog = null;
+            if (graph != null)
+            {
+                StartDialog(graph, onDialogEnded);
+            }
+            else if (doDebug)
+            {
+                Debug.LogWarning($"[DialogManager] No dialog graph provided.");
             }
         }
 
@@ -387,10 +400,10 @@ namespace DialogSystem.Runtime.Core
         {
             if (isPausedByHistory) return;
 
-            if (currentChoice != null) 
-            { 
-                ShowChoices(currentChoice); 
-                return; 
+            if (currentChoice != null)
+            {
+                ShowChoices(currentChoice);
+                return;
             }
 
             if (currentDialog != null)
@@ -427,7 +440,26 @@ namespace DialogSystem.Runtime.Core
                 }));
             }
         }
-
+      public  bool isChoiceInChoiceNode(string text)
+        {
+            if (currentChoice == null) return false;
+            foreach (var choice in currentChoice.choices)
+            {
+                if (choice.answerText.Equals(text))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public string GetLastChoiceText()
+        {
+            if (currentChoice != null && currentChoice.choices.Count > 0)
+            {
+                return currentChoice.choices[currentChoice.choices.Count - 1].answerText;
+            }
+            return string.Empty;
+        }
         private void SafeStopTyping()
         {
             // Stop coroutine if running
@@ -519,7 +551,7 @@ namespace DialogSystem.Runtime.Core
 
             for (int i = 0; i < _choiceViews.Count; i++)
             {
-                if(_choiceViews[i] != null)
+                if (_choiceViews[i] != null)
                     _choiceViews[i].ApplySelected(i == _selectedChoiceIndex, hint);
             }
         }
@@ -582,7 +614,7 @@ namespace DialogSystem.Runtime.Core
 
                 SafeStopTyping(); // snaps to full text via CompleteImmediately()
                 var full = currentDialog != null ? currentDialog.questionText : currentChoice?.text ?? string.Empty;
-                if (uiPanel?.dialogText != null) uiPanel.dialogText.text = full;
+                if (uiPanel?.dialogText != null) uiPanel.SetText(full);
 
                 if (ShouldStopOnSkipLine() && currentDialog != null) StopAudio(ShouldFadeOutOnStop());
 
@@ -875,10 +907,10 @@ namespace DialogSystem.Runtime.Core
 
                 if (uiPanel?.dialogText != null)
                 {
-                    uiPanel.dialogText.text = currentDialog != null
+                    uiPanel.SetText( currentDialog != null
                         ? currentDialog.questionText
                         : currentChoice != null ? currentChoice.text
-                        : string.Empty;
+                        : string.Empty);
                 }
 
                 isTyping = false;
@@ -1021,6 +1053,10 @@ namespace DialogSystem.Runtime.Core
         #region ---------------- Reveal Effect Factory ----------------
         private ITextRevealEffect CreateRevealEffect(string line)
         {
+            //aqui está el problema para cambiar el texto
+            var translator= FindObjectOfType<Translator>();
+
+            line= translator.TranslateTextToSymbols( line);
             if (uiPanel?.dialogText == null) return null;
 
             var type = localTextSettings != null

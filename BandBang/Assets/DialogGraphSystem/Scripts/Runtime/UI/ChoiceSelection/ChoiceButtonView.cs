@@ -124,13 +124,14 @@ namespace DialogSystem.Runtime.UI
             }
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        public virtual void OnPointerEnter(PointerEventData eventData)
         {
             if (_mgr == null) return;
 
             if (_settings != null && _settings.mouseHoverMovesSelection)
             {
                 if (_doDebug) Debug.Log($"[ChoiceButtonView] Hover select index {_index}");
+                
                 _mgr.SelectChoiceIndex(_index);
             }
         }

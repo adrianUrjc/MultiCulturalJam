@@ -29,7 +29,7 @@ public class Translator : MonoBehaviour
     /// <returns></returns>
     public string TranslateTextToSymbolsReal(string dialogOption)
     {
-        var temp = TranslateWithDict(dialogOption, realDictionary.EnglishToSymbol);
+       // var temp = TranslateWithDict(dialogOption, realDictionary.EnglishToSymbol);
         return dialogOption + " **with player symbols **";
     }
     /// <summary>
@@ -39,20 +39,20 @@ public class Translator : MonoBehaviour
     /// <returns></returns>
     public string TranslateTextToSymbols(string dialogOption)
     {
-        var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol);
+       // var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol);
 
         return dialogOption + " **with symbols **";
     }
     /// <summary>
-    /// Para cuando el jugador elige una opción
+    /// Para cuando el jugador elige una opciï¿½n
     /// </summary>
     /// <param name="dialogOption"></param>
     /// <returns></returns>
     public string TranslateTextToEnglishWithPlayerDict(string dialogOption)
     {
-        var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol) ;
+//        var temp = TranslateWithDict(dialogOption, playerJournal.englishToSymbol) ;
 
-        var temp2 = TranslateWithDict(temp, realDictionary.SymbolToEnglish);
+  //      var temp2 = TranslateWithDict(temp, realDictionary.SymbolToEnglish);
         return dialogOption;
     }
 

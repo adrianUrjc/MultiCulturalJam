@@ -21,7 +21,7 @@ namespace DialogSystem.Runtime.UI
         public Image portraitImage;
 
         [Header("Choices UI (Vertical Container)")]
-        [SerializeField] private bool doDebug = true;
+        [SerializeField] protected bool doDebug = true;
         public Transform choicesContainer;     // Must have VerticalLayoutGroup + ContentSizeFitter
         public GameObject choiceButtonPrefab;  // Prefab with Button + ChoiceButtonView on root
 
@@ -61,7 +61,7 @@ namespace DialogSystem.Runtime.UI
         { if (choicesContainer) choicesContainer.gameObject.SetActive(v); }
 
         public void SetSpeaker(string name) { if (speakerName) speakerName.text = name ?? string.Empty; }
-        public void SetText(string text) { if (dialogText) dialogText.text = text ?? string.Empty; }
+        public virtual void SetText(string text) {if (dialogText) dialogText.text = text ?? string.Empty; }
         public void SetPortrait(Sprite s) { if (portraitImage) portraitImage.sprite = s; }
         #endregion
 
