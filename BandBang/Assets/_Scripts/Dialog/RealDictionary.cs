@@ -6,10 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "RealDictionary", menuName = "Dialog/RealDictionary")]
 public class RealDictionary : ScriptableObject
 {
-    [SerializeField]
-    private List<DictionarySymbolEntry> dictionary;
-    Dictionary<string, string> englishToSymbol;
-    Dictionary<string, string> symbolToEnglish;
+
+    protected Dictionary<string, string> englishToSymbol;
+    protected Dictionary<string, string> symbolToEnglish;
 
     public Dictionary<string, string> EnglishToSymbol { get { 
             Debug.Log("Accessing SymbolToEnglish...");
@@ -37,8 +36,8 @@ public class RealDictionary : ScriptableObject
         }
     }
 
-    void initLookUp()
-    {
+    protected virtual void initLookUp()
+    {/*
         Debug.Log("Initializing RealDictionary lookups...");
         englishToSymbol = new Dictionary<string, string>();
         symbolToEnglish = new Dictionary<string, string>();
@@ -75,10 +74,11 @@ public class RealDictionary : ScriptableObject
          }*/
     }
 }
-
+/*
 [System.Serializable]
 public class DictionarySymbolEntry
 {
     public string english;
     public string symbol;
 }
+*/

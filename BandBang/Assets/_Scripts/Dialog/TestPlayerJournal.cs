@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
 public class TestPlayerJournal : MonoBehaviour
 {
-    public List<DictionarySymbolEntry> testEntries = new List<DictionarySymbolEntry>();
+    public List<DictionarySymbolSpritesEntry> testEntries = new List<DictionarySymbolSpritesEntry>();
     [SerializeField]
     PlayerJournal playerJournal;
     // Start is called before the first frame update
@@ -17,8 +18,11 @@ public class TestPlayerJournal : MonoBehaviour
     {
         foreach (var entry in testEntries)
         {
-            playerJournal.discoverSymbol(entry.symbol);
-            playerJournal.GuessMeaning(entry.english, entry.symbol);
+
+            string symbolIndex = entry.symbol.name.Split('_').ToList<string>().Last<string>();
+            string symbolKey = "<sprite=" + symbolIndex + ">";
+            playerJournal.discoverSymbol(symbolKey);
+            playerJournal.GuessMeaning(entry.english, symbolKey);
         }
     }
     // Update is called once per frame

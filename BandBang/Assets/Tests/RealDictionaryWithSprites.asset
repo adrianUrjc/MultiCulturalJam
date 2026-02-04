@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e386872ad69c2c4f9537b21608a857a, type: 3}
+  m_Name: RealDictionaryWithSprites
+  m_EditorClassIdentifier: 
+  dictionary: []
+  dictionaryS:
+  - english: dog
+    symbol: {fileID: 315841014, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: cat
+    symbol: {fileID: 227301423, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: apple
+    symbol: {fileID: 2049492952, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: banana
+    symbol: {fileID: -2012117994, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
