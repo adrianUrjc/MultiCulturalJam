@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position+ (new Vector2(moveInput.x, moveInput.y) * Time.fixedDeltaTime * moveSpeed));
+        rb.MovePosition(rb.position+ (new Vector2(moveInput.x, 0/*moveInput.y*/) * Time.fixedDeltaTime * moveSpeed));
 
         if (moveInput.sqrMagnitude > 0.1f)
         {
