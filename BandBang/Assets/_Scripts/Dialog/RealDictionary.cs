@@ -8,12 +8,13 @@ public class RealDictionary : ScriptableObject
 {
     [SerializeField]
     private List<DictionarySymbolEntry> dictionary;
-    Dictionary<string, string> englishToSymbol = new Dictionary<string, string>();
-    Dictionary<string, string> symbolToEnglish = new Dictionary<string, string>();
+    Dictionary<string, string> englishToSymbol;
+    Dictionary<string, string> symbolToEnglish;
 
     public Dictionary<string, string> EnglishToSymbol { get { 
-            
-            if(englishToSymbol.Count == 0)
+            Debug.Log("Accessing SymbolToEnglish...");
+
+            if (englishToSymbol == null)
             {
                 initLookUp();
                
@@ -24,9 +25,11 @@ public class RealDictionary : ScriptableObject
     {
         get
         {
+            Debug.Log("Accessing SymbolToEnglish...");
 
-            if (symbolToEnglish.Count == 0)
+            if (symbolToEnglish == null)
             {
+                
                 initLookUp();
 
             }
@@ -36,6 +39,7 @@ public class RealDictionary : ScriptableObject
 
     void initLookUp()
     {
+        Debug.Log("Initializing RealDictionary lookups...");
         englishToSymbol = new Dictionary<string, string>();
         symbolToEnglish = new Dictionary<string, string>();
         foreach (var entry in dictionary)

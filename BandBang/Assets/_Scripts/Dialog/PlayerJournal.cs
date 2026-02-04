@@ -17,7 +17,6 @@ public class PlayerJournal : MonoBehaviour
 
         englishToSymbol = new Dictionary<string, string>();
         symbolToEnglish = new Dictionary<string, string>();
-        realDict = FindObjectOfType<RealDictionary>();
         foreach (var key in realDict.SymbolToEnglish.Keys)
         {
             englishToSymbol[key] = "****";
