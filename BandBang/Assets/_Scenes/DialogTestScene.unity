@@ -382,6 +382,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &138117161 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2438830291652564291, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+  m_PrefabInstance: {fileID: 10253056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb6e1cb45646784d9afa720623396c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &161780877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,7 +1273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogGraph:
-    dialogGraph: {fileID: 11400000, guid: 5b8977525d1dd644baeb41c417417494, type: 2}
+    dialogGraph: {fileID: 11400000, guid: b9c836d046af9f54997fd2775995d04e, type: 2}
     dialogID: DemoActionDialog
 --- !u!61 &1282197312
 BoxCollider2D:
@@ -1516,7 +1527,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 280483536223358298, guid: 8ce6c4b899f415b48b9b152ada6595da, type: 3}
       propertyPath: doDebug
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 280483536223358298, guid: 8ce6c4b899f415b48b9b152ada6595da, type: 3}
       propertyPath: uiPanel
@@ -1865,6 +1876,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 335716902}
     m_Modifications:
+    - target: {fileID: 2364935886839177854, guid: 1a0e4dc9ebe10d64dad194261d7a4ea3, type: 3}
+      propertyPath: translator
+      value: 
+      objectReference: {fileID: 138117161}
     - target: {fileID: 7542902699421502482, guid: 1a0e4dc9ebe10d64dad194261d7a4ea3, type: 3}
       propertyPath: m_Name
       value: DialogUI_Panel

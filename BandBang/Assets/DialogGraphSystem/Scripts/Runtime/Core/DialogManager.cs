@@ -572,6 +572,7 @@ namespace DialogSystem.Runtime.Core
 
         public void OnChoiceSelected(int index)
         {
+            if(doDebug) Debug.Log($"[DialogManager] Choice selected: index={index}");
             var choiceNode = pendingChoiceFromDialog != null ? pendingChoiceFromDialog : currentChoice;
             if (choiceNode == null) return;
             if (index < 0 || index >= choiceNode.choices.Count) return;

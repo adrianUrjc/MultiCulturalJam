@@ -17,3 +17,7 @@ MonoBehaviour:
     symbol: (dog symbol)
   - english: cat
     symbol: (cat symbol)
+  - english: apple
+    symbol: (apple symbol)
+  - english: banana
+    symbol: (banana symbol)

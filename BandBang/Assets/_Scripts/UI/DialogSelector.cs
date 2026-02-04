@@ -10,6 +10,7 @@ using UnityEngine;
 public class DialogSelector : DialogUIController
 {
   //necesita la referencia al translator
+  [SerializeField] private int maxOptions = 4;
   [SerializeField] private
   Translator translator;
   //DialogManager necesita override para tomar el texto en ingles y traducirlo a la traducción del jugador
@@ -24,7 +25,7 @@ public class DialogSelector : DialogUIController
   {
     //antes de setear el texto, traducirlo
     string translatedText = translator.TranslateTextToSymbolsReal(text);
-    Debug.Log("Translated dialog text: " + translatedText);
+//    Debug.Log("Translated dialog text: " + translatedText);
    
     base.SetText(translatedText);
   }
@@ -41,7 +42,9 @@ public class DialogSelector : DialogUIController
       Destroy(choicesContainer.GetChild(i).gameObject);
 
     // Build
-    for (int i = 0; i < node.choices.Count; i++)
+    int optionCount = Mathf.Min(node.choices.Count, maxOptions);
+
+    for (int i = 0; i < optionCount; i++)
     {
       int idx = i;
       var ch = node.choices[i];
@@ -53,7 +56,7 @@ public class DialogSelector : DialogUIController
       //aqui preguntar al translator, que me de el string traducido segun la información
       Debug.Log("Original choice text: " + ch.answerText);
       string choiceText = translator.TranslateTextToSymbolsPlayer(ch.answerText);
-      Debug.Log("Translated choice text: " + choiceText);
+     
 
       //mirar en el dialog manager si hay ese string en las opciones
       //si existe asignar el idx verdadero
@@ -61,12 +64,21 @@ public class DialogSelector : DialogUIController
       {
         //si no default->ultima opcion, ultimo de node.choices
         idx = node.choices.Count - 1;
+        Debug.Log("This choice isn't known by the player, assigning last option idx: " + idx);
+
       }
+       Debug.Log("Translated choice text: " + choiceText);
 
       view.SetContent(choiceText, string.Empty, /*interactable*/ true, () => onPick?.Invoke(idx));
     }
 
     SetChoicesVisible(true);
+    //mix choices container children
+    // for (int i = 0; i < choicesContainer.childCount; i++)
+    // {
+    //   var child = choicesContainer.GetChild(i);
+    //   child.SetSiblingIndex(UnityEngine.Random.Range(0, choicesContainer.childCount));
+    // }
 
   }
 

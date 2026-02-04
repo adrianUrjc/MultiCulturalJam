@@ -1,3 +1,16 @@
 {
-	"name": "DialogSymbolSys"
+    "name": "DialogSymbolSys",
+    "rootNamespace": "",
+    "references": [
+        "GUID:607142689ccff104886ec8d11189beb2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

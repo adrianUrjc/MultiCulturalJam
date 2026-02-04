@@ -9,7 +9,7 @@ public class Translator : MonoBehaviour
 {
     [SerializeField]
     PlayerJournal playerJournal;
-    [SerializeField]
+    [SerializeField][ExposedScriptableObject]
     RealDictionary realDictionary;
 
     private void Start()
