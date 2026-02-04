@@ -4,9 +4,11 @@ using UnityEngine;
 public class Door : InteractionReceiver
 {
     [SerializeField]
-    GameObject roomObject;
+    GameObject[] insideObjects;
+
+   
     [SerializeField]
-    GameObject notRoomObject;
+    GameObject[] outsideObjects;
 
     bool isOpen = false;
     public override void Interact()
@@ -24,14 +26,27 @@ public class Door : InteractionReceiver
     }
     void OpenRoom()
     {
-        roomObject.SetActive(true);
-        notRoomObject.SetActive(false);
+        foreach (var obj in insideObjects)
+        {
+            obj.SetActive(true);
+        }
+
+        foreach (var obj in outsideObjects)
+        {
+            obj.SetActive(false);
+        }
         //move the player?
     }
     void CloseRoom()
     {
-        roomObject.SetActive(false);
-        notRoomObject.SetActive(true);
+        foreach (var obj in insideObjects)
+        {
+            obj.SetActive(false);
+        }
+        foreach (var obj in outsideObjects)
+        {
+            obj.SetActive(true);
+        }
     }
 
 

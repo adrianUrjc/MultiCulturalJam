@@ -44,7 +44,6 @@ public class LevelLoader : MonoBehaviour
                 break;
             default:
                 return;
-                break;
         }
         SceneManager.LoadScene(TEMP);
         return;

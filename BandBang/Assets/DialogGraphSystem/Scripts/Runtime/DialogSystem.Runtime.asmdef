@@ -1,14 +1,18 @@
 {
-  "name": "DialogSystem.Runtime",
-  "rootNamespace": "DialogSystem",
-  "references": ["Unity.TextMeshPro", "Unity.UGUI"],
-  "includePlatforms": [],
-  "excludePlatforms": [],
-  "allowUnsafeCode": false,
-  "overrideReferences": false,
-  "precompiledReferences": [],
-  "autoReferenced": true,
-  "defineConstraints": [],
-  "versionDefines": [],
-  "noEngineReferences": false
+    "name": "DialogSystem.Runtime",
+    "rootNamespace": "DialogSystem",
+    "references": [
+        "Unity.TextMeshPro",
+        "Unity.UGUI",
+        "DialogSymbolSys"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
