@@ -832,7 +832,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.1
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1351,6 +1351,7 @@ GameObject:
   - component: {fileID: 194364846293382887}
   - component: {fileID: 6658085473684230499}
   - component: {fileID: 2364935886839177854}
+  - component: {fileID: 2367431670076727503}
   m_Layer: 5
   m_Name: DialogUI_PanelTranslated
   m_TagString: Untagged
@@ -1403,7 +1404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 0.5686275, b: 0.43137258, a: 1}
+  m_Color: {r: 0.68235296, g: 0.5686275, b: 0.43137258, a: 0.16078432}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1501,6 +1502,19 @@ MonoBehaviour:
   pauseIcon: {fileID: 888238843173917969}
   playIcon: {fileID: 3457031960843034343}
   translator: {fileID: 0}
+--- !u!114 &2367431670076727503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7542902699421502482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f574af70cc0ce40bada03c165d9468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActions: {fileID: -944628639613478452, guid: fce6cef1c4a24f24fad2a0922a2c0544, type: 3}
 --- !u!1 &8414284850938393743
 GameObject:
   m_ObjectHideFlags: 0

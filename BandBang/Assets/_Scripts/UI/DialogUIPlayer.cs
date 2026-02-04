@@ -4,7 +4,7 @@ using UnityEngine;
 using DialogSystem.Runtime.Core;
 using static DialogSystem.Runtime.Core.DialogManager;
 
-public class DialogUITest : MonoBehaviour
+public class DialogUIPlayer : MonoBehaviour
 
 {
     [SerializeField] private
@@ -12,6 +12,6 @@ public class DialogUITest : MonoBehaviour
     [ContextMenu("Play Dialog")]
    public void PlayDialog()
     {
-        DialogManager.Instance.PlayDialogByDialogGraph(dialogGraph.dialogGraph);
+        DialogManager.Instance.PlayDialogByDialogGraphModel(dialogGraph);
     }
 }

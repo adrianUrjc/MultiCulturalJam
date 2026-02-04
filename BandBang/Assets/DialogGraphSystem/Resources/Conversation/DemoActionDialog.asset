@@ -238,13 +238,13 @@ MonoBehaviour:
   nodePosition: {x: 580.6667, y: -155.33333}
   text: 
   choices:
-  - answerText: Red
+  - answerText: cat
     nextNodeGUID: 94d018c634134cd6a7840e4e229af8c7
     onSelected:
       m_PersistentCalls:
         m_Calls: []
     tooltipOrSubLabel: 
-  - answerText: Blue
+  - answerText: dog
     nextNodeGUID: d08c5eeae20e45dea41239f9a5564fde
     onSelected:
       m_PersistentCalls:
@@ -273,7 +273,7 @@ MonoBehaviour:
   speakerName: Guid
   speakerPortrait: {fileID: 21300000, guid: ffde12b7f3c029f418663d7979d15648, type: 3}
   questionText: "Now, there is going to be an image shown, Chose a color for the
-    image? After you choose, I\u2019ll start a 5-second countdown."
+    image? cat - dog After you choose, I\u2019ll start a 5-second countdown."
   dialogAudio: {fileID: 0}
   displayTime: 0
 --- !u!114 &6328615245842445624

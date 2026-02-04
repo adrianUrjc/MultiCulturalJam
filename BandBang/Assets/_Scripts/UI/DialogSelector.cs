@@ -25,6 +25,7 @@ public class DialogSelector : DialogUIController
     //antes de setear el texto, traducirlo
     string translatedText = translator.TranslateTextToSymbols(text);
     Debug.Log("Translated dialog text: " + translatedText);
+   
     base.SetText(translatedText);
   }
   public override void BuildChoices(ChoiceNode node, DialogChoiceSettings settings, Action<int> onPick)
@@ -50,7 +51,9 @@ public class DialogSelector : DialogUIController
       view.Init(DialogManager.Instance, idx, settings);
       view.SetHotkey(string.Empty);
       //aqui preguntar al translator, que me de el string traducido segun la información
-      string choiceText = translator.TranslateTextToEnglishWithPlayerDict(ch.answerText);
+      Debug.Log("Original choice text: " + ch.answerText);
+      string choiceText = translator.TranslateTextToSymbols(ch.answerText);
+      Debug.Log("Translated choice text: " + choiceText);
 
       //mirar en el dialog manager si hay ese string en las opciones
       //si existe asignar el idx verdadero

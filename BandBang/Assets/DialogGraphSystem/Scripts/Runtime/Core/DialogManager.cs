@@ -188,12 +188,13 @@ namespace DialogSystem.Runtime.Core
                 Debug.LogWarning($"[DialogManager] No dialog found for id: {targetDialogID}");
             }
         }
-        public void PlayDialogByDialogGraph( DialogGraph graph, Action onDialogEnded = null)
+        public void PlayDialogByDialogGraphModel(DialogGraphModel graph, Action onDialogEnded = null)
         {
             currentDialog = null;
             if (graph != null)
             {
-                StartDialog(graph, onDialogEnded);
+                StartDialog(graph.dialogGraph, onDialogEnded);
+                currentDialogID = graph.dialogID;
             }
             else if (doDebug)
             {
@@ -440,7 +441,7 @@ namespace DialogSystem.Runtime.Core
                 }));
             }
         }
-      public  bool isChoiceInChoiceNode(string text)
+        public bool isChoiceInChoiceNode(string text)
         {
             if (currentChoice == null) return false;
             foreach (var choice in currentChoice.choices)
@@ -907,7 +908,7 @@ namespace DialogSystem.Runtime.Core
 
                 if (uiPanel?.dialogText != null)
                 {
-                    uiPanel.SetText( currentDialog != null
+                    uiPanel.SetText(currentDialog != null
                         ? currentDialog.questionText
                         : currentChoice != null ? currentChoice.text
                         : string.Empty);
@@ -1054,9 +1055,11 @@ namespace DialogSystem.Runtime.Core
         private ITextRevealEffect CreateRevealEffect(string line)
         {
             //aqui está el problema para cambiar el texto
-            var translator= FindObjectOfType<Translator>();
 
-            line= translator.TranslateTextToSymbols( line);
+           var translator = FindObjectOfType<Translator>();
+            if (translator != null)
+                line = translator.TranslateTextToSymbolsReal(line);
+
             if (uiPanel?.dialogText == null) return null;
 
             var type = localTextSettings != null
