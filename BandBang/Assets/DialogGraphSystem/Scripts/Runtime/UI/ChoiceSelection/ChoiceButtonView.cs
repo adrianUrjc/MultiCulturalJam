@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using DialogSystem.Runtime.Settings.Panels;
 using DialogSystem.Runtime.Core;
 using DialogSystem.Runtime.Settings;
+using System.ComponentModel;
 
 namespace DialogSystem.Runtime.UI
 {
@@ -27,7 +28,7 @@ namespace DialogSystem.Runtime.UI
 
         #region ---------------- Runtime ----------------
         private DialogManager _mgr;
-        private int _index;
+        [SerializeField]         private int _index;
         private DialogChoiceSettings _settings;
         private Vector3 _baseScale;
         private bool _selected;
@@ -132,14 +133,14 @@ namespace DialogSystem.Runtime.UI
             {
                 if (_doDebug) Debug.Log($"[ChoiceButtonView] Hover select index {_index}");
                 
-                _mgr.SelectChoiceIndex(_index);
+              _mgr.SelectChoiceIndex(transform.GetSiblingIndex());
             }
         }
 
         private void OnUIButtonClicked()
         {
             if (_doDebug) Debug.Log($"[ChoiceButtonView] Click received on '{name}'. HandlerNull={_onClick == null}");
-            _onClick?.Invoke();
+              _onClick?.Invoke();
         }
 
         private void Update()
