@@ -26,13 +26,14 @@ public class DialogSelector : DialogUIController
   {
     //antes de setear el texto, traducirlo
     string translatedText = translator.TranslateTextToSymbolsReal(text);
-        translator.DiscorverSymbols(translatedText);
-        //    Debug.Log("Translated dialog text: " + translatedText);
+    translator.DiscorverSymbols(translatedText);
+    //    Debug.Log("Translated dialog text: " + translatedText);
 
-        base.SetText(translatedText);
+    base.SetText(translatedText);
   }
   public override void BuildChoices(ChoiceNode node, DialogChoiceSettings settings, Action<int> onPick)
   {
+
     if (!choicesContainer || !choiceButtonPrefab)
     {
       if (doDebug) Debug.LogError("[DialogUIController] Choices UI not assigned.");
@@ -46,6 +47,7 @@ public class DialogSelector : DialogUIController
     // Build
     int optionCount = Mathf.Min(node.choices.Count, maxOptions);
 
+    int lockedOptions = 0;//si todas las opciones están bloqueadas, se elige la última opción
     for (int i = 0; i < optionCount; i++)
     {
       int idx = i;
@@ -65,17 +67,33 @@ public class DialogSelector : DialogUIController
       string englishPlayersChoice = translator.TranslateTextToEnglishPlayer(ch.answerText);
 
       int newIndex = choiceIndexOfText(englishPlayersChoice, node);
-      
+
       view.Init(DialogManager.Instance, newIndex, settings);
+
+
 
       Debug.Log("Original choice text: " + ch.answerText);
       Debug.Log("Translated into player's symbols choice text: " + choiceText);
       Debug.Log("Real english choice player would respond with: " + englishPlayersChoice + " (option: " + newIndex + ")");
       //Aqui poner que si el texto tiene una traduccion sin solucion no se pueda pulsar
-      view.SetContent(choiceText, string.Empty, /*interactable*/ true, () => onPick?.Invoke(newIndex));
+
+      if (englishPlayersChoice.Contains("*"))
+      {
+        lockedOptions++;
+        view.SetContent(choiceText, string.Empty, /*interactable*/ false, () => onPick?.Invoke(newIndex));
+      }
+      else
+      {
+        view.SetContent(choiceText, string.Empty, /*interactable*/ true, () => onPick?.Invoke(newIndex));
+      }
     }
 
     SetChoicesVisible(true);
+    if(lockedOptions == optionCount)
+    {
+      Debug.Log("All options are locked, defaulting to last option.");
+      onPick?.Invoke(node.choices.Count - 1);
+    }
     //mix choices container children
     // for (int i = 0; i < choicesContainer.childCount; i++)
     // {

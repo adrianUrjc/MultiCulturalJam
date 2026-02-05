@@ -20,7 +20,7 @@ public class JournalWithSave : PlayerJournal
                 Debug.LogError("No SaveSlot found in the scene! JournalWithSave requires a SaveSlot to function properly.");
             return;
         }
-        loader = saveSlot.loader;
+        loader = saveSlot.GetComponent<ALoader>();
 
         if (loader == null)
         {

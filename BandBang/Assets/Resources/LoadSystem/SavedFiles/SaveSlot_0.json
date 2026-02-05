@@ -195,7 +195,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": ""
+                    "value": "****,****,****,****,,"
                 }
             },
             {
@@ -206,7 +206,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": ""
+                    "value": "<sprite=0>,<sprite=8>,<sprite=13>,<sprite=15>,,"
                 }
             },
             {
