@@ -18,12 +18,14 @@ public class JournalWithSave : PlayerJournal
         if(saveSlot == null)
         {
                 Debug.LogError("No SaveSlot found in the scene! JournalWithSave requires a SaveSlot to function properly.");
+            return;
         }
         loader = saveSlot.loader;
 
         if (loader == null)
         {
             Debug.LogError("No loader found in the scene! JournalWithSave requires a SaveSlot to function properly.");
+            return;
         }
         string knowSymbols = loader.GetValue<string>("KnownSymbols");
         string symbolsDict = loader.GetValue<string>("SymbolsDict");
