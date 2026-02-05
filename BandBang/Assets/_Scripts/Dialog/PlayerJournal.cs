@@ -48,7 +48,7 @@ public class PlayerJournal : MonoBehaviour
     }
     public virtual void ReadSaveFile()
     {
-        string knowSymbols = "";
+        string knownSymbols = "";
     }
 
 
