@@ -26,9 +26,10 @@ public class DialogSelector : DialogUIController
   {
     //antes de setear el texto, traducirlo
     string translatedText = translator.TranslateTextToSymbolsReal(text);
-    //    Debug.Log("Translated dialog text: " + translatedText);
+        translator.DiscorverSymbols(translatedText);
+        //    Debug.Log("Translated dialog text: " + translatedText);
 
-    base.SetText(translatedText);
+        base.SetText(translatedText);
   }
   public override void BuildChoices(ChoiceNode node, DialogChoiceSettings settings, Action<int> onPick)
   {

@@ -49,7 +49,38 @@ public class Translator : MonoBehaviour
        var temp2 = TranslateWithDict(temp, realDictionary.SymbolToEnglish);
         return temp2;
     }
+    /// <summary>
+    /// PAra cuando hay un dialogo
+    /// </summary>
+    public void DiscorverSymbols(string NPCDialog)
+    {
+     
+        var keys = realDictionary.SymbolToEnglish.Keys
+        .OrderByDescending(k => k.Length)
+        .Select(Regex.Escape);
 
+        string pattern =
+            @"(?<![A-Za-z0-9])(" +
+            string.Join("|", keys) +
+            @")(?![A-Za-z0-9])";
+
+        var matches = Regex.Matches(NPCDialog, pattern);
+
+        var result = matches
+            .Cast<Match>()
+            .Select(m => m.Value);
+        foreach (var symbol in result)
+        {
+            playerJournal.discoverSymbol(symbol);
+        }
+       
+
+
+    } 
+    
+    /// <param name="s"></param>
+    /// <param name="dict"></param>
+    /// <returns></returns>
     private string TranslateWithDict(string s, Dictionary<string,string> dict)
     {
         var keys = dict.Keys
