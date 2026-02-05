@@ -25,6 +25,7 @@ public class SaveSlotButton : MonoBehaviour
 
         var saveSlotLoader =GetComponent<ALoader>();
         saveSlotLoader.LoadValues();
+        
         if (saveSlotLoader == null) { Debug.Log("SaveSlotLoader not found"); return; }
 
         if (saveSlotLoader .GetValue<bool>("HasPlayedBefore"))
