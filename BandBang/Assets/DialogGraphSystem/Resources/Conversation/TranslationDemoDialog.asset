@@ -83,8 +83,8 @@ MonoBehaviour:
   speakerName: Jeff
   speakerPortrait: {fileID: 21300000, guid: f1559ebc9ca919e4ea96a439ea8bb817, type: 3}
   questionText: Hello, this is testing the translation system. For exaple we have
-    added the word *_cat_*, which is translated to cat, we also have *_dog_*, which
-    is dog
+    added the word IIIcatIII, which is translated to cat, we also have IIIdogIII,
+    which is dog
   dialogAudio: {fileID: 0}
   displayTime: 0
 --- !u!114 &-390213450237236421
@@ -155,10 +155,10 @@ MonoBehaviour:
   - {fileID: -6868403827568379503}
   actionNodes: []
   startGuid: a13cf8ea796a4c3689443de546bc427b
-  startPosition: {x: -449.33334, y: -104}
+  startPosition: {x: -449.6, y: -104}
   startInitialized: 1
   endGuid: 33ab9d0ba5334b04bb8283978c79f4aa
-  endPosition: {x: 2033.3334, y: -39.333332}
+  endPosition: {x: 2033.6, y: -39.2}
   endInitialized: 1
 --- !u!114 &5826534116865664681
 MonoBehaviour:

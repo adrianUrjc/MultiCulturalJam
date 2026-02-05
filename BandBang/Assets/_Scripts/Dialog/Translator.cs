@@ -55,8 +55,10 @@ public class Translator : MonoBehaviour
         var keys = dict.Keys
    .OrderByDescending(k => k.Length)
    .Select(Regex.Escape);
-
-        string pattern = @"\b(" + string.Join("|", keys) + @")\b";
+        string pattern =
+    @"(?<![A-Za-z0-9])(" +
+    string.Join("|", keys) +
+    @")(?![A-Za-z0-9])";
 
         string result = Regex.Replace(
             s,
