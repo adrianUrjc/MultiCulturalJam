@@ -12,6 +12,11 @@ public class JournalWithSave : PlayerJournal
     }
     public override void ReadSaveFile()
     {
+        if(loader == null || saveSlot== null)
+        {
+            saveSlot = FindAnyObjectByType<SaveSlot>();
+            loader = saveSlot.loader;
+        }
         loader = saveSlot.loader;
         string knowSymbols = loader.GetValue<string>("KnownSymbols");
         string symbolsDict = loader.GetValue<string>("SymbolDict");
@@ -42,7 +47,7 @@ public class JournalWithSave : PlayerJournal
             englishDict += kvp.Value + ",";
         }
         loader.SetValue("KnownSymbols", knownSymbols);
-        loader.SetValue("SymbolDict", symbolDict);
+        loader.SetValue("SymbolsDict", symbolDict);
         loader.SetValue("EnglishDict", englishDict);
     }
 }

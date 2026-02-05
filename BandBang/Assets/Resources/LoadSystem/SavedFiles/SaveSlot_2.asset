@@ -45,7 +45,15 @@ MonoBehaviour:
       type: 6
       value:
         rid: 3074272015968370734
-    - name: KnownWords
+    - name: KnownSymbols
+      type: 7
+      value:
+        rid: 3074272015968370735
+    - name: EnglishDict
+      type: 7
+      value:
+        rid: 3074272015968370735
+    - name: SymbolsDict
       type: 7
       value:
         rid: 3074272015968370735

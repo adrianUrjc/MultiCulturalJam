@@ -540,8 +540,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5541245193153323198}
   - component: {fileID: 2438830291652564291}
-  - component: {fileID: 7987658541158677290}
   - component: {fileID: 1036795670578556777}
+  - component: {fileID: 4148131386778754430}
   m_Layer: 0
   m_Name: PlayerJournal
   m_TagString: Untagged
@@ -576,23 +576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb6e1cb45646784d9afa720623396c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerJournal: {fileID: 7987658541158677290}
+  playerJournal: {fileID: 4148131386778754430}
   realDictionary: {fileID: 11400000, guid: 4bf41bd1f38c30946882f8c64ca1c569, type: 2}
---- !u!114 &7987658541158677290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3998116311749005285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc55692e75f83fa4b94b97a0cb444cf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  realDict: {fileID: 11400000, guid: 4bf41bd1f38c30946882f8c64ca1c569, type: 2}
-  discoveredSymbols:
-  - (cat symbol)
 --- !u!114 &1036795670578556777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,8 +592,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testEntries:
   - english: dog
-    symbol: (cat symbol)
-  playerJournal: {fileID: 7987658541158677290}
+    symbol: {fileID: 227301423, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  playerJournal: {fileID: 4148131386778754430}
+--- !u!114 &4148131386778754430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998116311749005285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa81c435349cabd4c8164e8e46ae1d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  realDict: {fileID: 11400000, guid: 4bf41bd1f38c30946882f8c64ca1c569, type: 2}
+  discoveredSymbols: []
 --- !u!1 &4423136193098263546
 GameObject:
   m_ObjectHideFlags: 0
