@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public class TestPlayerJournal : MonoBehaviour
@@ -33,6 +35,8 @@ public class TestPlayerJournal : MonoBehaviour
     
 }
 
+
+#if UNITY_EDITOR
 [CustomEditor(typeof(TestPlayerJournal))]
 public class MyScriptEditor : Editor
 {
@@ -51,3 +55,5 @@ public class MyScriptEditor : Editor
         }
     }
 }
+
+#endif

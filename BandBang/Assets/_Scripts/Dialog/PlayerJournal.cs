@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerJournal : MonoBehaviour
 {
+
+    
     [SerializeField]
-    RealDictionary realDict;
+    protected RealDictionary realDict;
     public Dictionary<string, string> englishToSymbol = new Dictionary<string, string>();
     public Dictionary<string, string> symbolToEnglish = new Dictionary<string, string>();
 
@@ -14,7 +16,7 @@ public class PlayerJournal : MonoBehaviour
     private void Start()
     {
 
-
+        ReadSaveFile();
         foreach (var key in realDict.SymbolToEnglish.Keys)
         {
             if(!symbolToEnglish.ContainsKey(key))
@@ -44,7 +46,10 @@ public class PlayerJournal : MonoBehaviour
         englishToSymbol[englishWord] = "*** (unkown, trying to guess " + englishWord + ") ";
         symbolToEnglish[symbol] = "****";
     }
-    
+    public virtual void ReadSaveFile()
+    {
+        string knowSymbols = "";
+    }
 
 
 
