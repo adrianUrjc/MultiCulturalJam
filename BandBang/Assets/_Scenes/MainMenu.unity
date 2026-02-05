@@ -591,7 +591,7 @@ PrefabInstance:
     - target: {fileID: 161401558316313562, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
       propertyPath: values
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: c2f100e0849679d4c97554bbcb3cc9ef, type: 2}
     - target: {fileID: 161401558316313562, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
       propertyPath: jsonFileName
       value: SaveSlot_1.json
@@ -680,6 +680,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 422237638}
+    - target: {fileID: 8519836577730947634, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8882548286807893825, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
       propertyPath: m_Name
       value: SaveSlot_2
@@ -1119,7 +1123,7 @@ PrefabInstance:
     - target: {fileID: 161401558316313562, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
       propertyPath: values
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 08d0c99f738fb0b498bc63460d0fb6b7, type: 2}
     - target: {fileID: 161401558316313562, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
       propertyPath: jsonFileName
       value: SaveSlot_2.json
@@ -1208,6 +1212,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 422237638}
+    - target: {fileID: 8519836577730947634, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8882548286807893825, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
       propertyPath: m_Name
       value: SaveSlot_3

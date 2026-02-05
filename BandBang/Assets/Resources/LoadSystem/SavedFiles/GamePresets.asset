@@ -18,43 +18,43 @@ MonoBehaviour:
     - name: HasPlayedBefore
       type: 0
       value:
-        rid: 3074272015968370718
+        rid: 3074272015968370987
     - name: CurrentSaveSlot
       type: 4
       value:
-        rid: 3074272015968370719
+        rid: 3074272015968370988
     - name: TimePlayed
       type: 5
       value:
-        rid: 3074272015968370720
+        rid: 3074272015968370989
     - name: LastTimePlayed
       type: 5
       value:
-        rid: 3074272015968370721
+        rid: 3074272015968370990
     - name: FirstTimePlayed
       type: 5
       value:
-        rid: 3074272015968370722
+        rid: 3074272015968370991
   references:
     version: 2
     RefIds:
-    - rid: 3074272015968370718
+    - rid: 3074272015968370987
       type: {class: BoolSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 1
-    - rid: 3074272015968370719
+    - rid: 3074272015968370988
       type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 0
-    - rid: 3074272015968370720
+    - rid: 3074272015968370989
       type: {class: LongSettingValue, ns: , asm: Assembly-CSharp}
       data:
-        value: 947
-    - rid: 3074272015968370721
+        value: 2080
+    - rid: 3074272015968370990
       type: {class: LongSettingValue, ns: , asm: Assembly-CSharp}
       data:
-        value: 1770281304
-    - rid: 3074272015968370722
+        value: 1770282437
+    - rid: 3074272015968370991
       type: {class: LongSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 1770280357
