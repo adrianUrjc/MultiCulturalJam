@@ -60,9 +60,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soPath: Assets/Resources/LoadSystem/SavedFiles/
-  soName: GroupValues.asset
-  jsonFileName: GameAssets.json
-  values: {fileID: 0}
+  soName: SaveSlot_0.asset
+  jsonFileName: SaveSlot_0.json
+  values: {fileID: 11400000, guid: f613c71d9f7347d49bac18e852631466, type: 2}
 --- !u!1 &732386941205139474
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 238985787491927907}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,8 +114,8 @@ MonoBehaviour:
     sceneAsset: {fileID: 102900000, guid: f4472368e40b64c418c6b7f9fd36b886, type: 3}
     index: 4
   russia:
-    sceneAsset: {fileID: 102900000, guid: 93443b1df1c85e545bd906d5897d117c, type: 3}
-    index: 1
+    sceneAsset: {fileID: 102900000, guid: e9e99f421375d7245879b27299d7a680, type: 3}
+    index: 5
   egypt:
     sceneAsset: {fileID: 0}
     index: -1

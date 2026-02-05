@@ -58,10 +58,24 @@
                     }
                 },
                 {
-                    "name": "KnownWords",
+                    "name": "KnownSymbols",
                     "type": 7,
                     "value": {
                         "rid": 1007
+                    }
+                },
+                {
+                    "name": "EnglishDict",
+                    "type": 7,
+                    "value": {
+                        "rid": 1008
+                    }
+                },
+                {
+                    "name": "SymbolsDict",
+                    "type": 7,
+                    "value": {
+                        "rid": 1009
                     }
                 }
             ]
@@ -73,7 +87,7 @@
                     "name": "NPCsRecruited",
                     "type": 7,
                     "value": {
-                        "rid": 1008
+                        "rid": 1010
                     }
                 }
             ]
@@ -170,11 +184,33 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": ""
+                    "value": "<sprite=3>,<sprite=15>"
                 }
             },
             {
                 "rid": 1008,
+                "type": {
+                    "class": "StringSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": ",****,****,****,dog,"
+                }
+            },
+            {
+                "rid": 1009,
+                "type": {
+                    "class": "StringSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": ",<sprite=0>,<sprite=8>,<sprite=13>,<sprite=15>,"
+                }
+            },
+            {
+                "rid": 1010,
                 "type": {
                     "class": "StringSettingValue",
                     "ns": "",

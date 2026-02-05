@@ -2404,6 +2404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 732386941205139474, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
     - target: {fileID: 4580110956412614887, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
       propertyPath: soName
       value: SaveSlot_0.asset

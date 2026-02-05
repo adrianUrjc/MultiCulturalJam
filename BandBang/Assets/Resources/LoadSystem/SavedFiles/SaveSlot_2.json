@@ -58,10 +58,24 @@
                     }
                 },
                 {
-                    "name": "KnownWords",
+                    "name": "KnownSymbols",
                     "type": 7,
                     "value": {
                         "rid": 1007
+                    }
+                },
+                {
+                    "name": "EnglishDict",
+                    "type": 7,
+                    "value": {
+                        "rid": 1008
+                    }
+                },
+                {
+                    "name": "SymbolsDict",
+                    "type": 7,
+                    "value": {
+                        "rid": 1009
                     }
                 }
             ]
@@ -73,7 +87,7 @@
                     "name": "NPCsRecruited",
                     "type": 7,
                     "value": {
-                        "rid": 1008
+                        "rid": 1010
                     }
                 }
             ]
@@ -90,7 +104,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": false
+                    "value": true
                 }
             },
             {
@@ -112,7 +126,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": 1770281813
                 }
             },
             {
@@ -123,7 +137,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": 1770281820
                 }
             },
             {
@@ -134,7 +148,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": 7
                 }
             },
             {
@@ -175,6 +189,28 @@
             },
             {
                 "rid": 1008,
+                "type": {
+                    "class": "StringSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": ""
+                }
+            },
+            {
+                "rid": 1009,
+                "type": {
+                    "class": "StringSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": ""
+                }
+            },
+            {
+                "rid": 1010,
                 "type": {
                     "class": "StringSettingValue",
                     "ns": "",
