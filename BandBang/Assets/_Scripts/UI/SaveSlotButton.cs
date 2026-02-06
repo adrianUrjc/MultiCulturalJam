@@ -23,8 +23,8 @@ public class SaveSlotButton : MonoBehaviour
 
        
 
-        var saveSlotLoader =GetComponent<ALoader>();
-        saveSlotLoader.LoadValues();
+        var saveSlotLoader =GetComponent<LoaderMono>();
+        saveSlotLoader.LoadData();
         
         if (saveSlotLoader == null) { Debug.Log("SaveSlotLoader not found"); return; }
 

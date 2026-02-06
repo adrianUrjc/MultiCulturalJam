@@ -12,10 +12,10 @@ public class SaveSlot : MonoBehaviour
     int currentSlot = 0;
     [SerializeField]
     [ReadOnly]
-    public ALoader loader;
+    public LoaderMono loader;
     void Start()
     {
-        loader = GetComponent<ALoader>();
+        loader = GetComponent<LoaderMono>();
     }
 public void SetSlotIdx(int idx)
     {
@@ -23,7 +23,7 @@ public void SetSlotIdx(int idx)
          if(loader==null) { Debug.Log("Loader not found"); return; }
         loader.ChangeAssetName("SaveSlot_" + idx.ToString());
         loader.RemoveLoadedValues();
-        loader.LoadValues();
+        loader.LoadData();
     }
     public void SelectSlot(int slot)
     {
@@ -43,7 +43,7 @@ public void SetSlotIdx(int idx)
             loader.SetValue("LastTimePlayed", (int)System.DateTimeOffset.Now.ToUnixTimeSeconds());
             int timePlayed = loader.GetValue<int>("LastTimePlayed") - loader.GetValue<int>("FirstTimePlayed");
             loader.SetValue("TimePlayed", timePlayed);
-            loader.SaveValues();
+            loader.SaveData();
         }
     }
     void OnDestroy()

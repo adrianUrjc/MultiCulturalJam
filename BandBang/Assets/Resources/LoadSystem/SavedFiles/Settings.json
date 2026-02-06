@@ -1,93 +1,90 @@
 {
     "fields": [
         {
-            "fieldName": "GeneralValues",
+            "fieldName": "Controls",
+            "entries": []
+        },
+        {
+            "fieldName": "Viewport",
             "entries": [
                 {
-                    "name": "HasPlayedBefore",
-                    "type": 0,
+                    "name": "Brightness",
+                    "type": 1,
                     "value": {
                         "rid": 1000
                     }
                 },
                 {
-                    "name": "CurrentCountry",
-                    "type": 4,
+                    "name": "Contrast",
+                    "type": 1,
                     "value": {
                         "rid": 1001
                     }
                 },
                 {
-                    "name": "FirstTimePlayed",
-                    "type": 4,
+                    "name": "ScreenResolution",
+                    "type": 6,
                     "value": {
                         "rid": 1002
                     }
                 },
                 {
-                    "name": "LastTimePlayed",
+                    "name": "",
                     "type": 4,
                     "value": {
                         "rid": 1003
-                    }
-                },
-                {
-                    "name": "TimePlayed",
-                    "type": 4,
-                    "value": {
-                        "rid": 1004
                     }
                 }
             ]
         },
         {
-            "fieldName": "Country1",
+            "fieldName": "Sound",
             "entries": [
                 {
-                    "name": "FirstTime",
-                    "type": 0,
+                    "name": "MasterVolume",
+                    "type": 4,
+                    "value": {
+                        "rid": 1004
+                    }
+                },
+                {
+                    "name": "MusicVolume",
+                    "type": 4,
                     "value": {
                         "rid": 1005
                     }
                 },
                 {
-                    "name": "PlayerPos",
-                    "type": 6,
+                    "name": "SFXVolume",
+                    "type": 4,
                     "value": {
                         "rid": 1006
                     }
                 },
                 {
-                    "name": "KnownSymbols",
-                    "type": 7,
+                    "name": "InterfaceVolume",
+                    "type": 4,
                     "value": {
                         "rid": 1007
-                    }
-                },
-                {
-                    "name": "EnglishDict",
-                    "type": 7,
-                    "value": {
-                        "rid": 1008
-                    }
-                },
-                {
-                    "name": "SymbolsDict",
-                    "type": 7,
-                    "value": {
-                        "rid": 1009
                     }
                 }
             ]
         },
         {
-            "fieldName": "NPCsRecruited",
+            "fieldName": "Accesibility",
             "entries": [
                 {
-                    "name": "NPCsRecruited",
-                    "type": 7,
+                    "name": "CameraShake",
+                    "type": 0,
                     "value": {
-                        "rid": 1010
+                        "rid": 1008
+                    }
+                },
+                {
+                    "name": "ControllerRumble",
+                    "type": 0,
+                    "value": {
+                        "rid": 1009
                     }
                 }
             ]
@@ -99,34 +96,37 @@
             {
                 "rid": 1000,
                 "type": {
-                    "class": "BoolSettingValue",
+                    "class": "FloatSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": false
+                    "value": 0.0
                 }
             },
             {
                 "rid": 1001,
                 "type": {
-                    "class": "IntSettingValue",
+                    "class": "FloatSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": 0.0
                 }
             },
             {
                 "rid": 1002,
                 "type": {
-                    "class": "IntSettingValue",
+                    "class": "Vector2SettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
                 }
             },
             {
@@ -154,6 +154,39 @@
             {
                 "rid": 1005,
                 "type": {
+                    "class": "IntSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1006,
+                "type": {
+                    "class": "IntSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1007,
+                "type": {
+                    "class": "IntSettingValue",
+                    "ns": "",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "value": 0
+                }
+            },
+            {
+                "rid": 1008,
+                "type": {
                     "class": "BoolSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
@@ -163,61 +196,14 @@
                 }
             },
             {
-                "rid": 1006,
-                "type": {
-                    "class": "Vector2SettingValue",
-                    "ns": "",
-                    "asm": "Assembly-CSharp"
-                },
-                "data": {
-                    "value": {
-                        "x": 0.0,
-                        "y": 0.0
-                    }
-                }
-            },
-            {
-                "rid": 1007,
-                "type": {
-                    "class": "StringSettingValue",
-                    "ns": "",
-                    "asm": "Assembly-CSharp"
-                },
-                "data": {
-                    "value": ""
-                }
-            },
-            {
-                "rid": 1008,
-                "type": {
-                    "class": "StringSettingValue",
-                    "ns": "",
-                    "asm": "Assembly-CSharp"
-                },
-                "data": {
-                    "value": ""
-                }
-            },
-            {
                 "rid": 1009,
                 "type": {
-                    "class": "StringSettingValue",
+                    "class": "BoolSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": ""
-                }
-            },
-            {
-                "rid": 1010,
-                "type": {
-                    "class": "StringSettingValue",
-                    "ns": "",
-                    "asm": "Assembly-CSharp"
-                },
-                "data": {
-                    "value": ""
+                    "value": false
                 }
             }
         ]

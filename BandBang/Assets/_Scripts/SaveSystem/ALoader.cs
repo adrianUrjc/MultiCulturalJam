@@ -8,7 +8,8 @@ using System;
 using UnityEditor;
 #endif
 
-public class ALoader : MonoBehaviour
+[Serializable]
+public class ALoader
 {
     [Header("SO Path")]
     [SerializeField] protected string soPath = "Assets/Resources/LoadSystem/SavedFiles/";
@@ -64,8 +65,6 @@ public class ALoader : MonoBehaviour
 #endif
         }
 
-
-
         // Cargar valores desde JSON
         LoadFromJsonFile();
 
@@ -103,14 +102,21 @@ public class ALoader : MonoBehaviour
 
     public void SaveValues(GroupValues valuesToSave = null)
     {
-        if (valuesToSave == null)
-            valuesToSave = values;
-        if (values.IsTheSame(valuesToSave))
+        if(values==null && valuesToSave==null)
         {
-            Debug.Log("[Loader] The data introduced is the same as the current one. No changes made.");
+            Debug.LogWarning("[Loader] No values to save.");
             return;
         }
-
+        if (values != null)
+        {
+            if (valuesToSave == null)
+                valuesToSave = values;
+            if (values.IsTheSame(valuesToSave))
+            {
+                Debug.Log("[Loader] The data introduced is the same as the current one. No changes made.");
+                return;
+            }
+        }
         values = valuesToSave.Clone();
         SaveToJsonFile();
     }
@@ -209,9 +215,10 @@ public class ALoader : MonoBehaviour
         values.SetValue(key, value);
 #if UNITY_EDITOR
         EditorUtility.SetDirty(values);
-       // Debug.Log("[ALoader] IsDirty: " + EditorUtility.IsDirty(values));
+        // Debug.Log("[ALoader] IsDirty: " + EditorUtility.IsDirty(values));
         UnityEditor.SceneView.RepaintAll();
         UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
+        AssetDatabase.SaveAssets();
 
 #endif
     }

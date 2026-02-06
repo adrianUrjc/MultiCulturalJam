@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JournalWithSave : PlayerJournal
 {
-    ALoader loader;
+    LoaderMono loader;
     SaveSlot saveSlot;
     private void OnDisable()
     {
@@ -20,7 +20,7 @@ public class JournalWithSave : PlayerJournal
                 Debug.LogError("No SaveSlot found in the scene! JournalWithSave requires a SaveSlot to function properly.");
             return;
         }
-        loader = saveSlot.GetComponent<ALoader>();
+        loader = saveSlot.GetComponent<LoaderMono>();
 
         if (loader == null)
         {
@@ -75,6 +75,6 @@ public class JournalWithSave : PlayerJournal
         loader.SetValue("KnownSymbols", knownSymbols);
         loader.SetValue("SymbolsDict", symbolDict);
         loader.SetValue("EnglishDict", englishDict);
-        loader.SaveValues();
+        loader.SaveData();
     }
 }

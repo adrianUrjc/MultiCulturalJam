@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 4066871702612759067}
   - component: {fileID: 8519836577730947634}
   - component: {fileID: 230001587828582862}
-  - component: {fileID: 161401558316313562}
+  - component: {fileID: 1177183219320810309}
   m_Layer: 5
   m_Name: SaveSlot
   m_TagString: Untagged
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotText: {fileID: 2937902073870101210}
   dateText: {fileID: 6907623533396427667}
---- !u!114 &161401558316313562
+--- !u!114 &1177183219320810309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -427,10 +427,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8882548286807893825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b68aa721199dcc4aa0e7e9e2dd6c708, type: 3}
+  m_Script: {fileID: 11500000, guid: f35cdde973eb70f44b6c78996d5b6aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soPath: Assets/Resources/LoadSystem/SavedFiles/
-  soName: SaveSlot_0.asset
-  jsonFileName: SaveSlot_0.json
-  values: {fileID: 11400000, guid: f613c71d9f7347d49bac18e852631466, type: 2}
+  loader:
+    soPath: Assets/Resources/LoadSystem/SavedFiles/
+    soName: SaveSlot_0.asset
+    jsonFileName: SaveSlot_0.json
+    values: {fileID: 0}
