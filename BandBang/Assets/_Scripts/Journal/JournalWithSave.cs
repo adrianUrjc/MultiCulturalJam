@@ -30,6 +30,11 @@ public class JournalWithSave : PlayerJournal
         string knowSymbols = loader.GetValue<string>("KnownSymbols");
         string symbolsDict = loader.GetValue<string>("SymbolsDict");
         string englishDict = loader.GetValue<string>("EnglishDict");
+        if(knowSymbols == null || symbolsDict == null || englishDict == null)
+        {
+            Debug.LogWarning("No saved data found for the journal. Starting with empty data.");
+            return;
+        }
         string[] symbols = knowSymbols.Split(',');
         foreach (var symbol in symbols)
         {

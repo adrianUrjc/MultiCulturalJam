@@ -18,95 +18,95 @@ MonoBehaviour:
     - name: HasPlayedBefore
       type: 0
       value:
-        rid: 3917340177867997836
+        rid: 3917340177867997862
     - name: CurrentCountry
       type: 4
       value:
-        rid: 3917340177867997837
+        rid: 3917340177867997863
     - name: FirstTimePlayed
       type: 4
       value:
-        rid: 3917340177867997838
+        rid: 3917340177867997864
     - name: LastTimePlayed
       type: 4
       value:
-        rid: 3917340177867997839
+        rid: 3917340177867997865
     - name: TimePlayed
       type: 4
       value:
-        rid: 3917340177867997840
+        rid: 3917340177867997866
   - fieldName: Country1
     entries:
     - name: FirstTime
       type: 0
       value:
-        rid: 3917340177867997841
+        rid: 3917340177867997867
     - name: PlayerPos
       type: 6
       value:
-        rid: 3917340177867997842
+        rid: 3917340177867997868
     - name: KnownSymbols
       type: 7
       value:
-        rid: 3917340177867997843
+        rid: 3917340177867997869
     - name: EnglishDict
       type: 7
       value:
-        rid: 3917340177867997844
+        rid: 3917340177867997870
     - name: SymbolsDict
       type: 7
       value:
-        rid: 3917340177867997845
+        rid: 3917340177867997871
   - fieldName: NPCsRecruited
     entries:
     - name: NPCsRecruited
       type: 7
       value:
-        rid: 3917340177867997846
+        rid: 3917340177867997872
   references:
     version: 2
     RefIds:
-    - rid: 3917340177867997836
+    - rid: 3917340177867997862
+      type: {class: BoolSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 1
+    - rid: 3917340177867997863
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340177867997864
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 1770395935
+    - rid: 3917340177867997865
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340177867997866
+      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
+      data:
+        value: 0
+    - rid: 3917340177867997867
       type: {class: BoolSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 0
-    - rid: 3917340177867997837
-      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340177867997838
-      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340177867997839
-      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340177867997840
-      type: {class: IntSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340177867997841
-      type: {class: BoolSettingValue, ns: , asm: Assembly-CSharp}
-      data:
-        value: 0
-    - rid: 3917340177867997842
+    - rid: 3917340177867997868
       type: {class: Vector2SettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: {x: 0, y: 0}
-    - rid: 3917340177867997843
+    - rid: 3917340177867997869
       type: {class: StringSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 
-    - rid: 3917340177867997844
+    - rid: 3917340177867997870
       type: {class: StringSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 
-    - rid: 3917340177867997845
+    - rid: 3917340177867997871
       type: {class: StringSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 
-    - rid: 3917340177867997846
+    - rid: 3917340177867997872
       type: {class: StringSettingValue, ns: , asm: Assembly-CSharp}
       data:
         value: 
