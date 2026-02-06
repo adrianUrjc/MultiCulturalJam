@@ -17,6 +17,7 @@ namespace ProceduralUITool.Runtime
 
         [Header("Effect Configuration")]
         [Tooltip("Profile containing all effect parameters.")]
+        [ExposedScriptableObject]
         public ProceduralUIProfile profile;
 
         [Header("Runtime Configuration")]

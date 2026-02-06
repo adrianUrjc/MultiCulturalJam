@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 public class WordUI : MonoBehaviour
 {
     [ReadOnly]
+    public
  string word;
  [SerializeField]
  TextMeshProUGUI wordText;

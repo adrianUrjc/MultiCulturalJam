@@ -22,7 +22,7 @@ public class DraggableUISnapCenter : MonoBehaviour,
         // liberar slot anterior
         if (currentSnap != null)
         {
-            currentSnap.occupied = false;
+            currentSnap.Vacate();
             currentSnap = null;
         }
 
@@ -72,7 +72,7 @@ public class DraggableUISnapCenter : MonoBehaviour,
         {
             // SNAP EXACTO AL CENTRO
             rect.position = best.rect.position;
-            best.occupied = true;
+            best.Occupy(GetComponent<WordUI>().word??string.Empty); // TODO: pasar symbol real
             currentSnap = best;
         }
     }

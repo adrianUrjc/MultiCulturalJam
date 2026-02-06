@@ -3,7 +3,8 @@
     "rootNamespace": "ProceduralUITool.Runtime",
     "references": [
         "Unity.ugui",
-        "Unity.RenderPipelines.Core.Runtime"
+        "Unity.RenderPipelines.Core.Runtime",
+        "Utils"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

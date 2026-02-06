@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 213acda6610d758429b48864bf2456a6, type: 3}
-  m_Name: demo1
+  m_Name: RightPage
   m_EditorClassIdentifier: 
   shapeType: 0
   starPoints: 5
@@ -19,10 +19,10 @@ MonoBehaviour:
   cornerRadiusUnit: 1
   useIndividualCorners: 1
   globalCornerRadius: 100
-  cornerRadiusTopLeft: 12
-  cornerRadiusTopRight: 5
-  cornerRadiusBottomLeft: 12
-  cornerRadiusBottomRight: 5
+  cornerRadiusTopLeft: 5
+  cornerRadiusTopRight: 12
+  cornerRadiusBottomLeft: 5
+  cornerRadiusBottomRight: 12
   useIndividualOffsets: 0
   globalCornerOffset: 0.2
   cornerOffsetTopLeft: 0.2
