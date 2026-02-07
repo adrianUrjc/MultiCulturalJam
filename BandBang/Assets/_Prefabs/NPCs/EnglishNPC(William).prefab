@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4dd8b6130e48241851b7ce9c69bf51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Jeff
+  interactText: E to talk
 --- !u!114 &2370275241275000876
 MonoBehaviour:
   m_ObjectHideFlags: 0
