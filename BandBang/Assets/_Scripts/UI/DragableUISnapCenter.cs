@@ -49,7 +49,7 @@ public class DraggableUISnapCenter : MonoBehaviour,
     {
         if (!TrySnapToCenter())
         {
-             LeanTween.moveLocal(gameObject,Vector3.zero,0.1f);
+            LeanTween.moveLocal(gameObject, Vector3.zero, 0.1f);
         }
     }
 
@@ -78,14 +78,18 @@ public class DraggableUISnapCenter : MonoBehaviour,
         {
             // Vector2 canvasPos = BestToCanvasLocal(best.rect);
             // rect.anchoredPosition = canvasPos;
-            rect.position = best.rect.TransformPoint(best.rect.rect.center);
 
+            SnapToPoint(best);
             best.Occupy(GetComponent<WordUI>().word ?? string.Empty);
             currentSnap = best;
             return true;
         }
         return false;
 
+    }
+    void SnapToPoint(UISnapPoint uISnap)
+    {
+        rect.position = uISnap.rect.TransformPoint(uISnap.rect.rect.center);
     }
     Vector2 CanvasToParentLocal(Vector2 canvasPos, RectTransform parent)
     {
