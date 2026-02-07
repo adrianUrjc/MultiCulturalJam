@@ -12,7 +12,7 @@ public class DraggableUISnapCenter : MonoBehaviour,
     RectTransform canvasRect;
     Canvas canvas;
     Vector2 offset;
-    UISnapPoint currentSnap;
+    public UISnapPoint currentSnap;
 
     void Awake()
     {

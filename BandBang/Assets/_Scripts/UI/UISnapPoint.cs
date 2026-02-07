@@ -4,7 +4,7 @@ using UnityEngine;
 public class UISnapPoint : MonoBehaviour
 {
     public TextMeshProUGUI wordText;
-    PlayerJournal journal;
+    public PlayerJournal journal;
     public bool occupied;
     public string Word {
         set
@@ -28,7 +28,7 @@ public class UISnapPoint : MonoBehaviour
     }
     public void Occupy(string symb)
     {
-        
+        if(occupied) { return; }
         occupied = true;
         symbol = symb;
         journal.GuessMeaning(word, symbol);

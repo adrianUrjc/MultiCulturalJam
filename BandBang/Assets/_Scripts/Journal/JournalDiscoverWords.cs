@@ -34,7 +34,8 @@ public class JournalDiscoverWords : MonoBehaviour
         {
             var newSlot = Instantiate(wordSlotPrefab, WordsGrid);
             var snapUI = newSlot.GetComponentInChildren<UISnapPoint>();
-            snapUI.Word = english;
+            snapUI.Word = english; 
+            snapUI.journal = playerJournal;
             Debug.Log("Initializing slot for English word: " + english);
 
 
