@@ -19,7 +19,7 @@ public class UISnapPoint : MonoBehaviour
     public RectTransform rect => (RectTransform)transform;
     private void Awake()
     {
-        wordText = GetComponentInChildren<TextMeshProUGUI>();
+      //  wordText = GetComponentInChildren<TextMeshProUGUI>();
     }
     private void Start()
     {

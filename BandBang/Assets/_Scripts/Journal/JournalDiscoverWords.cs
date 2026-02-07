@@ -10,6 +10,8 @@ public class JournalDiscoverWords : MonoBehaviour
     public GameObject discoverWordPrefab;
     public Transform SymbolsGrid;
     public Transform WordsGrid;
+    public RectTransform JournalContainer;
+
     private void Start()
     {
         playerJournal.OnNewDiscoveredSymbol.AddListener(DiscoverWord);
@@ -20,7 +22,8 @@ public class JournalDiscoverWords : MonoBehaviour
        
        var newWord = Instantiate(discoverWordPrefab, SymbolsGrid);
        newWord.GetComponentInChildren<WordUI>().SetWord(symbol);
-    
+        newWord.GetComponentInChildren<DraggableUISnapCenter>().bounds = JournalContainer;
+
     }
     void InitSlots()
     {
