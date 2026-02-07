@@ -4512,13 +4512,53 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
-      propertyPath: russia.index
-      value: 5
+      propertyPath: egypt.index
+      value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: india.index
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: france.index
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: russia.index
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: england.index
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: newYork.index
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: egypt.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: ba7f06d0477db40c5bb3a5087a0bf43d, type: 3}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: india.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: ba7f06d0477db40c5bb3a5087a0bf43d, type: 3}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: france.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 15f447e24c92043d789e499267a6c693, type: 3}
     - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
       propertyPath: russia.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: e9e99f421375d7245879b27299d7a680, type: 3}
+      objectReference: {fileID: 102900000, guid: ae110eac43d294a30a2d368710d5432b, type: 3}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: england.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: ae110eac43d294a30a2d368710d5432b, type: 3}
+    - target: {fileID: 7096613808720599733, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+      propertyPath: newYork.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 15f447e24c92043d789e499267a6c693, type: 3}
     m_RemovedComponents:
     - {fileID: 238985787491927907, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
     - {fileID: 4580110956412614887, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}

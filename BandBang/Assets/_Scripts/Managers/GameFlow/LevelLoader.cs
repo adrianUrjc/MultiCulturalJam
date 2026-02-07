@@ -14,11 +14,11 @@ public class LevelLoader : MonoBehaviour
     [SerializeField]
     SimpleScene mainMenu;
     [SerializeField]
-    SimpleScene russia;
+    SimpleScene england;
     [SerializeField]
-    SimpleScene egypt;
+    SimpleScene india;
     [SerializeField]
-    SimpleScene france;
+    SimpleScene newYork;
     // Start is called before the first frame update
     [ContextMenu("Load Main Menu")]
     public void LoadMainMenu()
@@ -31,15 +31,15 @@ public class LevelLoader : MonoBehaviour
         switch (country)
         {
             case countries.Russia:
-                TEMP = russia.Index;
+                TEMP = england.Index;
 
                 break;
             case countries.Egypt:
-                TEMP = egypt.Index;
+                TEMP = india.Index;
 
                 break;
             case countries.France:
-                TEMP = france.Index;
+                TEMP = newYork.Index;
 
                 break;
             default:
