@@ -1159,7 +1159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6413413279820664743, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: npcsRecruited.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6413413279820664743, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: npcsRecruited.Array.data[1]
