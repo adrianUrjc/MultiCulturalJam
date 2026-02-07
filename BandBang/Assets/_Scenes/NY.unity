@@ -641,7 +641,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NYBuilding2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9059659466883809291, guid: 4ec4221a858a3405c97e990171a0ee80, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
