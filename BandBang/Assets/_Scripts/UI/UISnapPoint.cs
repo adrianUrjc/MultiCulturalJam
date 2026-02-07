@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class UISnapPoint : MonoBehaviour
 {
+    PlayerJournal journal;
     public bool occupied;
 
     string word;
@@ -13,6 +14,7 @@ public class UISnapPoint : MonoBehaviour
         
         occupied = true;
         symbol = symb;
+        journal.GuessMeaning(word, symbol);
 
 
         //llamar al journal para decirle el symbol recibido y word==symbol
@@ -20,7 +22,8 @@ public class UISnapPoint : MonoBehaviour
     public void Vacate()
     {
         occupied = false;
-        
+
+        journal.UnGuessMeaning(word, symbol);
 
         //llamar al journal de que se ha quitado el 
     }
