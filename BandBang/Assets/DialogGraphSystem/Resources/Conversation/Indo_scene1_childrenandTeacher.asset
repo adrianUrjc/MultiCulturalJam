@@ -368,10 +368,10 @@ MonoBehaviour:
   - {fileID: -198544683414012697}
   - {fileID: 0}
   startGuid: 7e6297f86823467cb82f7d27f04d0211
-  startPosition: {x: -4662.6665, y: -902}
+  startPosition: {x: -4662.4, y: -902.4}
   startInitialized: 1
   endGuid: 6d969e0e45d7492e9c083fdb3d9ed9d7
-  endPosition: {x: 2420.6667, y: -1358.6667}
+  endPosition: {x: 2420.8, y: -1359.2001}
   endInitialized: 1
 --- !u!114 &73547893517324493
 MonoBehaviour:

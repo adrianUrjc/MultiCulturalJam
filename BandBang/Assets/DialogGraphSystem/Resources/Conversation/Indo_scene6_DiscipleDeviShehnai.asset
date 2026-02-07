@@ -1,0 +1,631 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9049709895572638735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: cc5fa3314a174c528386360ad7b5ace9
+  nodePosition: {x: 2075.2, y: 559.19995}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Oh! you know the instrument, wonderful!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-8428232551548947545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 9f8a43673840471688d3897a0c1e9745
+  nodePosition: {x: 2472.8, y: 850.39996}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: It's called Shehnai
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-8126092174114373428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: b4714e466a664ad68c7c277c4f44e127
+  nodePosition: {x: 119.2, y: 39.199997}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: What brings you here?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-7979402302274456230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: bb81b06bbac544669663a99c3e34e21b
+  nodePosition: {x: 2915.2, y: 696.8}
+  text: 
+  choices:
+  - answerText: I have a request
+    nextNodeGUID: 1a92062c874745be8f657cc52d82b21e
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-5783630552956217578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: ef5c537c60d14c5b9fd2c60fd388caec
+  nodePosition: {x: 1088, y: 152.79999}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: You like it?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-5400206356483377572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: ab98f45c6ffa4c2486d7013a6a4abc4f
+  nodePosition: {x: -309.6, y: 36}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Hello
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-5304765354795555197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 940877d3e7d345c89dfdb0c163540215
+  nodePosition: {x: 5008, y: 240.80002}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Let's go then, let's play the music of the world
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-3431575620098964348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 1a571854d665436d8ed88a2756e1cc46
+  nodePosition: {x: 2016, y: 845.6}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Haha. good guesswork, but no
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-1771655618764130275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: fe05ee51f0f245b28c505bbea378b2b5
+  nodePosition: {x: 634.80005, y: 212.52003}
+  text: 
+  choices:
+  - answerText: Your music
+    nextNodeGUID: ef5c537c60d14c5b9fd2c60fd388caec
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: I seek musicians
+    nextNodeGUID: ad518c6161ae4225b0429c407f51d276
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-1709005298686986547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 25b35d57f21f4b9f82cdfd89e30dcef3
+  nodePosition: {x: 4420.8, y: 634.39996}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Need to ask Bhansen first
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-1223247986290410646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: bbf5fbabe26a4af1a535be1d3fa1a592
+  nodePosition: {x: 2146.4, y: 249.6}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Like what exactly?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-1040824458167466935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 222b2a6cee004efab0a750b061dc0cff
+  nodePosition: {x: 3232.8, y: 387.2}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: What exactly?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-868782575881548755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 1a92062c874745be8f657cc52d82b21e
+  nodePosition: {x: 3368.8, y: 654.39996}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: What would you want?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c45c6e4622be54698e67e4868db7e5, type: 3}
+  m_Name: Indo_scene6_DiscipleDeviShehnai
+  m_EditorClassIdentifier: 
+  links:
+  - fromGuid: 377c17bf94db4e038365b9d2a57897c5
+    toGuid: 4f9292237b3e41f9b1f388f32892c46e
+    fromPortIndex: 0
+  - fromGuid: 4f9292237b3e41f9b1f388f32892c46e
+    toGuid: 0a56ba21e0b448c594652ad4d1708bdf
+    fromPortIndex: 0
+  - fromGuid: 0a56ba21e0b448c594652ad4d1708bdf
+    toGuid: ab98f45c6ffa4c2486d7013a6a4abc4f
+    fromPortIndex: 0
+  - fromGuid: ab98f45c6ffa4c2486d7013a6a4abc4f
+    toGuid: b4714e466a664ad68c7c277c4f44e127
+    fromPortIndex: 0
+  - fromGuid: 0a56ba21e0b448c594652ad4d1708bdf
+    toGuid: c549f1519a284a75919d478c30f4654c
+    fromPortIndex: 1
+  - fromGuid: b4714e466a664ad68c7c277c4f44e127
+    toGuid: fe05ee51f0f245b28c505bbea378b2b5
+    fromPortIndex: 0
+  - fromGuid: fe05ee51f0f245b28c505bbea378b2b5
+    toGuid: ef5c537c60d14c5b9fd2c60fd388caec
+    fromPortIndex: 0
+  - fromGuid: ef5c537c60d14c5b9fd2c60fd388caec
+    toGuid: fc9975780a054eed8f6c89c3bf884325
+    fromPortIndex: 0
+  - fromGuid: fc9975780a054eed8f6c89c3bf884325
+    toGuid: c549f1519a284a75919d478c30f4654c
+    fromPortIndex: 0
+  - fromGuid: fc9975780a054eed8f6c89c3bf884325
+    toGuid: bbf5fbabe26a4af1a535be1d3fa1a592
+    fromPortIndex: 1
+  - fromGuid: c549f1519a284a75919d478c30f4654c
+    toGuid: a4130086f4dd45f4b7d3c5b575f350bd
+    fromPortIndex: 0
+  - fromGuid: a4130086f4dd45f4b7d3c5b575f350bd
+    toGuid: cc5fa3314a174c528386360ad7b5ace9
+    fromPortIndex: 0
+  - fromGuid: a4130086f4dd45f4b7d3c5b575f350bd
+    toGuid: 1a571854d665436d8ed88a2756e1cc46
+    fromPortIndex: 1
+  - fromGuid: a4130086f4dd45f4b7d3c5b575f350bd
+    toGuid: 1a571854d665436d8ed88a2756e1cc46
+    fromPortIndex: 2
+  - fromGuid: 1a571854d665436d8ed88a2756e1cc46
+    toGuid: 9f8a43673840471688d3897a0c1e9745
+    fromPortIndex: 0
+  - fromGuid: ad518c6161ae4225b0429c407f51d276
+    toGuid: 222b2a6cee004efab0a750b061dc0cff
+    fromPortIndex: 0
+  - fromGuid: bb81b06bbac544669663a99c3e34e21b
+    toGuid: 1a92062c874745be8f657cc52d82b21e
+    fromPortIndex: 0
+  - fromGuid: 1a92062c874745be8f657cc52d82b21e
+    toGuid: d0d3c51535cc4f95a80482ac5692bace
+    fromPortIndex: 0
+  - fromGuid: 9f8a43673840471688d3897a0c1e9745
+    toGuid: bb81b06bbac544669663a99c3e34e21b
+    fromPortIndex: 0
+  - fromGuid: d0d3c51535cc4f95a80482ac5692bace
+    toGuid: 222b2a6cee004efab0a750b061dc0cff
+    fromPortIndex: 0
+  - fromGuid: fe05ee51f0f245b28c505bbea378b2b5
+    toGuid: ad518c6161ae4225b0429c407f51d276
+    fromPortIndex: 1
+  - fromGuid: 222b2a6cee004efab0a750b061dc0cff
+    toGuid: ac368c2a42ac4882927822912348fcbd
+    fromPortIndex: 0
+  - fromGuid: ac368c2a42ac4882927822912348fcbd
+    toGuid: 9676273aeb9e4a2d9f2d6fac2f0c99e2
+    fromPortIndex: 0
+  - fromGuid: 9676273aeb9e4a2d9f2d6fac2f0c99e2
+    toGuid: 25b35d57f21f4b9f82cdfd89e30dcef3
+    fromPortIndex: 0
+  - fromGuid: 25b35d57f21f4b9f82cdfd89e30dcef3
+    toGuid: 5c2710f83bd6445eb845c5bd2a3e546f
+    fromPortIndex: 0
+  - fromGuid: 5c2710f83bd6445eb845c5bd2a3e546f
+    toGuid: 940877d3e7d345c89dfdb0c163540215
+    fromPortIndex: 0
+  - fromGuid: 5c2710f83bd6445eb845c5bd2a3e546f
+    toGuid: 940877d3e7d345c89dfdb0c163540215
+    fromPortIndex: 1
+  - fromGuid: 940877d3e7d345c89dfdb0c163540215
+    toGuid: 3eae09f64d2f44079ba6784cb133d53e
+    fromPortIndex: 0
+  nodes:
+  - {fileID: 4167171904822715379}
+  - {fileID: -5400206356483377572}
+  - {fileID: -8126092174114373428}
+  - {fileID: 6648801137354751551}
+  - {fileID: -5783630552956217578}
+  - {fileID: -1223247986290410646}
+  - {fileID: -9049709895572638735}
+  - {fileID: -3431575620098964348}
+  - {fileID: -8428232551548947545}
+  - {fileID: -1040824458167466935}
+  - {fileID: -868782575881548755}
+  - {fileID: 527138673308933202}
+  - {fileID: -1709005298686986547}
+  - {fileID: -5304765354795555197}
+  choiceNodes:
+  - {fileID: 1319329359505216689}
+  - {fileID: -1771655618764130275}
+  - {fileID: 329644419017119202}
+  - {fileID: 2993678819178756944}
+  - {fileID: -7979402302274456230}
+  - {fileID: 6684887392191914000}
+  - {fileID: 3608969231996818605}
+  - {fileID: 875014568736078145}
+  - {fileID: 3689440701940434527}
+  actionNodes: []
+  startGuid: 377c17bf94db4e038365b9d2a57897c5
+  startPosition: {x: -1432, y: 91.99999}
+  startInitialized: 1
+  endGuid: 3eae09f64d2f44079ba6784cb133d53e
+  endPosition: {x: 5681.6, y: 311.2}
+  endInitialized: 1
+--- !u!114 &329644419017119202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: fc9975780a054eed8f6c89c3bf884325
+  nodePosition: {x: 1610.4, y: 211.20001}
+  text: 
+  choices:
+  - answerText: I like your music
+    nextNodeGUID: c549f1519a284a75919d478c30f4654c
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Yes for my anthem
+    nextNodeGUID: bbf5fbabe26a4af1a535be1d3fa1a592
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &527138673308933202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 9676273aeb9e4a2d9f2d6fac2f0c99e2
+  nodePosition: {x: 4256.8, y: 323.2}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Whoa! big deal, I am in
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &875014568736078145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: ac368c2a42ac4882927822912348fcbd
+  nodePosition: {x: 3792, y: 336}
+  text: 
+  choices:
+  - answerText: Music anthem of the world
+    nextNodeGUID: 9676273aeb9e4a2d9f2d6fac2f0c99e2
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &1319329359505216689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 0a56ba21e0b448c594652ad4d1708bdf
+  nodePosition: {x: -759.2, y: 61.6}
+  text: 
+  choices:
+  - answerText: Hello
+    nextNodeGUID: ab98f45c6ffa4c2486d7013a6a4abc4f
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: This instrument is so serene
+    nextNodeGUID: c549f1519a284a75919d478c30f4654c
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &2993678819178756944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: a4130086f4dd45f4b7d3c5b575f350bd
+  nodePosition: {x: 1568, y: 540}
+  text: 
+  choices:
+  - answerText: Shehnai
+    nextNodeGUID: cc5fa3314a174c528386360ad7b5ace9
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Sitar
+    nextNodeGUID: 1a571854d665436d8ed88a2756e1cc46
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Cello
+    nextNodeGUID: 1a571854d665436d8ed88a2756e1cc46
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &3608969231996818605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: d0d3c51535cc4f95a80482ac5692bace
+  nodePosition: {x: 3804.8, y: 700}
+  text: 
+  choices:
+  - answerText: To play together, a music anthem
+    nextNodeGUID: 222b2a6cee004efab0a750b061dc0cff
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &3689440701940434527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 5c2710f83bd6445eb845c5bd2a3e546f
+  nodePosition: {x: 4896.8, y: 553.6}
+  text: 
+  choices:
+  - answerText: He's already in
+    nextNodeGUID: 940877d3e7d345c89dfdb0c163540215
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: He won't say no!
+    nextNodeGUID: 940877d3e7d345c89dfdb0c163540215
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &4167171904822715379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 4f9292237b3e41f9b1f388f32892c46e
+  nodePosition: {x: -1216.8, y: 37.6}
+  speakerName: Devi
+  speakerPortrait: {fileID: 21300000, guid: 72b5178ef5de548f089f1d8e863cab0f, type: 3}
+  questionText: '*beautiful melancholic sounds*'
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &6648801137354751551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: c549f1519a284a75919d478c30f4654c
+  nodePosition: {x: 1060, y: 506.4}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: You know the instrument?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &6684887392191914000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: ad518c6161ae4225b0429c407f51d276
+  nodePosition: {x: 2704.8, y: 435.2}
+  text: 
+  choices:
+  - answerText: I have a wonderful music anthem
+    nextNodeGUID: 222b2a6cee004efab0a750b061dc0cff
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
