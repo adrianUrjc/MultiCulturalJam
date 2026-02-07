@@ -13,23 +13,15 @@ MonoBehaviour:
   m_Name: RealDictionaryWithSprites
   m_EditorClassIdentifier: 
   dictionaryS:
-  - english: dog
-    symbol: {fileID: 315841014, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
-  - english: cat
-    symbol: {fileID: 227301423, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
-  - english: apple
-    symbol: {fileID: 2049492952, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
-  - english: banana
-    symbol: {fileID: -2012117994, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
   - english: Hello
-    symbol: {fileID: -743815560, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+    symbol: {fileID: -2119835942, guid: f687419b88e584d688b66ab44ad6b685, type: 3}
   - english: want
-    symbol: {fileID: -1467865659, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+    symbol: {fileID: -600837335, guid: f687419b88e584d688b66ab44ad6b685, type: 3}
   - english: play
-    symbol: {fileID: 964388964, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+    symbol: {fileID: 1113581046, guid: f687419b88e584d688b66ab44ad6b685, type: 3}
   - english: like
-    symbol: {fileID: 1629414584, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+    symbol: {fileID: 1111657799, guid: f687419b88e584d688b66ab44ad6b685, type: 3}
   - english: music
-    symbol: {fileID: 989780383, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+    symbol: {fileID: -851369744, guid: f687419b88e584d688b66ab44ad6b685, type: 3}
   - english: thanks
-    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+    symbol: {fileID: 2074111041, guid: f687419b88e584d688b66ab44ad6b685, type: 3}
