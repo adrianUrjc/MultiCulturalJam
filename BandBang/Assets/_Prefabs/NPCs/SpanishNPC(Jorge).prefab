@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2281871757990760315}
   - component: {fileID: 631336334977290764}
   - component: {fileID: 8359667824341601773}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPCSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 567586350242069664}
   - component: {fileID: 3137567250376691736}
   - component: {fileID: 1403990075313190256}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpanishNPC(Jorge)
   m_TagString: NPC
   m_Icon: {fileID: 0}
