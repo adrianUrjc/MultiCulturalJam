@@ -1751,6 +1751,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: e281a2de02a017f42aebeaf7b71865a2, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 4efff3390e6e0e246b17291fe1d54932, type: 2}
     - target: {fileID: 8362883712107209494, guid: e281a2de02a017f42aebeaf7b71865a2, type: 3}
       propertyPath: m_Name
       value: SpanishNPC(Jorge)
