@@ -65,6 +65,6 @@ public class SouthParkStyleSpriteAnimator : MonoBehaviour
         LeanTween.cancel(sprite.gameObject);
         LeanTween.scale(sprite.gameObject, baseScale, 0.1f);
         gameObject.transform.rotation = Quaternion.identity;
-        GetComponent<SpriteAnimator2D>().SetAnimacion(SpriteAnim.Idle);
+        GetComponent<SpriteAnimator2D>().SetAnimation(SpriteAnim.Idle);
     }
 }
