@@ -4,9 +4,12 @@ using UnityEngine.Audio;
 
 public enum NPCs
 {
-    a,
-    b,
-    c, d, e, f,
+    Drummer,
+    Saxophonist,
+    Fiddler,
+    Guitarist,
+    Sitarist,
+    ShehnaiPlayer,
 }
 
 public class NPCMusicPlayer
@@ -32,6 +35,11 @@ public class NPCMusicPlayer
     {
         CheckMusicPlayerInScene();
         nPCMusicPlayerInScene.PlayNPCs(npc);
+    }
+    public static void Stop()
+    {
+        CheckMusicPlayerInScene();
+        GameObject.Destroy(nPCMusicPlayerInScene.gameObject);
     }
 
     private static void CheckMusicPlayerInScene()
