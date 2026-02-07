@@ -38,6 +38,24 @@ MonoBehaviour:
   questionText: Hello!
   dialogAudio: {fileID: 0}
   displayTime: 0
+--- !u!114 &-2446790121694651997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
+  m_Name: ActionNode
+  m_EditorClassIdentifier: 
+  GUID: a8ad07a353df472bb812a32e0c846e7e
+  nodePosition: {x: 3190.6667, y: 317.3333}
+  actionId: RecruitGuitarist
+  payloadJson: 
+  waitForCompletion: 0
+  waitSeconds: 0
 --- !u!114 &-266130723651083591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,6 +113,9 @@ MonoBehaviour:
     toGuid: 680ec2de499a496689bcd5ca21b88eec
     fromPortIndex: 0
   - fromGuid: 1bddfef34bbd4ca99f4dcd9dafd01536
+    toGuid: a8ad07a353df472bb812a32e0c846e7e
+    fromPortIndex: 0
+  - fromGuid: a8ad07a353df472bb812a32e0c846e7e
     toGuid: 680ec2de499a496689bcd5ca21b88eec
     fromPortIndex: 0
   nodes:
@@ -106,7 +127,8 @@ MonoBehaviour:
   choiceNodes:
   - {fileID: 6279473839041020567}
   - {fileID: 7233739550403678493}
-  actionNodes: []
+  actionNodes:
+  - {fileID: -2446790121694651997}
   startGuid: dcc450b65a184a2db2aa2aeb0b79e377
   startPosition: {x: -320, y: 80}
   startInitialized: 1

@@ -9,4 +9,5 @@ public class NPCRecruitMe : MonoBehaviour
     {
         FindAnyObjectByType<NPCRecruiter>().RecruitNPC(npc);
     }
+    
 }

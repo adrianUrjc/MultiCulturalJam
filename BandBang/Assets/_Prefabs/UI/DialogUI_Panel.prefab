@@ -609,7 +609,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.15
+  m_fontSize: 27.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -756,8 +756,8 @@ RectTransform:
   m_GameObject: {fileID: 2374131740863527065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.69114584, y: 0.69114584, z: 0.69114584}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8958563003601667176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -794,7 +794,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: afafafafaf
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 801efe2c6e7bb2f409e855113ff42561, type: 2}
   m_sharedMaterial: {fileID: 6299985356945045626, guid: 801efe2c6e7bb2f409e855113ff42561, type: 2}
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190335
   m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -878,7 +878,7 @@ MonoBehaviour:
   text: {fileID: 8433105338679177406}
   beginingWord: 'Symbol discovered: '
   player: {fileID: 0}
-  scale: 0.5
+  scale: 0.8
   duration: 0.6
 --- !u!225 &1617509100411400260
 CanvasGroup:
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.45
+  m_fontSize: 24.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
