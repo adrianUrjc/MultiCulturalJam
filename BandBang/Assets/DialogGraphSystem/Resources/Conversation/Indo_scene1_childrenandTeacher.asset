@@ -1,0 +1,578 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8394826737418061227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_Def
+  m_EditorClassIdentifier: 
+  GUID: 692691c9b4c548e78672a898135a4d82
+  nodePosition: {x: -603.2, y: -991.2}
+  speakerName: Students
+  speakerPortrait: {fileID: 0}
+  questionText: Ok! see you there !
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-8313171911570895296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 72859948bab7489aa53e85e60e083946
+  nodePosition: {x: -2187.2, y: -976}
+  text: 
+  choices:
+  - answerText: Smile
+    nextNodeGUID: 5b1f8239f9a041738196fb7f8abef5f8
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Thank you
+    nextNodeGUID: 5b1f8239f9a041738196fb7f8abef5f8
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-6775960663203250900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: eca499acf7fb4490839ba67185f53f29
+  nodePosition: {x: -2236.8, y: -512}
+  speakerName: Students
+  speakerPortrait: {fileID: 0}
+  questionText: Oh you'll find the best
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-4890948387970810886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_if music played
+  m_EditorClassIdentifier: 
+  GUID: d65149c36edf40278f2e6e6f8c664bc4
+  nodePosition: {x: -3160.8, y: -1003.2}
+  speakerName: Students
+  speakerPortrait: {fileID: 0}
+  questionText: Wow! you play so well!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-4432185680564727544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: eda270f5ad1940b89b46f760190fe46c
+  nodePosition: {x: 1763.2, y: -1086.4}
+  text: 
+  choices:
+  - answerText: See you there
+    nextNodeGUID: 6d969e0e45d7492e9c083fdb3d9ed9d7
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-3634969754977300949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_Def
+  m_EditorClassIdentifier: 
+  GUID: 8c70f00eaa204c96a74563addf01553b
+  nodePosition: {x: 1269.6, y: -1016.80005}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: 
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-2513751886138806752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
+  m_Name: ActionNode
+  m_EditorClassIdentifier: 
+  GUID: 577516f7e4b3482799be389d05b4426b
+  nodePosition: {x: -3619.2, y: -994.4}
+  actionId: play music
+  payloadJson: 
+  waitForCompletion: 0
+  waitSeconds: 0
+--- !u!114 &-892686692111506317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 5b1f8239f9a041738196fb7f8abef5f8
+  nodePosition: {x: -1720, y: -1001.60004}
+  speakerName: Students
+  speakerPortrait: {fileID: 0}
+  questionText: Will you play at the music festival?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-404587572000667136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 146e7643ee8847d598b034134aa69bc9
+  nodePosition: {x: -2653.6, y: -1304.8}
+  text: 
+  choices:
+  - answerText: Yes!
+    nextNodeGUID: 692691c9b4c548e78672a898135a4d82
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Yes, I seek musicians
+    nextNodeGUID: eca499acf7fb4490839ba67185f53f29
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: No!
+    nextNodeGUID: 0774573f262b4bb98629c24eefcc9b47
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Dunno
+    nextNodeGUID: 5d26baaafbb24b04835433414a97f4b5
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Yes, I want chickens
+    nextNodeGUID: 8c809e9c06cc4d62b846cfdee70e5dd3
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-198544683414012697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
+  m_Name: ActionNode
+  m_EditorClassIdentifier: 
+  GUID: 8c809e9c06cc4d62b846cfdee70e5dd3
+  nodePosition: {x: -2123.2, y: -1829.6}
+  actionId: jump students
+  payloadJson: 
+  waitForCompletion: 0
+  waitSeconds: 0
+--- !u!114 &-6951664366709564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 61b77b5f0af147068cd460b186b64b68
+  nodePosition: {x: -1673.6, y: -1772}
+  speakerName: Students
+  speakerPortrait: {fileID: 0}
+  questionText: Hahahaha! what does she mean
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c45c6e4622be54698e67e4868db7e5, type: 3}
+  m_Name: Indo_scene1_childrenandTeacher
+  m_EditorClassIdentifier: 
+  links:
+  - fromGuid: e31597edfaa249efa9f4dca2e7afd0fd
+    toGuid: 146e7643ee8847d598b034134aa69bc9
+    fromPortIndex: 0
+  - fromGuid: d65149c36edf40278f2e6e6f8c664bc4
+    toGuid: ef4a457d120d429ebea747e94a96626b
+    fromPortIndex: 0
+  - fromGuid: ef4a457d120d429ebea747e94a96626b
+    toGuid: 72859948bab7489aa53e85e60e083946
+    fromPortIndex: 0
+  - fromGuid: 72859948bab7489aa53e85e60e083946
+    toGuid: 5b1f8239f9a041738196fb7f8abef5f8
+    fromPortIndex: 0
+  - fromGuid: 72859948bab7489aa53e85e60e083946
+    toGuid: 5b1f8239f9a041738196fb7f8abef5f8
+    fromPortIndex: 1
+  - fromGuid: 5b1f8239f9a041738196fb7f8abef5f8
+    toGuid: e2b3e82e12ae430d9ee7655aac457ef5
+    fromPortIndex: 0
+  - fromGuid: 146e7643ee8847d598b034134aa69bc9
+    toGuid: 5d26baaafbb24b04835433414a97f4b5
+    fromPortIndex: 3
+  - fromGuid: 5d26baaafbb24b04835433414a97f4b5
+    toGuid: 0774573f262b4bb98629c24eefcc9b47
+    fromPortIndex: 0
+  - fromGuid: 0774573f262b4bb98629c24eefcc9b47
+    toGuid: 6d969e0e45d7492e9c083fdb3d9ed9d7
+    fromPortIndex: 0
+  - fromGuid: e2b3e82e12ae430d9ee7655aac457ef5
+    toGuid: 5d26baaafbb24b04835433414a97f4b5
+    fromPortIndex: 0
+  - fromGuid: e2b3e82e12ae430d9ee7655aac457ef5
+    toGuid: 5d26baaafbb24b04835433414a97f4b5
+    fromPortIndex: 1
+  - fromGuid: e2b3e82e12ae430d9ee7655aac457ef5
+    toGuid: 692691c9b4c548e78672a898135a4d82
+    fromPortIndex: 2
+  - fromGuid: 692691c9b4c548e78672a898135a4d82
+    toGuid: d1fe33e6d0da4986a20fc1c27f001e2a
+    fromPortIndex: 0
+  - fromGuid: d1fe33e6d0da4986a20fc1c27f001e2a
+    toGuid: 4120d2a3e8bb4a1f820efb48ab7e67d6
+    fromPortIndex: 0
+  - fromGuid: eda270f5ad1940b89b46f760190fe46c
+    toGuid: 6d969e0e45d7492e9c083fdb3d9ed9d7
+    fromPortIndex: 0
+  - fromGuid: 7e6297f86823467cb82f7d27f04d0211
+    toGuid: e051ec01edea46dc8ba451e9b8eed58f
+    fromPortIndex: 0
+  - fromGuid: e051ec01edea46dc8ba451e9b8eed58f
+    toGuid: 577516f7e4b3482799be389d05b4426b
+    fromPortIndex: 0
+  - fromGuid: e051ec01edea46dc8ba451e9b8eed58f
+    toGuid: e31597edfaa249efa9f4dca2e7afd0fd
+    fromPortIndex: 1
+  - fromGuid: 577516f7e4b3482799be389d05b4426b
+    toGuid: d65149c36edf40278f2e6e6f8c664bc4
+    fromPortIndex: 0
+  - fromGuid: 146e7643ee8847d598b034134aa69bc9
+    toGuid: 8c809e9c06cc4d62b846cfdee70e5dd3
+    fromPortIndex: 4
+  - fromGuid: 8c809e9c06cc4d62b846cfdee70e5dd3
+    toGuid: 61b77b5f0af147068cd460b186b64b68
+    fromPortIndex: 0
+  - fromGuid: 61b77b5f0af147068cd460b186b64b68
+    toGuid: 5d26baaafbb24b04835433414a97f4b5
+    fromPortIndex: 0
+  - fromGuid: 146e7643ee8847d598b034134aa69bc9
+    toGuid: 692691c9b4c548e78672a898135a4d82
+    fromPortIndex: 0
+  - fromGuid: 146e7643ee8847d598b034134aa69bc9
+    toGuid: 0774573f262b4bb98629c24eefcc9b47
+    fromPortIndex: 2
+  - fromGuid: 146e7643ee8847d598b034134aa69bc9
+    toGuid: eca499acf7fb4490839ba67185f53f29
+    fromPortIndex: 1
+  - fromGuid: 4120d2a3e8bb4a1f820efb48ab7e67d6
+    toGuid: aa4248584a02495f8dc980a4356072ca
+    fromPortIndex: 0
+  - fromGuid: 8c70f00eaa204c96a74563addf01553b
+    toGuid: eda270f5ad1940b89b46f760190fe46c
+    fromPortIndex: 0
+  - fromGuid: eca499acf7fb4490839ba67185f53f29
+    toGuid: d9e9ca14e01c45cca3bf984162e26f27
+    fromPortIndex: 0
+  - fromGuid: d9e9ca14e01c45cca3bf984162e26f27
+    toGuid: 8c70f00eaa204c96a74563addf01553b
+    fromPortIndex: 0
+  - fromGuid: aa4248584a02495f8dc980a4356072ca
+    toGuid: 8c70f00eaa204c96a74563addf01553b
+    fromPortIndex: 0
+  nodes:
+  - {fileID: 9099969446654044749}
+  - {fileID: -4890948387970810886}
+  - {fileID: 73547893517324493}
+  - {fileID: -892686692111506317}
+  - {fileID: 2007585492873688952}
+  - {fileID: 124532827278195628}
+  - {fileID: -8394826737418061227}
+  - {fileID: -6951664366709564}
+  - {fileID: -6775960663203250900}
+  - {fileID: 1251166466160514130}
+  - {fileID: -3634969754977300949}
+  choiceNodes:
+  - {fileID: -404587572000667136}
+  - {fileID: -8313171911570895296}
+  - {fileID: 2691338832977930700}
+  - {fileID: 6116126893401565509}
+  - {fileID: -4432185680564727544}
+  - {fileID: 4970641000467748469}
+  actionNodes:
+  - {fileID: -2513751886138806752}
+  - {fileID: 4880654870545435164}
+  - {fileID: -198544683414012697}
+  - {fileID: 0}
+  startGuid: 7e6297f86823467cb82f7d27f04d0211
+  startPosition: {x: -4662.4, y: -901.60004}
+  startInitialized: 1
+  endGuid: 6d969e0e45d7492e9c083fdb3d9ed9d7
+  endPosition: {x: 2420.8, y: -1358.4}
+  endInitialized: 1
+--- !u!114 &73547893517324493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: ef4a457d120d429ebea747e94a96626b
+  nodePosition: {x: -2661.6, y: -1000.80005}
+  speakerName: Students
+  speakerPortrait: {fileID: 0}
+  questionText: We like your Music
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &124532827278195628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_Def
+  m_EditorClassIdentifier: 
+  GUID: 0774573f262b4bb98629c24eefcc9b47
+  nodePosition: {x: 230.4, y: -1537.6}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Get in line students
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &1251166466160514130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_Def
+  m_EditorClassIdentifier: 
+  GUID: aa4248584a02495f8dc980a4356072ca
+  nodePosition: {x: 787.2, y: -1015.2}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: 
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &2007585492873688952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_Def
+  m_EditorClassIdentifier: 
+  GUID: 5d26baaafbb24b04835433414a97f4b5
+  nodePosition: {x: -252, y: -1536}
+  speakerName: Teacher
+  speakerPortrait: {fileID: 0}
+  questionText: Don't mind them
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &2691338832977930700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: e2b3e82e12ae430d9ee7655aac457ef5
+  nodePosition: {x: -1233.6, y: -1036}
+  text: 
+  choices:
+  - answerText: Dunno
+    nextNodeGUID: 5d26baaafbb24b04835433414a97f4b5
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: No
+    nextNodeGUID: 5d26baaafbb24b04835433414a97f4b5
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: I might
+    nextNodeGUID: 692691c9b4c548e78672a898135a4d82
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &4880654870545435164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
+  m_Name: ActionNode
+  m_EditorClassIdentifier: 
+  GUID: 4120d2a3e8bb4a1f820efb48ab7e67d6
+  nodePosition: {x: 283.2, y: -766.4}
+  actionId: jump
+  payloadJson: 
+  waitForCompletion: 0
+  waitSeconds: 0
+--- !u!114 &4970641000467748469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: e051ec01edea46dc8ba451e9b8eed58f
+  nodePosition: {x: -4138.4, y: -873.60004}
+  text: 
+  choices:
+  - answerText: Play Music
+    nextNodeGUID: 577516f7e4b3482799be389d05b4426b
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Skip for now
+    nextNodeGUID: e31597edfaa249efa9f4dca2e7afd0fd
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &6116126893401565509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: d1fe33e6d0da4986a20fc1c27f001e2a
+  nodePosition: {x: -152.8, y: -1018.4}
+  text: 
+  choices:
+  - answerText: smiles
+    nextNodeGUID: 4120d2a3e8bb4a1f820efb48ab7e67d6
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &9099969446654044749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_if music not played
+  m_EditorClassIdentifier: 
+  GUID: e31597edfaa249efa9f4dca2e7afd0fd
+  nodePosition: {x: -3165.6, y: -1301.6}
+  speakerName: Students
+  speakerPortrait: {fileID: 0}
+  questionText: Here for the Music Festival?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
