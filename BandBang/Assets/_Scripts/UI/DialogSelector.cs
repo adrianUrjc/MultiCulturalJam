@@ -121,5 +121,16 @@ public class DialogSelector : DialogUIController
 
     return currentChoice.choices.Count - 1; // Default to last option if not found
   }
+  public override void ActivateChoiceInput(int idxButton)
+  {
+    foreach(Transform child in choicesContainer)
+    {
+      if (child.GetSiblingIndex() == idxButton)
+      {
+        child.GetComponent<ChoiceButtonView>().OnUIButtonClicked();
+        break;
+      }
+    }
+  }
 
 }
