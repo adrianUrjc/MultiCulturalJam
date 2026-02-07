@@ -41,7 +41,7 @@
             "fieldName": "Sound",
             "entries": [
                 {
-                    "name": "MasterVolume",
+                    "name": "Master",
                     "type": 1,
                     "value": {
                         "rid": 1004
@@ -148,7 +148,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0.5
+                    "value": 0.0
                 }
             },
             {
@@ -159,7 +159,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0.5
+                    "value": 0.0
                 }
             },
             {
@@ -170,7 +170,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0.5
+                    "value": 0.0
                 }
             },
             {
@@ -181,7 +181,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0.5
+                    "value": 0.0
                 }
             },
             {

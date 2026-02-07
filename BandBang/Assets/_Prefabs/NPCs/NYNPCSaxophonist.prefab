@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2281871757990760315}
   - component: {fileID: 631336334977290764}
   - component: {fileID: 8359667824341601773}
-  m_Layer: 0
+  - component: {fileID: 2189816899130441949}
+  m_Layer: 7
   m_Name: NPCSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,6 +111,18 @@ MonoBehaviour:
   noOffsetX: 1.5
   noDuracion: 0.2
   ignoreOriginalPosition: 0
+--- !u!114 &2189816899130441949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7870176331308922455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152338b2158ca684b963a8892aeaaaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8362883712107209494
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +139,7 @@ GameObject:
   - component: {fileID: 567586350242069664}
   - component: {fileID: 3137567250376691736}
   - component: {fileID: 4225932900721478978}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NYNPCSaxophonist
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -213,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4dd8b6130e48241851b7ce9c69bf51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Jorge
+  interactText: E to talk
 --- !u!114 &8371249324204637088
 MonoBehaviour:
   m_ObjectHideFlags: 0
