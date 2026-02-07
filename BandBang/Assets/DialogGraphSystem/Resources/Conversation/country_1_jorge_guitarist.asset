@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8549394890896523641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 649bcb72854b4d5a97df05959a99e3d1
+  nodePosition: {x: 1808, y: 624}
+  speakerName: Jorge
+  speakerPortrait: {fileID: 0}
+  questionText: ???
+  dialogAudio: {fileID: 0}
+  displayTime: 0
 --- !u!114 &-8008261606382244890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,6 +36,25 @@ MonoBehaviour:
   speakerName: Jorge
   speakerPortrait: {fileID: 0}
   questionText: Hello!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-266130723651083591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 1bddfef34bbd4ca99f4dcd9dafd01536
+  nodePosition: {x: 2767.2, y: 303.2}
+  speakerName: Jorge
+  speakerPortrait: {fileID: 0}
+  questionText: Yes!
   dialogAudio: {fileID: 0}
   displayTime: 0
 --- !u!114 &11400000
@@ -41,21 +79,39 @@ MonoBehaviour:
   - fromGuid: 2f17fddb7a5c48a1b79b21eb56844bae
     toGuid: e3ba82ee5c8a4c9c830c0b7a9f41f602
     fromPortIndex: 0
+  - fromGuid: dcc450b65a184a2db2aa2aeb0b79e377
+    toGuid: 5d8f7855aab3458e94deb6a9069edf8d
+    fromPortIndex: 0
   - fromGuid: e3ba82ee5c8a4c9c830c0b7a9f41f602
+    toGuid: aafaaa051bff48d5bd670924b45dddac
+    fromPortIndex: 0
+  - fromGuid: e3ba82ee5c8a4c9c830c0b7a9f41f602
+    toGuid: 649bcb72854b4d5a97df05959a99e3d1
+    fromPortIndex: 1
+  - fromGuid: aafaaa051bff48d5bd670924b45dddac
+    toGuid: 1bddfef34bbd4ca99f4dcd9dafd01536
+    fromPortIndex: 0
+  - fromGuid: 649bcb72854b4d5a97df05959a99e3d1
+    toGuid: 680ec2de499a496689bcd5ca21b88eec
+    fromPortIndex: 0
+  - fromGuid: 1bddfef34bbd4ca99f4dcd9dafd01536
     toGuid: 680ec2de499a496689bcd5ca21b88eec
     fromPortIndex: 0
   nodes:
   - {fileID: 3009120260404313562}
   - {fileID: -8008261606382244890}
   - {fileID: 8125481657416044657}
+  - {fileID: -8549394890896523641}
+  - {fileID: -266130723651083591}
   choiceNodes:
   - {fileID: 6279473839041020567}
+  - {fileID: 7233739550403678493}
   actionNodes: []
   startGuid: dcc450b65a184a2db2aa2aeb0b79e377
   startPosition: {x: -320, y: 80}
   startInitialized: 1
   endGuid: 680ec2de499a496689bcd5ca21b88eec
-  endPosition: {x: 2271.2, y: 512}
+  endPosition: {x: 3623.2, y: 720.8}
   endInitialized: 1
 --- !u!114 &3009120260404313562
 MonoBehaviour:
@@ -92,8 +148,36 @@ MonoBehaviour:
   nodePosition: {x: 1425.6, y: 350.4}
   text: 
   choices:
-  - answerText: 
-    nextNodeGUID: 680ec2de499a496689bcd5ca21b88eec
+  - answerText: Yes
+    nextNodeGUID: aafaaa051bff48d5bd670924b45dddac
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Hmm?
+    nextNodeGUID: 649bcb72854b4d5a97df05959a99e3d1
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &7233739550403678493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: aafaaa051bff48d5bd670924b45dddac
+  nodePosition: {x: 1935.2, y: 64}
+  text: 
+  choices:
+  - answerText: I make music, will you join me?
+    nextNodeGUID: 1bddfef34bbd4ca99f4dcd9dafd01536
     onSelected:
       m_PersistentCalls:
         m_Calls: []
