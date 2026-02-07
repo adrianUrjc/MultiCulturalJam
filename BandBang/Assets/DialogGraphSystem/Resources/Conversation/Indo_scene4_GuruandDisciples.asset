@@ -22,7 +22,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     tooltipOrSubLabel: 
-  - answerText: ( Joiins Hands )
+  - answerText: Hello
     nextNodeGUID: 25eff253cffd4075bdd6fe831e719d58
     onSelected:
       m_PersistentCalls:
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 123c225d41104110bc039a0e7ea9b3ca
   nodePosition: {x: 7069.6, y: 127.200005}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: In the bazaar. Just follow the music
   dialogAudio: {fileID: 0}
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 7f6c45418fe0402fbe5a705a9cdf2d78
   nodePosition: {x: 7028, y: 842.39996}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: Their Guru.
   dialogAudio: {fileID: 0}
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 2be5f89e19b74ebe8909c12c96d1db2c
   nodePosition: {x: 4095.2, y: 1049.6}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: So what did your Buffalo want from this?
   dialogAudio: {fileID: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
   GUID: 3989795b5d9e41b290c6d39743b31c16
   nodePosition: {x: -1061.6, y: 50.4}
   speakerName: Guru
-  speakerPortrait: {fileID: 0}
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: Hmmm.....
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Name: Node_New Dialog
   m_EditorClassIdentifier: 
   GUID: 10d0d89eaa9d4315a829153988abe28f
-  nodePosition: {x: 425.6, y: 30.400002}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  nodePosition: {x: 427.2, y: 30.400002}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: Enjoying the festival?
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 012a4a14c75547aeb46c3387bc6568a3
   nodePosition: {x: 2353.6, y: 673.6}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: Huh! Wonderful, how did you find it?
   dialogAudio: {fileID: 0}
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: f279582a6a9b41edadb63838209b1870
   nodePosition: {x: 3328.8, y: 756.8}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: Ok Great! good find.
   dialogAudio: {fileID: 0}
@@ -315,8 +315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: fe4f70a312ba48878ada3617e8ce0b1b
   nodePosition: {x: 1428, y: 28}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: Thankyou very much
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 5c787e8b44c643538ff8db3c51392438
   nodePosition: {x: 4717.6, y: 182.4}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: I am too old now
   dialogAudio: {fileID: 0}
@@ -588,8 +588,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: a707667a604e4ce1ade64ee747d64271
   nodePosition: {x: 1434.4, y: 728}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: What could be better?
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -606,10 +606,10 @@ MonoBehaviour:
   m_Name: Node_New Dialog
   m_EditorClassIdentifier: 
   GUID: 25eff253cffd4075bdd6fe831e719d58
-  nodePosition: {x: -63.2, y: 32}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
-  questionText: Oh! Namastey dear.
+  nodePosition: {x: -63.2, y: 30.400002}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
+  questionText: Oh! Hello dear.
   dialogAudio: {fileID: 0}
   displayTime: 0
 --- !u!114 &2087532776465003418
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 12790591dc9c40c6ac5897cc90bde80c
   nodePosition: {x: 5449.6, y: 620.8}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: But sadly I can't
   dialogAudio: {fileID: 0}
@@ -695,8 +695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 377302ea127f4959a4bc2f493083e93f
   nodePosition: {x: 3292, y: 184}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: You want us to play together then?
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -714,8 +714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: bb5205b476264f96b5c545675cc72c95
   nodePosition: {x: 2356, y: -67.200005}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: Music anthem of the World?
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -733,7 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 60b526c1502447e8a0103509660e3cb9
   nodePosition: {x: 6592, y: 584.8}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: The two younger musicians.
   dialogAudio: {fileID: 0}
@@ -752,7 +752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 3b01ec322d544e259104b806e519e20e
   nodePosition: {x: 6018.4, y: 500.00003}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: They will help you
   dialogAudio: {fileID: 0}
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: d1608dce68b64ef3a003838f9f330ff2
   nodePosition: {x: 3472, y: 1050.4}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 21300000, guid: a3c9596bdc495e84c9c6dce73e9c5863, type: 3}
   questionText: Really? Great! good find hahahaha...
   dialogAudio: {fileID: 0}
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: d3488136e0eb4525b2992a2412889ce0
   nodePosition: {x: 4265.6, y: 182.4}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: That's wonderful, but sadly I can't
   dialogAudio: {fileID: 0}
@@ -864,9 +864,9 @@ MonoBehaviour:
   m_Name: Node_New Dialog
   m_EditorClassIdentifier: 
   GUID: bc90d04c7aa44e5b8b73883dcd6d43a2
-  nodePosition: {x: 2353.6, y: -314.4}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  nodePosition: {x: 2353.6, y: -315.2}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: Music anthem of the .....
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -884,8 +884,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: fbd6c6c9967d448a9e601e60caab1ed4
   nodePosition: {x: 950.4, y: 469.6}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: Let's hear it
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -902,9 +902,9 @@ MonoBehaviour:
   m_Name: Node_New Dialog
   m_EditorClassIdentifier: 
   GUID: 2aae9b8fa3424bd79ea05a67c778e8fb
-  nodePosition: {x: 1439.2, y: 276.80002}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  nodePosition: {x: 1440, y: 276.80002}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: I am glad you like it
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -922,8 +922,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 6d220d1e29b54d8abb559a0ee45ef56e
   nodePosition: {x: 2357.6, y: 183.20001}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
+  speakerName: Guru
+  speakerPortrait: {fileID: 21300000, guid: ecdf4d2ded8e24d36a64c6e04d7a8000, type: 3}
   questionText: When musicians of the world play together?
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 1cebcd6f78ea46438a60cc0f8740f1fe
   nodePosition: {x: 6590.4, y: 835.19995}
-  speakerName: 
+  speakerName: Guru
   speakerPortrait: {fileID: 0}
   questionText: I am their teacher after all!
   dialogAudio: {fileID: 0}
