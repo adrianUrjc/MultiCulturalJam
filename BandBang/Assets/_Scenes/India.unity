@@ -1216,6 +1216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndianBuilding (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3210013329305997073, guid: 62f70e46566a24f3eb4c98cae2951cfe, type: 3}
+      propertyPath: outsideObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
