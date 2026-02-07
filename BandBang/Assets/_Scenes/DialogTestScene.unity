@@ -204,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523700709001831317, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1688513314899019916, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_Layer
@@ -249,7 +249,7 @@ PrefabInstance:
     - target: {fileID: 2964052679320786208, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1294510086}
+      objectReference: {fileID: 10253058}
     - target: {fileID: 2964052679320786208, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
@@ -336,7 +336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3998116311749005285, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4423136193098263546, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_Layer
@@ -426,6 +426,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6128759100470778776, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: offset.x
+      value: -500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128759100470778776, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: offset.y
+      value: -50
+      objectReference: {fileID: 0}
     - target: {fileID: 6172948004146403415, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -509,7 +517,7 @@ PrefabInstance:
     - target: {fileID: 7466870786510612699, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1294510086}
+      objectReference: {fileID: 10253058}
     - target: {fileID: 7466870786510612699, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
@@ -588,12 +596,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4148131386778754430, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
   m_PrefabInstance: {fileID: 10253056}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294510086}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa81c435349cabd4c8164e8e46ae1d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &10253058 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1523700709001831317, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+  m_PrefabInstance: {fileID: 10253056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &14252477
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +851,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2438830291652564291, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
   m_PrefabInstance: {fileID: 10253056}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294510086}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb6e1cb45646784d9afa720623396c3, type: 3}
@@ -1466,11 +1479,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 60, y: 182.78412}
   m_EdgeRadius: 0
---- !u!1 &1294510086 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3998116311749005285, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
-  m_PrefabInstance: {fileID: 10253056}
-  m_PrefabAsset: {fileID: 0}
 --- !u!20 &1670343503 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2702342717479800303, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}

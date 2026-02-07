@@ -16,7 +16,7 @@ public class DraggableUISnapCenter : MonoBehaviour,
 
     void Awake()
     {
-        rect = (RectTransform)transform;
+        rect = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
         canvasRect = canvas.transform as RectTransform;
     }
@@ -88,6 +88,19 @@ public class DraggableUISnapCenter : MonoBehaviour,
     }
     public void SnapToPoint(UISnapPoint uISnap)
     {
+        if (uISnap==null)
+        {
+            Debug.LogError("UISnap es null");
+        }
+        if (rect == null)
+        {
+            rect=GetComponent<RectTransform>();
+            //Debug.LogError("rect es nulo");
+        }
+        if (uISnap.rect.rect.center == null)
+        {
+            Debug.LogError("el tocho es null");
+        }
         rect.position = uISnap.rect.TransformPoint(uISnap.rect.rect.center);
         uISnap.Occupy(GetComponent<WordUI>().word ?? string.Empty);
         currentSnap = uISnap;

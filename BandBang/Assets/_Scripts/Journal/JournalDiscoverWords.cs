@@ -5,6 +5,7 @@ using UnityEngine;
 public class JournalDiscoverWords : MonoBehaviour
 {
     public PlayerJournal playerJournal;
+    public Vector2 offset = new Vector2(-50, -50);
 
     public GameObject wordSlotPrefab;
     public GameObject discoverWordPrefab;
@@ -14,36 +15,39 @@ public class JournalDiscoverWords : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
     public void DiscoverWord(string symbol)
     {
-       
-       var newWord = Instantiate(discoverWordPrefab, SymbolsGrid);
-       newWord.GetComponentInChildren<WordUI>().SetWord(symbol);
+
+        var newWord = Instantiate(discoverWordPrefab, SymbolsGrid);
+        newWord.GetComponentInChildren<WordUI>().SetWord(symbol);
         newWord.GetComponentInChildren<DraggableUISnapCenter>().bounds = JournalContainer;
 
     }
     public void OnJournalInitHandler()
     {
-        foreach(var symbol in playerJournal.discoveredSymbols)
+        foreach (var symbol in playerJournal.discoveredSymbols)
         {
             DiscoverWord(symbol);
         }
+
         foreach (var english in playerJournal.realDict.EnglishToSymbol.Keys)
         {
             var newSlot = Instantiate(wordSlotPrefab, WordsGrid);
             var snapUI = newSlot.GetComponentInChildren<UISnapPoint>();
-            snapUI.Word = english; 
+            snapUI.Word = english;
             snapUI.journal = playerJournal;
             Debug.Log("Initializing slot for English word: " + english);
 
 
             //If the player has a guess for this word
-            if ( ! playerJournal.englishToSymbol[english].Contains('*'))
+            if (!playerJournal.englishToSymbol[english].Contains('*'))
             {
+                Debug.Log("Aplicando snap");
                 snapUI.occupied = true;
                 snapUI.symbol = playerJournal.englishToSymbol[english];
+                snapUI.rect.anchoredPosition += offset;
 
                 MoveSymbolToSnapPoint(snapUI.symbol, snapUI);
             }
