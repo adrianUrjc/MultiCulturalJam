@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3478965426346165633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 722b822355d74b5086f57a60172ed536
+  nodePosition: {x: -118.666664, y: -17.333332}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: I like yout style Im in!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c45c6e4622be54698e67e4868db7e5, type: 3}
+  m_Name: Recruit
+  m_EditorClassIdentifier: 
+  links:
+  - fromGuid: 952161b5452948dda594e9ec7b1d1370
+    toGuid: 722b822355d74b5086f57a60172ed536
+    fromPortIndex: 0
+  - fromGuid: 722b822355d74b5086f57a60172ed536
+    toGuid: 01fa75d25eb54a5cb5f711ef307912ea
+    fromPortIndex: 0
+  - fromGuid: 01fa75d25eb54a5cb5f711ef307912ea
+    toGuid: 7850302a7d1147fbb50f1effe410f8cd
+    fromPortIndex: 0
+  nodes:
+  - {fileID: -3478965426346165633}
+  choiceNodes: []
+  actionNodes:
+  - {fileID: 8947759282759711190}
+  startGuid: 952161b5452948dda594e9ec7b1d1370
+  startPosition: {x: -320, y: 80}
+  startInitialized: 1
+  endGuid: 7850302a7d1147fbb50f1effe410f8cd
+  endPosition: {x: 794.6667, y: -17.333332}
+  endInitialized: 1
+--- !u!114 &8947759282759711190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
+  m_Name: ActionNode
+  m_EditorClassIdentifier: 
+  GUID: 01fa75d25eb54a5cb5f711ef307912ea
+  nodePosition: {x: 328, y: -53.333332}
+  actionId: RecruitNPC
+  payloadJson: 
+  waitForCompletion: 0
+  waitSeconds: 0

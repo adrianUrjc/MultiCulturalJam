@@ -31,7 +31,7 @@ public class SymbolDiscoveredAnimation : MonoBehaviour
             player.OnNewDiscoveredSymbol.AddListener(EnqueueSymbols);
     }
 
-    void EnqueueSymbols(string newSymbol)
+    public void EnqueueSymbols(string newSymbol)
     {
 
         discoveredSymbols.Enqueue(beginingWord + newSymbol);

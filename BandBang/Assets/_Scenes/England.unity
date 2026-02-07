@@ -283,6 +283,18 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+          - m_Target: {fileID: 163875194}
+            m_TargetAssemblyTypeName: SymbolDiscoveredAnimation, Assembly-CSharp
+            m_MethodName: EnqueueSymbols
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: Guitaris Recruited!
+              m_BoolArgument: 0
+            m_CallState: 2
     handlers: []
   useGlobalFallback: 0
 --- !u!4 &107982410
@@ -523,6 +535,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce4f70d9511459540a88f33345c45b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &163875194 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8859373468870355501, guid: 509c2bdd75451dd4b9493f4c7c3847e8, type: 3}
+  m_PrefabInstance: {fileID: 163875191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c534351770eda0a41ba99c6220a37dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &220473032
@@ -3389,11 +3412,11 @@ PrefabInstance:
       objectReference: {fileID: 102900000, guid: ba7f06d0477db40c5bb3a5087a0bf43d, type: 3}
     - target: {fileID: 993435782438405731, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.2004752
       objectReference: {fileID: 0}
     - target: {fileID: 993435782438405731, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.070156276
       objectReference: {fileID: 0}
     - target: {fileID: 1175509421640599656, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_Material
