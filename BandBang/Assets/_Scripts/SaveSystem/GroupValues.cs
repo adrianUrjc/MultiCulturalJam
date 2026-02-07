@@ -21,6 +21,8 @@ public enum VALUE_TYPE
 [CreateAssetMenu(menuName = "ScriptableObject/GenericValues")]
 public partial class GroupValues : ScriptableObject
 {
+    
+
     //TODO: optimizar con diccionario, de momento no funciona bien
     // private Dictionary<string, SettingEntry> _cache;
 

@@ -14,7 +14,7 @@ public class GameManager : ASingleton<GameManager>, IManager
     public IManager.GameStartMode StartMode => IManager.GameStartMode.FIRST;
     [SerializeField, ReadOnly]
     public
-    ALoader loader;
+    LoaderMono loader;
     [SerializeField]
     float autoSaveTime = 20f;
 
@@ -25,12 +25,12 @@ public class GameManager : ASingleton<GameManager>, IManager
     }
     public void StartManager()
     {
-        loader = GetComponent<ALoader>();
+        loader = GetComponent<LoaderMono>();
         LoadData();
     }
     public void LoadData()
     {
-        loader.LoadValues();
+        loader.LoadData();
 
         string FirsTime = "HasPlayedBefore";
         string FirstTimeplayed = "FirstTimePlayed";
@@ -48,7 +48,7 @@ public class GameManager : ASingleton<GameManager>, IManager
 
     //        Debug.Log(loader.GetValue<long>(FirstTimeplayed));
 
-            loader.SaveValues();
+            loader.SaveData();
         }
     }
     public void OnSceneChange()
@@ -99,7 +99,7 @@ public class GameManager : ASingleton<GameManager>, IManager
     }
     public void AutoSave()
     {
-        loader.SaveValues();
+        loader.SaveData();
         DelayedActions.Do(AutoSave, autoSaveTime, this, "AutoSaveData");
     }
     public void SaveData()
@@ -111,7 +111,7 @@ if(loader==null) return;
 
         loader.SetValue<long>("TimePlayed", totalTime);
 
-        loader.SaveValues();
+        loader.SaveData();
     }
 
     public void LoadLevel(int level)

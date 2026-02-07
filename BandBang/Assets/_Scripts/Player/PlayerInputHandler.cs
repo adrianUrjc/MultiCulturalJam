@@ -30,7 +30,7 @@ public class PlayerInputHandler : MonoBehaviour
      
         movement.moveInput = moveAction.ReadValue<Vector2>();
     }
-
+public Vector2 GetMoveInput() => moveAction.ReadValue<Vector2>();
     private void OnEnable()
     {
         playerMap.Enable();

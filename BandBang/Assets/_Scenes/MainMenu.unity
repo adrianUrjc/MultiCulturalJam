@@ -596,6 +596,14 @@ PrefabInstance:
       propertyPath: jsonFileName
       value: SaveSlot_1.json
       objectReference: {fileID: 0}
+    - target: {fileID: 1177183219320810309, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
+      propertyPath: loader.soName
+      value: SaveSlot_1.asset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177183219320810309, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
+      propertyPath: loader.jsonFileName
+      value: SaveSlot_1.json
+      objectReference: {fileID: 0}
     - target: {fileID: 2469898678615274701, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1126,6 +1134,14 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 08d0c99f738fb0b498bc63460d0fb6b7, type: 2}
     - target: {fileID: 161401558316313562, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
       propertyPath: jsonFileName
+      value: SaveSlot_2.json
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177183219320810309, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
+      propertyPath: loader.soName
+      value: SaveSlot_2.asset
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177183219320810309, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
+      propertyPath: loader.jsonFileName
       value: SaveSlot_2.json
       objectReference: {fileID: 0}
     - target: {fileID: 2469898678615274701, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
@@ -2468,7 +2484,9 @@ PrefabInstance:
       propertyPath: russia.sceneAsset
       value: 
       objectReference: {fileID: 102900000, guid: e9e99f421375d7245879b27299d7a680, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 238985787491927907, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
+    - {fileID: 4580110956412614887, guid: bbbf804565ab8574aa689f720c6e1e1a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2569,7 +2587,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SaveSlot_1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 161401558316313562, guid: 857967cee49e8c84889e94ec5ecba3b9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

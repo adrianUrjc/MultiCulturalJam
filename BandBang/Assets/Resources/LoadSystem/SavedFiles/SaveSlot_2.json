@@ -104,7 +104,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": true
+                    "value": false
                 }
             },
             {
@@ -126,7 +126,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 1770281813
+                    "value": 0
                 }
             },
             {
@@ -137,7 +137,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 1770281820
+                    "value": 0
                 }
             },
             {
@@ -148,7 +148,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 7
+                    "value": 0
                 }
             },
             {

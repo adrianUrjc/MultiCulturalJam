@@ -104,7 +104,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": true
+                    "value": false
                 }
             },
             {
@@ -126,7 +126,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 1770282388
+                    "value": 0
                 }
             },
             {
@@ -137,7 +137,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 1770282408
+                    "value": 0
                 }
             },
             {
@@ -148,7 +148,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 20
+                    "value": 0
                 }
             },
             {
@@ -195,7 +195,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": "****,****,****,****,,"
+                    "value": ""
                 }
             },
             {
@@ -206,7 +206,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": "<sprite=0>,<sprite=8>,<sprite=13>,<sprite=15>,,"
+                    "value": ""
                 }
             },
             {

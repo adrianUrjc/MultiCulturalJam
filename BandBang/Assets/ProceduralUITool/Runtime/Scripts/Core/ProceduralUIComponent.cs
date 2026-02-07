@@ -10,7 +10,7 @@ namespace ProceduralUITool.Runtime
     /// </summary>
     [RequireComponent(typeof(RectTransform))]
     [AddComponentMenu("Procedural UI Tool/Procedural UI Component")]
-    [ExecuteInEditMode]
+    [ExecuteAlways]
     public class ProceduralUIComponent : MonoBehaviour
     {
         #region Serialized Fields
@@ -67,7 +67,7 @@ namespace ProceduralUITool.Runtime
         private static readonly int _GlobalCornerOffsetId = Shader.PropertyToID("_GlobalCornerOffset");
         private static readonly int _AAId = Shader.PropertyToID("_AA");
         private static readonly int _RectSizeId = Shader.PropertyToID("_RectSize");
-        
+
         // Shape properties.
         private static readonly int _ShapeTypeId = Shader.PropertyToID("_ShapeType");
         private static readonly int _ShapeVerticesId = Shader.PropertyToID("_ShapeVertices");
@@ -77,7 +77,7 @@ namespace ProceduralUITool.Runtime
         // Properties for sharp edges.
         private static readonly int _EdgeSharpnessId = Shader.PropertyToID("_EdgeSharpness");
         private static readonly int _UsePixelPerfectEdgesId = Shader.PropertyToID("_UsePixelPerfectEdges");
-        
+
         // Progress border properties.
         private static readonly int _UseProgressBorderId = Shader.PropertyToID("_UseProgressBorder");
         private static readonly int _ProgressValueId = Shader.PropertyToID("_ProgressValue");
@@ -92,7 +92,7 @@ namespace ProceduralUITool.Runtime
         private const string SHADER_URP = "ProceduralUITool/RoundedBorder_URP";
         private const string SHADER_BUILTIN = "ProceduralUITool/RoundedBorder_Builtin";
         private const string SHADER_LEGACY = "ProceduralUITool/RoundedBorder";
-        
+
         #endregion
 
         #region Unity Lifecycle
@@ -120,8 +120,10 @@ namespace ProceduralUITool.Runtime
                 ApplyProfile();
                 if (_targetGraphic != null)
                 {
-                    _targetGraphic.SetVerticesDirty();
+                    _targetGraphic.material = _effectMaterial;
+                    _targetGraphic.SetMaterialDirty();
                 }
+
             }
         }
 
@@ -195,7 +197,7 @@ namespace ProceduralUITool.Runtime
                 _lastRectSize = _rectTransform.rect.size;
             }
         }
-        
+
         /// <summary>
         /// Initializes the component, creating the effect material.
         /// </summary>
@@ -233,7 +235,8 @@ namespace ProceduralUITool.Runtime
 
             _effectMaterial = new Material(effectShader)
             {
-                hideFlags = HideFlags.HideAndDontSave,
+                hideFlags = HideFlags.DontSaveInBuild | HideFlags.DontSaveInEditor,
+
                 name = $"ProceduralUI_Material_{GetInstanceID()}"
             };
 
@@ -283,16 +286,16 @@ namespace ProceduralUITool.Runtime
             Debug.LogWarning("No suitable Procedural UI Tool shader found. Using fallback UI/Default.", this);
             return "UI/Default";
         }
-        
+
         /// <summary>
         /// Gets the name of the current render pipeline.
         /// </summary>
         /// <returns>The pipeline name.</returns>
         private string GetCurrentPipelineName()
         {
-#if UNITY_PIPELINE_URP
+#if UNITY_URP
             return "Universal Render Pipeline";
-#elif UNITY_PIPELINE_HDRP
+#elif UNITY_HDRP
             return "High Definition Render Pipeline";
 #else
             return "Built-in Render Pipeline";
@@ -317,6 +320,8 @@ namespace ProceduralUITool.Runtime
 
                 if (_targetGraphic != null && _hasChanges)
                 {
+                    _targetGraphic.SetVerticesDirty();
+                    _targetGraphic.SetMaterialDirty(); // <- CRÍTICO EN UNITY 2022
                     _targetGraphic.SetAllDirty();
                 }
 
@@ -350,8 +355,14 @@ namespace ProceduralUITool.Runtime
             {
                 _hasChanges = true;
                 ApplyProfile();
+
+                if (_targetGraphic != null)
+                {
+                    _targetGraphic.SetMaterialDirty();
+                }
             }
         }
+
 
         /// <summary>
         /// Checks if the RectTransform's size has changed.
@@ -388,12 +399,12 @@ namespace ProceduralUITool.Runtime
         private float ConvertValueToPixels(float value, ProceduralUIProfile.Unit unit, Vector2 rectSize, bool useMinDimension)
         {
             if (unit == ProceduralUIProfile.Unit.Pixels) return value;
-            if (rectSize.x <= 0 || rectSize.y <= 0) return value; 
+            if (rectSize.x <= 0 || rectSize.y <= 0) return value;
 
             float referenceDim = useMinDimension ? Mathf.Min(rectSize.x, rectSize.y) : Mathf.Max(rectSize.x, rectSize.y);
             return (value / 100f) * (referenceDim * 0.5f);
         }
-        
+
         /// <summary>
         /// Applies all properties from the profile to the material.
         /// </summary>
@@ -404,7 +415,7 @@ namespace ProceduralUITool.Runtime
             mat.SetFloat(_ShapeTypeId, (float)prof.shapeType);
 
             Vector2[] vertices = prof.GetShapeVertices();
-            
+
             if (vertices != null && vertices.Length > 0)
             {
                 mat.SetFloat(_VertexCountId, vertices.Length);
@@ -415,12 +426,12 @@ namespace ProceduralUITool.Runtime
                 for (int i = 0; i < Mathf.Min(vertices.Length, 8); i++)
                 {
                     Vector2 vertex = vertices[i];
-                    if (i < 2) 
+                    if (i < 2)
                     {
                         if (i == 0) { vertices1.x = vertex.x; vertices1.y = vertex.y; }
                         else { vertices1.z = vertex.x; vertices1.w = vertex.y; }
                     }
-                    else if (i < 4) 
+                    else if (i < 4)
                     {
                         if (i == 2) { vertices2.x = vertex.x; vertices2.y = vertex.y; }
                         else { vertices2.z = vertex.x; vertices2.w = vertex.y; }
@@ -431,11 +442,11 @@ namespace ProceduralUITool.Runtime
             }
             else
             {
-                mat.SetFloat(_VertexCountId, 4f); 
+                mat.SetFloat(_VertexCountId, 4f);
                 mat.SetVector(_ShapeVerticesId, Vector4.zero);
                 mat.SetVector(_ShapeVerticesExtId, Vector4.zero);
             }
-            
+
             Vector4 cornerRadiiRaw = prof.GetCornerRadii();
             Vector4 cornerRadiiPx = new Vector4(
                 ConvertValueToPixels(cornerRadiiRaw.x, prof.cornerRadiusUnit, rectSize, true),
@@ -444,27 +455,27 @@ namespace ProceduralUITool.Runtime
                 ConvertValueToPixels(cornerRadiiRaw.w, prof.cornerRadiusUnit, rectSize, true)
             );
             mat.SetVector(_CornerRadiiId, cornerRadiiPx);
-            
+
             float borderWidthPx = ConvertValueToPixels(prof.borderWidth, prof.borderWidthUnit, rectSize, true);
             mat.SetFloat(_BorderWidthId, borderWidthPx);
-            
+
             mat.SetVector(_CornerOffsetsId, prof.GetCornerOffsets());
             mat.SetFloat(_UseIndividualCornersId, prof.useIndividualCorners ? 1f : 0f);
             mat.SetFloat(_UseIndividualOffsetsId, prof.useIndividualOffsets ? 1f : 0f);
             mat.SetFloat(_GlobalCornerOffsetId, prof.globalCornerOffset);
             mat.SetColor(_BorderColorId, prof.borderColor);
             mat.SetColor(_ColorId, prof.fillColor);
-            
+
             mat.SetFloat(_AAId, prof.edgeSharpness * 0.3f);
             mat.SetFloat(_EdgeSharpnessId, prof.edgeSharpness);
             mat.SetFloat(_UsePixelPerfectEdgesId, prof.usePixelPerfectEdges ? 1f : 0f);
-            
+
             mat.SetFloat(_UseProgressBorderId, prof.useProgressBorder ? 1f : 0f);
             mat.SetFloat(_ProgressValueId, Mathf.Clamp01(prof.progressValue));
             mat.SetFloat(_ProgressStartAngleId, prof.progressStartAngle);
             mat.SetFloat(_ProgressDirectionId, (float)prof.progressDirection);
         }
-        
+
         #endregion
 
         #region Change Detection
@@ -497,7 +508,7 @@ namespace ProceduralUITool.Runtime
         #endregion
 
         #region Public API
-        
+
         /// <summary>
         /// Configures a procedural shape directly from code.
         /// </summary>
@@ -521,7 +532,7 @@ namespace ProceduralUITool.Runtime
             profile = newProfile;
             ForceUpdate();
         }
-        
+
         /// <summary>
         /// Sets the progress value (0-1) for progress borders.
         /// </summary>
@@ -536,7 +547,7 @@ namespace ProceduralUITool.Runtime
         }
 
         #endregion
-        
+
         #region Cleanup
 
         /// <summary>
@@ -549,7 +560,7 @@ namespace ProceduralUITool.Runtime
                 _targetGraphic.material = _originalMaterial;
             }
         }
-        
+
         /// <summary>
         /// Destroys the effect material to prevent memory leaks.
         /// </summary>
@@ -583,7 +594,7 @@ namespace ProceduralUITool.Runtime
                 if (this == null || gameObject == null) return;
                 if (_targetGraphic == null) CacheComponents();
                 if (_targetGraphic == null) return;
-                
+
                 string expectedShader = GetAvailableShaderName();
                 if (_effectMaterial == null || _targetGraphic.material == _originalMaterial || (_effectMaterial.shader.name != expectedShader))
                 {
@@ -597,7 +608,7 @@ namespace ProceduralUITool.Runtime
         #endregion
 
         #region Helper Classes
-    
+
         /// <summary>
         /// Internal class to cache profile values and detect changes.
         /// </summary>
@@ -629,7 +640,7 @@ namespace ProceduralUITool.Runtime
                        fillColor != p.fillColor || !Mathf.Approximately(borderWidth, p.borderWidth) ||
                        useIndividualCorners != p.useIndividualCorners || useIndividualOffsets != p.useIndividualOffsets ||
                        !Mathf.Approximately(globalCornerOffset, p.globalCornerOffset) || borderWidthUnit != p.borderWidthUnit ||
-                       !Mathf.Approximately(edgeSharpness, p.edgeSharpness) || usePixelPerfectEdges != p.usePixelPerfectEdges || 
+                       !Mathf.Approximately(edgeSharpness, p.edgeSharpness) || usePixelPerfectEdges != p.usePixelPerfectEdges ||
                        useProgressBorder != p.useProgressBorder ||
                        !Mathf.Approximately(progressValue, p.progressValue) ||
                        !Mathf.Approximately(progressStartAngle, p.progressStartAngle) ||
