@@ -32,7 +32,7 @@ MonoBehaviour:
   edgeSharpness: 0.2
   usePixelPerfectEdges: 0
   borderWidthUnit: 0
-  borderWidth: 37
+  borderWidth: 9
   borderColor: {r: 0, g: 0, b: 0, a: 1}
   fillColor: {r: 1, g: 1, b: 1, a: 1}
   useProgressBorder: 0

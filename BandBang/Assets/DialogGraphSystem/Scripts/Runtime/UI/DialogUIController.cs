@@ -61,7 +61,7 @@ namespace DialogSystem.Runtime.UI
         { if (choicesContainer) choicesContainer.gameObject.SetActive(v); }
 
         public void SetSpeaker(string name) { if (speakerName) speakerName.text = name ?? string.Empty; }
-        public virtual void SetText(string text) {if (dialogText) dialogText.text = text ?? string.Empty; }
+        public virtual void SetText(string text) { if (dialogText) dialogText.text = text ?? string.Empty; }
         public void SetPortrait(Sprite s) { if (portraitImage) portraitImage.sprite = s; }
         #endregion
 
@@ -94,7 +94,7 @@ namespace DialogSystem.Runtime.UI
 
             SetChoicesVisible(true);
         }
-
+        public virtual void ActivateChoiceInput(int idx) { }
         public void ClearChoices()
         {
             if (!choicesContainer) return;

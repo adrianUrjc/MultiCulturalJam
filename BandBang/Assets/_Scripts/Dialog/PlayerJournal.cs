@@ -1,17 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerJournal : MonoBehaviour
 {
 
     
     [SerializeField]
-    protected RealDictionary realDict;
+    public RealDictionary realDict;
     public Dictionary<string, string> englishToSymbol = new Dictionary<string, string>();
     public Dictionary<string, string> symbolToEnglish = new Dictionary<string, string>();
 
-    public List<string> discoveredSymbols = new(); 
+    public List<string> discoveredSymbols = new();
+    public UnityEvent<string> OnNewDiscoveredSymbol=new();
+    public UnityEvent JournalInitialized = new();
+
+
+
 
     private void Start()
     {
@@ -27,12 +33,16 @@ public class PlayerJournal : MonoBehaviour
             if (!englishToSymbol.ContainsKey(key))
                 englishToSymbol[key] = "*** (unkown, trying to guess " + key + ") ";
         }
-
+        JournalInitialized?.Invoke();
     }
     public void discoverSymbol(string symbol)
     {
-       if(!discoveredSymbols.Contains(symbol)) 
-       discoveredSymbols.Add(symbol);
+       if(!discoveredSymbols.Contains(symbol))
+        {
+
+            discoveredSymbols.Add(symbol);
+            OnNewDiscoveredSymbol.Invoke(symbol);
+        }
     }
     public void GuessMeaning(string englishWord, string symbol)
     {

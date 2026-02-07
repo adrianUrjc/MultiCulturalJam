@@ -137,7 +137,7 @@ namespace DialogSystem.Runtime.UI
             }
         }
 
-        private void OnUIButtonClicked()
+        public void OnUIButtonClicked()
         {
             if (_doDebug) Debug.Log($"[ChoiceButtonView] Click received on '{name}'. HandlerNull={_onClick == null}");
               _onClick?.Invoke();

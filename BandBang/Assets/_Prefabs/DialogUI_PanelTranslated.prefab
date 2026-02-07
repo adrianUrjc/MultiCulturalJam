@@ -832,7 +832,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 20.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1501,6 +1501,7 @@ MonoBehaviour:
   autoPlayButton: {fileID: 4321574411087804817}
   pauseIcon: {fileID: 888238843173917969}
   playIcon: {fileID: 3457031960843034343}
+  maxOptions: 4
   translator: {fileID: 0}
 --- !u!114 &2367431670076727503
 MonoBehaviour:
@@ -1543,9 +1544,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8780227988638586490}
-  - {fileID: 2147472241210616201}
   - {fileID: 4059302615048186490}
+  - {fileID: 2147472241210616201}
+  - {fileID: 8780227988638586490}
   m_Father: {fileID: 8542691604462398681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1, y: 0.05}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ChoiceNode
   m_EditorClassIdentifier: 
   GUID: 9ea1713f89704a95819ccfef24ea3cb1
-  nodePosition: {x: 924.6667, y: 78.66667}
+  nodePosition: {x: 916.6667, y: 76}
   text: 
   choices:
   - answerText: dog
@@ -42,6 +42,12 @@ MonoBehaviour:
     tooltipOrSubLabel: 
   - answerText: wronganswer
     nextNodeGUID: eeef02e077904ef1acde39b4c122c967
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: playerdoesntknow
+    nextNodeGUID: 
     onSelected:
       m_PersistentCalls:
         m_Calls: []
