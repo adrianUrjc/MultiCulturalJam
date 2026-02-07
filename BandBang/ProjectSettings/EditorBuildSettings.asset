@@ -23,5 +23,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/DialogTestScene.unity
     guid: e9e99f421375d7245879b27299d7a680
+  - enabled: 1
+    path: Assets/_Scenes/England.unity
+    guid: ae110eac43d294a30a2d368710d5432b
+  - enabled: 1
+    path: Assets/_Scenes/India.unity
+    guid: ba7f06d0477db40c5bb3a5087a0bf43d
+  - enabled: 1
+    path: Assets/_Scenes/NY.unity
+    guid: 15f447e24c92043d789e499267a6c693
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fce6cef1c4a24f24fad2a0922a2c0544, type: 3}
