@@ -111,7 +111,7 @@ MonoBehaviour:
   startPosition: {x: -320, y: 80}
   startInitialized: 1
   endGuid: 680ec2de499a496689bcd5ca21b88eec
-  endPosition: {x: 3623.2, y: 720.8}
+  endPosition: {x: 3623.3333, y: 720.6667}
   endInitialized: 1
 --- !u!114 &3009120260404313562
 MonoBehaviour:

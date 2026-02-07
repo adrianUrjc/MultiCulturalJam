@@ -50,7 +50,7 @@ MonoBehaviour:
   startPosition: {x: -320, y: 80}
   startInitialized: 1
   endGuid: 758df700cf974d069cf9afab6da5cd79
-  endPosition: {x: 1101.6, y: 236.79999}
+  endPosition: {x: 1101.3334, y: 236.66667}
   endInitialized: 1
 --- !u!114 &7246080520666708934
 MonoBehaviour:
