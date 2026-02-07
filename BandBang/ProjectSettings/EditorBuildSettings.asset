@@ -32,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/NY.unity
     guid: 15f447e24c92043d789e499267a6c693
+  - enabled: 1
+    path: Assets/_Scenes/EndScene.unity
+    guid: c844df9c14f37ec488147fad7461b865
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fce6cef1c4a24f24fad2a0922a2c0544, type: 3}

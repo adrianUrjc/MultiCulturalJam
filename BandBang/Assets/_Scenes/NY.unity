@@ -171,9 +171,23 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 193242487288771365, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: scene.index
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 193242487288771365, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: scene.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: c844df9c14f37ec488147fad7461b865, type: 3}
     - target: {fileID: 993435782438405731, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634164050331988637, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: m_text
+      value: 'Finish world anthem
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 3939869581953980737, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -227,6 +241,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1459699100}
+    - target: {fileID: 8143431242291384744, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: m_text
+      value: 'Are you sure you want to finish the anthem?
+
+
+        You will trigger
+        the game''s finale.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
