@@ -217,7 +217,7 @@ Transform:
   m_GameObject: {fileID: 131499255}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: -0.90183264, w: -0.4320856}
-  m_LocalPosition: {x: 1.6, y: -0.28, z: 0}
+  m_LocalPosition: {x: -0.65, y: -0.15, z: 0}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -395,7 +395,7 @@ Transform:
   m_GameObject: {fileID: 392619226}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.12368808, w: 0.9923212}
-  m_LocalPosition: {x: -2.57, y: -0.28, z: 0}
+  m_LocalPosition: {x: -0.25, y: -0.43, z: 0}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1105,6 +1105,10 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3218745982529971884, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3728314001236578530, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_Material
       value: 
@@ -1152,6 +1156,18 @@ PrefabInstance:
     - target: {fileID: 6304598203261598381, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_Material
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413413279820664743, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: npcsRecruited.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413413279820664743, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: npcsRecruited.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413413279820664743, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
+      propertyPath: npcsRecruited.Array.data[2]
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6826016276742167143, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_Name
