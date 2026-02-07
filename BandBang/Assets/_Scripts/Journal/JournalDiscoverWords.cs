@@ -44,7 +44,7 @@ public class JournalDiscoverWords : MonoBehaviour
                 snapUI.occupied = true;
                 snapUI.symbol = playerJournal.englishToSymbol[english];
 
-                MoveSymbolToSnapPoint(snapUI.symbol, snapUI.gameObject);
+                MoveSymbolToSnapPoint(snapUI.symbol, snapUI);
             }
         }
 
@@ -52,14 +52,15 @@ public class JournalDiscoverWords : MonoBehaviour
 
         playerJournal.OnNewDiscoveredSymbol.AddListener(DiscoverWord);
     }
-    public void MoveSymbolToSnapPoint(string symbol, GameObject snapPoint)
+    public void MoveSymbolToSnapPoint(string symbol, UISnapPoint snapPoint)
     {
         var temp = SymbolsGrid.GetComponentsInChildren<WordUI>();
         foreach (var word in temp)
         {
             if (word.word == symbol)
             {
-                word.transform.position = snapPoint.transform.position;
+                var dragUI = word.GetComponentInChildren<DraggableUISnapCenter>();
+                dragUI.SnapToPoint(snapPoint);
                 return;
             }
         }
