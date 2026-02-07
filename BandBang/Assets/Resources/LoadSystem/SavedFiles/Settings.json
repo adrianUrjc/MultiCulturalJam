@@ -42,28 +42,28 @@
             "entries": [
                 {
                     "name": "MasterVolume",
-                    "type": 4,
+                    "type": 1,
                     "value": {
                         "rid": 1004
                     }
                 },
                 {
                     "name": "MusicVolume",
-                    "type": 4,
+                    "type": 1,
                     "value": {
                         "rid": 1005
                     }
                 },
                 {
                     "name": "SFXVolume",
-                    "type": 4,
+                    "type": 1,
                     "value": {
                         "rid": 1006
                     }
                 },
                 {
                     "name": "InterfaceVolume",
-                    "type": 4,
+                    "type": 1,
                     "value": {
                         "rid": 1007
                     }
@@ -143,45 +143,45 @@
             {
                 "rid": 1004,
                 "type": {
-                    "class": "IntSettingValue",
+                    "class": "FloatSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": 0.5
                 }
             },
             {
                 "rid": 1005,
                 "type": {
-                    "class": "IntSettingValue",
+                    "class": "FloatSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": 0.5
                 }
             },
             {
                 "rid": 1006,
                 "type": {
-                    "class": "IntSettingValue",
+                    "class": "FloatSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": 0.5
                 }
             },
             {
                 "rid": 1007,
                 "type": {
-                    "class": "IntSettingValue",
+                    "class": "FloatSettingValue",
                     "ns": "",
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": 0
+                    "value": 0.5
                 }
             },
             {
