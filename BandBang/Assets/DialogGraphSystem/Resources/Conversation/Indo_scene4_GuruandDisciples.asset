@@ -101,8 +101,14 @@ MonoBehaviour:
   nodePosition: {x: 3792, y: 268.80002}
   text: 
   choices:
-  - answerText: Yes! I do
+  - answerText: Yes! I want to make music with you
     nextNodeGUID: d3488136e0eb4525b2992a2412889ce0
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: :D
+    nextNodeGUID: 
     onSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -342,6 +348,12 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     tooltipOrSubLabel: 
+  - answerText: :(
+    nextNodeGUID: 
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,9 +420,6 @@ MonoBehaviour:
     fromPortIndex: 0
   - fromGuid: 6d220d1e29b54d8abb559a0ee45ef56e
     toGuid: c6f46fbe056540e7a5403d899e77211b
-    fromPortIndex: 0
-  - fromGuid: c6f46fbe056540e7a5403d899e77211b
-    toGuid: 377302ea127f4959a4bc2f493083e93f
     fromPortIndex: 0
   - fromGuid: 377302ea127f4959a4bc2f493083e93f
     toGuid: 4e0559378fd04669ac8982d329ef5f1a
@@ -549,8 +558,14 @@ MonoBehaviour:
   nodePosition: {x: 2840.8, y: 276.80002}
   text: 
   choices:
-  - answerText: Yes, I think
-    nextNodeGUID: 377302ea127f4959a4bc2f493083e93f
+  - answerText: Absolutely
+    nextNodeGUID: 
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: '*nods randomly*'
+    nextNodeGUID: 
     onSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -630,6 +645,12 @@ MonoBehaviour:
   choices:
   - answerText: To play together
     nextNodeGUID: 98b39776a51b4d5db9d60db9b04febc1
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: To make music together
+    nextNodeGUID: 
     onSelected:
       m_PersistentCalls:
         m_Calls: []
@@ -775,6 +796,12 @@ MonoBehaviour:
   choices:
   - answerText: I have something better
     nextNodeGUID: a707667a604e4ce1ade64ee747d64271
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: We can make better music
+    nextNodeGUID: 
     onSelected:
       m_PersistentCalls:
         m_Calls: []

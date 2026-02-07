@@ -79,6 +79,12 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     tooltipOrSubLabel: 
+  - answerText: ...
+    nextNodeGUID: 1a92062c874745be8f657cc52d82b21e
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
 --- !u!114 &-5783630552956217578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +362,15 @@ MonoBehaviour:
   - fromGuid: 940877d3e7d345c89dfdb0c163540215
     toGuid: 3eae09f64d2f44079ba6784cb133d53e
     fromPortIndex: 0
+  - fromGuid: cc5fa3314a174c528386360ad7b5ace9
+    toGuid: bb81b06bbac544669663a99c3e34e21b
+    fromPortIndex: 0
+  - fromGuid: ad518c6161ae4225b0429c407f51d276
+    toGuid: 222b2a6cee004efab0a750b061dc0cff
+    fromPortIndex: 1
+  - fromGuid: bb81b06bbac544669663a99c3e34e21b
+    toGuid: 1a92062c874745be8f657cc52d82b21e
+    fromPortIndex: 1
   nodes:
   - {fileID: 4167171904822715379}
   - {fileID: -5400206356483377572}
@@ -451,7 +466,7 @@ MonoBehaviour:
   nodePosition: {x: 3792, y: 336}
   text: 
   choices:
-  - answerText: Music anthem of the world
+  - answerText: Play the Music anthem of the world
     nextNodeGUID: 9676273aeb9e4a2d9f2d6fac2f0c99e2
     onSelected:
       m_PersistentCalls:
@@ -541,6 +556,12 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     tooltipOrSubLabel: 
+  - answerText: ...music...
+    nextNodeGUID: 
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
 --- !u!114 &3689440701940434527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,6 +645,12 @@ MonoBehaviour:
   text: 
   choices:
   - answerText: I have a wonderful music anthem
+    nextNodeGUID: 222b2a6cee004efab0a750b061dc0cff
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: ...music...
     nextNodeGUID: 222b2a6cee004efab0a750b061dc0cff
     onSelected:
       m_PersistentCalls:

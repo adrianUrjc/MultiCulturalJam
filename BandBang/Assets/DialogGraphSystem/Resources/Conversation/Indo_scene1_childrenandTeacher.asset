@@ -15,7 +15,7 @@ MonoBehaviour:
   GUID: 692691c9b4c548e78672a898135a4d82
   nodePosition: {x: -603.2, y: -991.2}
   speakerName: Students
-  speakerPortrait: {fileID: 0}
+  speakerPortrait: {fileID: 21300000, guid: 57d3ee18bbec04262a1d134a45069cb4, type: 3}
   questionText: Ok! see you there !
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -47,6 +47,25 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     tooltipOrSubLabel: 
+--- !u!114 &-7424549907771067356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_Untitled
+  m_EditorClassIdentifier: 
+  GUID: f8ee48ab8fab4c30a659978f3e53f68c
+  nodePosition: {x: -4427.2, y: -1197.6}
+  speakerName: 
+  speakerPortrait: {fileID: 21300000, guid: 52c856b51007b429e9cf99ea0e8d2db9, type: 3}
+  questionText: Whoa! another musician!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
 --- !u!114 &-6775960663203250900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,11 +79,30 @@ MonoBehaviour:
   m_Name: Node_New Dialog
   m_EditorClassIdentifier: 
   GUID: eca499acf7fb4490839ba67185f53f29
-  nodePosition: {x: -2236.8, y: -512}
+  nodePosition: {x: -2070.4, y: -492.8}
   speakerName: Students
-  speakerPortrait: {fileID: 0}
+  speakerPortrait: {fileID: 21300000, guid: 52c856b51007b429e9cf99ea0e8d2db9, type: 3}
   questionText: Oh you'll find the best
   dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-5220375447573035508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 41132000e59e47159c9c9b789187b04f
+  nodePosition: {x: -3600.8, y: -764}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: SKIP
+  dialogAudio: {fileID: 8300000, guid: 820c26fa64bea4972b6b9d431e745edc, type: 3}
   displayTime: 0
 --- !u!114 &-4890948387970810886
 MonoBehaviour:
@@ -83,7 +121,7 @@ MonoBehaviour:
   speakerName: Students
   speakerPortrait: {fileID: 0}
   questionText: Wow! you play so well!
-  dialogAudio: {fileID: 0}
+  dialogAudio: {fileID: 8300000, guid: b3875837b60af4b1b8401959e8e2eaaa, type: 3}
   displayTime: 0
 --- !u!114 &-4432185680564727544
 MonoBehaviour:
@@ -121,29 +159,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 8c70f00eaa204c96a74563addf01553b
   nodePosition: {x: 1269.6, y: -1016.80005}
-  speakerName: 
-  speakerPortrait: {fileID: 0}
-  questionText: 
+  speakerName: Teacher
+  speakerPortrait: {fileID: 21300000, guid: 0551bef912dc5438489d046c2dbe24f7, type: 3}
+  questionText: Get in line students
   dialogAudio: {fileID: 0}
   displayTime: 0
---- !u!114 &-2513751886138806752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0cd3f917fb000a419dc8116722bd53e, type: 3}
-  m_Name: ActionNode
-  m_EditorClassIdentifier: 
-  GUID: 577516f7e4b3482799be389d05b4426b
-  nodePosition: {x: -3564.6667, y: -828.6666}
-  actionId: play music
-  payloadJson: 
-  waitForCompletion: 0
-  waitSeconds: 0
 --- !u!114 &-892686692111506317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,9 +177,9 @@ MonoBehaviour:
   m_Name: Node_New Dialog
   m_EditorClassIdentifier: 
   GUID: 5b1f8239f9a041738196fb7f8abef5f8
-  nodePosition: {x: -1720, y: -1001.60004}
+  nodePosition: {x: -1720.8, y: -1002.4}
   speakerName: Students
-  speakerPortrait: {fileID: 0}
+  speakerPortrait: {fileID: 21300000, guid: 57d3ee18bbec04262a1d134a45069cb4, type: 3}
   questionText: Will you play at the music festival?
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -242,7 +262,7 @@ MonoBehaviour:
   GUID: 61b77b5f0af147068cd460b186b64b68
   nodePosition: {x: -1673.6, y: -1772}
   speakerName: Students
-  speakerPortrait: {fileID: 0}
+  speakerPortrait: {fileID: 21300000, guid: 21f123d788783496eb31507bc4bf879b, type: 3}
   questionText: Hahahaha! what does she mean
   dialogAudio: {fileID: 0}
   displayTime: 0
@@ -304,18 +324,9 @@ MonoBehaviour:
   - fromGuid: eda270f5ad1940b89b46f760190fe46c
     toGuid: 6d969e0e45d7492e9c083fdb3d9ed9d7
     fromPortIndex: 0
-  - fromGuid: 7e6297f86823467cb82f7d27f04d0211
-    toGuid: e051ec01edea46dc8ba451e9b8eed58f
-    fromPortIndex: 0
-  - fromGuid: e051ec01edea46dc8ba451e9b8eed58f
-    toGuid: 577516f7e4b3482799be389d05b4426b
-    fromPortIndex: 0
   - fromGuid: e051ec01edea46dc8ba451e9b8eed58f
     toGuid: e31597edfaa249efa9f4dca2e7afd0fd
     fromPortIndex: 1
-  - fromGuid: 577516f7e4b3482799be389d05b4426b
-    toGuid: d65149c36edf40278f2e6e6f8c664bc4
-    fromPortIndex: 0
   - fromGuid: 146e7643ee8847d598b034134aa69bc9
     toGuid: 8c809e9c06cc4d62b846cfdee70e5dd3
     fromPortIndex: 4
@@ -343,6 +354,21 @@ MonoBehaviour:
   - fromGuid: aa4248584a02495f8dc980a4356072ca
     toGuid: 8c70f00eaa204c96a74563addf01553b
     fromPortIndex: 0
+  - fromGuid: eca499acf7fb4490839ba67185f53f29
+    toGuid: d1fe33e6d0da4986a20fc1c27f001e2a
+    fromPortIndex: 0
+  - fromGuid: 7e6297f86823467cb82f7d27f04d0211
+    toGuid: f8ee48ab8fab4c30a659978f3e53f68c
+    fromPortIndex: 0
+  - fromGuid: f8ee48ab8fab4c30a659978f3e53f68c
+    toGuid: e051ec01edea46dc8ba451e9b8eed58f
+    fromPortIndex: 0
+  - fromGuid: e051ec01edea46dc8ba451e9b8eed58f
+    toGuid: 41132000e59e47159c9c9b789187b04f
+    fromPortIndex: 0
+  - fromGuid: 41132000e59e47159c9c9b789187b04f
+    toGuid: d65149c36edf40278f2e6e6f8c664bc4
+    fromPortIndex: 0
   nodes:
   - {fileID: 9099969446654044749}
   - {fileID: -4890948387970810886}
@@ -355,6 +381,8 @@ MonoBehaviour:
   - {fileID: -6775960663203250900}
   - {fileID: 1251166466160514130}
   - {fileID: -3634969754977300949}
+  - {fileID: -7424549907771067356}
+  - {fileID: -5220375447573035508}
   choiceNodes:
   - {fileID: -404587572000667136}
   - {fileID: -8313171911570895296}
@@ -363,7 +391,6 @@ MonoBehaviour:
   - {fileID: -4432185680564727544}
   - {fileID: 4970641000467748469}
   actionNodes:
-  - {fileID: -2513751886138806752}
   - {fileID: 4880654870545435164}
   - {fileID: -198544683414012697}
   - {fileID: 0}
@@ -425,9 +452,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: aa4248584a02495f8dc980a4356072ca
   nodePosition: {x: 787.2, y: -1015.2}
-  speakerName: 
+  speakerName: Teacher
   speakerPortrait: {fileID: 0}
-  questionText: 
+  questionText: Don't mind them...
   dialogAudio: {fileID: 0}
   displayTime: 0
 --- !u!114 &2007585492873688952
@@ -446,7 +473,7 @@ MonoBehaviour:
   nodePosition: {x: -252, y: -1536}
   speakerName: Teacher
   speakerPortrait: {fileID: 0}
-  questionText: Don't mind them
+  questionText: Don't mind them...
   dialogAudio: {fileID: 0}
   displayTime: 0
 --- !u!114 &2691338832977930700
@@ -518,7 +545,7 @@ MonoBehaviour:
   text: 
   choices:
   - answerText: Play Music
-    nextNodeGUID: 577516f7e4b3482799be389d05b4426b
+    nextNodeGUID: 41132000e59e47159c9c9b789187b04f
     onSelected:
       m_PersistentCalls:
         m_Calls: []
