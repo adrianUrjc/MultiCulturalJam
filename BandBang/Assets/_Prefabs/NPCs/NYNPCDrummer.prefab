@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4dd8b6130e48241851b7ce9c69bf51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: Jorge
+  interactText: E to talk
 --- !u!114 &8371249324204637088
 MonoBehaviour:
   m_ObjectHideFlags: 0
