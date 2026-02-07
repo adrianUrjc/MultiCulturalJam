@@ -1470,6 +1470,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: 735cfad0c999543d0852a11fc7e009bc, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 4efff3390e6e0e246b17291fe1d54932, type: 2}
     - target: {fileID: 7494074605924681476, guid: 735cfad0c999543d0852a11fc7e009bc, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -3731,6 +3735,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: 300bee0b178d8445899ae871a2f93771, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f9b3779794a68c46b2893ea68223264, type: 2}
     - target: {fileID: 7870176331308922455, guid: 300bee0b178d8445899ae871a2f93771, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -4018,6 +4026,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: 4845b4d0338514f1ea7a1d3d5016a263, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 08b96a44ebf5ce0478d8f1fc21675a67, type: 2}
     - target: {fileID: 8362883712107209494, guid: 4845b4d0338514f1ea7a1d3d5016a263, type: 3}
       propertyPath: m_Name
       value: IndianShenaistNPC
@@ -4200,6 +4212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndianBuilding2
       objectReference: {fileID: 0}
+    - target: {fileID: 5077762464348495030, guid: 15684085c14e94ec5a4f98ef006b9fe3, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: cf91a4f8181e2b24b9dc68d7c172fdcf, type: 2}
     - target: {fileID: 5403455111487350373, guid: 15684085c14e94ec5a4f98ef006b9fe3, type: 3}
       propertyPath: m_IsActive
       value: 0

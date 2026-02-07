@@ -33,3 +33,19 @@ MonoBehaviour:
     symbol: {fileID: 989780383, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
   - english: thanks
     symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: festival
+    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: seek
+    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: students
+    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: wonderful
+    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: world
+    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: musicians
+    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: together
+    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
+  - english: instrument
+    symbol: {fileID: 316062841, guid: 73bbd57b262e26e488db474c3298c282, type: 3}
