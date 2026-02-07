@@ -5,7 +5,6 @@ using UnityEngine;
 public class JournalDiscoverWords : MonoBehaviour
 {
     public PlayerJournal playerJournal;
-    public Vector2 offset = new Vector2(-50, -50);
 
     public GameObject wordSlotPrefab;
     public GameObject discoverWordPrefab;
@@ -47,7 +46,7 @@ public class JournalDiscoverWords : MonoBehaviour
                 Debug.Log("Aplicando snap");
                 snapUI.occupied = true;
                 snapUI.symbol = playerJournal.englishToSymbol[english];
-                snapUI.rect.anchoredPosition += offset;
+                
 
                 MoveSymbolToSnapPoint(snapUI.symbol, snapUI);
             }
@@ -65,7 +64,9 @@ public class JournalDiscoverWords : MonoBehaviour
             if (word.word == symbol)
             {
                 var dragUI = word.GetComponentInChildren<DraggableUISnapCenter>();
-                dragUI.SnapToPoint(snapPoint);
+                dragUI.currentSnap=snapPoint;
+                //dragUI.SnapToPoint(snapPoint);
+               // dragUI.GetComponent<RectTransform>().anchoredPosition += offset;
                 return;
             }
         }

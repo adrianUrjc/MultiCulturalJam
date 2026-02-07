@@ -14,13 +14,21 @@ public class DraggableUISnapCenter : MonoBehaviour,
     Vector2 offset;
     public UISnapPoint currentSnap;
 
+
     void Awake()
     {
         rect = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
         canvasRect = canvas.transform as RectTransform;
     }
+    void Start()
+    {
+        if(currentSnap != null)
+        {
 
+            DelayedActions.Do(()=>SnapToPoint(currentSnap), 0.1f, this, "Snap tardio");
+        }
+    }
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (currentSnap != null)
