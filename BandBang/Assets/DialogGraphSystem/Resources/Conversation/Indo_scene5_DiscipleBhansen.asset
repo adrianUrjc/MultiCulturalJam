@@ -1,0 +1,648 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8975406774262123426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: d23367e3f7b94a679fcb9e1e41fe6fd6
+  nodePosition: {x: -844.7699, y: 49.881668}
+  speakerName: Bhansen
+  speakerPortrait: {fileID: 0}
+  questionText: '*tuning instrument*'
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-8696352555570103817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 2181cf3d3b2749ac8b574e10b373cd3b
+  nodePosition: {x: 3906.4, y: -270.4}
+  text: 
+  choices:
+  - answerText: Yes
+    nextNodeGUID: 2c8220c3d325405cbc464a5f9a688642
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Not just you
+    nextNodeGUID: 2c8220c3d325405cbc464a5f9a688642
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-7895539805734489274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: d2863f4d746847b988a47de01d54ea0d
+  nodePosition: {x: 1731.2, y: -265.6}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Oh really? my Guru wants me to play it?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-6696374140818399804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 2c41221355024bb79d5ba5cdc0a70100
+  nodePosition: {x: 3594.4, y: 396}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: So then, what do you seek?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-6248130793004885199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 0e846a85b84f42949c5be98cfc99657d
+  nodePosition: {x: 3128, y: 700.8}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Oh this? this instrument is called a Sitar
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-6188695700287408927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 2c8220c3d325405cbc464a5f9a688642
+  nodePosition: {x: 2297.6, y: -304}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Great! But first seek out my partner, follow the sound of Shehnai!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-5958005646624961554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: e055bb9dfc814021aa60b70ad4b27ee9
+  nodePosition: {x: 2692, y: 519.19995}
+  text: 
+  choices:
+  - answerText: What do you play?
+    nextNodeGUID: 0e846a85b84f42949c5be98cfc99657d
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-5040312944183189131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 0b729dedb48d4eaa82013a13b1637f95
+  nodePosition: {x: 3127.2, y: 426.4}
+  speakerName: Bhansen
+  speakerPortrait: {fileID: 0}
+  questionText: I play Sitar, my fellow musician plays Shehnai.
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-3597690346280350963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 21f02e09e46e4c5b835c910082090554
+  nodePosition: {x: 248, y: 54.4}
+  speakerName: Bhansen
+  speakerPortrait: {fileID: 0}
+  questionText: Thanks
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &-1827509756245955061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 99e4bf83b3764b0a8c1915390cb594c4
+  nodePosition: {x: 1788, y: 380.80002}
+  text: 
+  choices:
+  - answerText: Yes we should
+    nextNodeGUID: 2c8220c3d325405cbc464a5f9a688642
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: A question first!
+    nextNodeGUID: cb05758dfbd4429cb7286b434def0b3e
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &-549206539860310113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 2c4dc5a6410e4026a70135d24908368d
+  nodePosition: {x: 853.6, y: 133.6}
+  speakerName: Bhansen
+  speakerPortrait: {fileID: 0}
+  questionText: Oh Why?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c45c6e4622be54698e67e4868db7e5, type: 3}
+  m_Name: Indo_scene5_DiscipleBhansen
+  m_EditorClassIdentifier: 
+  links:
+  - fromGuid: deaf634d30ae42028a0383475c99c2cb
+    toGuid: d23367e3f7b94a679fcb9e1e41fe6fd6
+    fromPortIndex: 0
+  - fromGuid: d23367e3f7b94a679fcb9e1e41fe6fd6
+    toGuid: 339f8b03bd084d8eb230f1cdf56d6a8d
+    fromPortIndex: 0
+  - fromGuid: 339f8b03bd084d8eb230f1cdf56d6a8d
+    toGuid: 21f02e09e46e4c5b835c910082090554
+    fromPortIndex: 0
+  - fromGuid: 21f02e09e46e4c5b835c910082090554
+    toGuid: 7172a3bea5b64d588208e0d899d42d69
+    fromPortIndex: 0
+  - fromGuid: 339f8b03bd084d8eb230f1cdf56d6a8d
+    toGuid: 3a46811d5dda41a8844b5d289efcf8ff
+    fromPortIndex: 1
+  - fromGuid: 3a46811d5dda41a8844b5d289efcf8ff
+    toGuid: 21f02e09e46e4c5b835c910082090554
+    fromPortIndex: 0
+  - fromGuid: 7172a3bea5b64d588208e0d899d42d69
+    toGuid: 25ea13303b1d4e94ab247aff0cfc4b6f
+    fromPortIndex: 1
+  - fromGuid: 25ea13303b1d4e94ab247aff0cfc4b6f
+    toGuid: e6726dca4ef84e8a82916efc9e63996c
+    fromPortIndex: 0
+  - fromGuid: e6726dca4ef84e8a82916efc9e63996c
+    toGuid: 99e4bf83b3764b0a8c1915390cb594c4
+    fromPortIndex: 0
+  - fromGuid: 99e4bf83b3764b0a8c1915390cb594c4
+    toGuid: cb05758dfbd4429cb7286b434def0b3e
+    fromPortIndex: 1
+  - fromGuid: d73932976cc84059b4be134151864bdf
+    toGuid: 0b729dedb48d4eaa82013a13b1637f95
+    fromPortIndex: 0
+  - fromGuid: 2c4dc5a6410e4026a70135d24908368d
+    toGuid: 19b6fd3522844dd5b97d4acf9a2bce6e
+    fromPortIndex: 0
+  - fromGuid: 7172a3bea5b64d588208e0d899d42d69
+    toGuid: 2c4dc5a6410e4026a70135d24908368d
+    fromPortIndex: 0
+  - fromGuid: 19b6fd3522844dd5b97d4acf9a2bce6e
+    toGuid: d2863f4d746847b988a47de01d54ea0d
+    fromPortIndex: 0
+  - fromGuid: d2863f4d746847b988a47de01d54ea0d
+    toGuid: 2c8220c3d325405cbc464a5f9a688642
+    fromPortIndex: 0
+  - fromGuid: 19b6fd3522844dd5b97d4acf9a2bce6e
+    toGuid: 4049b193717c448f94c062e6d048c900
+    fromPortIndex: 1
+  - fromGuid: 4049b193717c448f94c062e6d048c900
+    toGuid: 85f19fb0d3dd4591bffe8d72cdb117f2
+    fromPortIndex: 0
+  - fromGuid: cb05758dfbd4429cb7286b434def0b3e
+    toGuid: e055bb9dfc814021aa60b70ad4b27ee9
+    fromPortIndex: 0
+  - fromGuid: e055bb9dfc814021aa60b70ad4b27ee9
+    toGuid: 0e846a85b84f42949c5be98cfc99657d
+    fromPortIndex: 0
+  - fromGuid: 85f19fb0d3dd4591bffe8d72cdb117f2
+    toGuid: 35c2fd1c9cd64b818f22174701cc5ce2
+    fromPortIndex: 0
+  - fromGuid: 35c2fd1c9cd64b818f22174701cc5ce2
+    toGuid: 12048fcbca8d4c92bf6687d3c7b83b25
+    fromPortIndex: 0
+  - fromGuid: 12048fcbca8d4c92bf6687d3c7b83b25
+    toGuid: eb5de6e2591d430886208aaf320e6599
+    fromPortIndex: 0
+  - fromGuid: eb5de6e2591d430886208aaf320e6599
+    toGuid: 2181cf3d3b2749ac8b574e10b373cd3b
+    fromPortIndex: 0
+  - fromGuid: 2181cf3d3b2749ac8b574e10b373cd3b
+    toGuid: 2c8220c3d325405cbc464a5f9a688642
+    fromPortIndex: 0
+  - fromGuid: 2181cf3d3b2749ac8b574e10b373cd3b
+    toGuid: 2c8220c3d325405cbc464a5f9a688642
+    fromPortIndex: 1
+  - fromGuid: 2c8220c3d325405cbc464a5f9a688642
+    toGuid: 15d6c8ff118649f69c8dc1d8e3fe7970
+    fromPortIndex: 0
+  - fromGuid: 0b729dedb48d4eaa82013a13b1637f95
+    toGuid: 2c41221355024bb79d5ba5cdc0a70100
+    fromPortIndex: 0
+  - fromGuid: 0e846a85b84f42949c5be98cfc99657d
+    toGuid: 2c41221355024bb79d5ba5cdc0a70100
+    fromPortIndex: 0
+  - fromGuid: 2c41221355024bb79d5ba5cdc0a70100
+    toGuid: 85f19fb0d3dd4591bffe8d72cdb117f2
+    fromPortIndex: 0
+  - fromGuid: 99e4bf83b3764b0a8c1915390cb594c4
+    toGuid: 2c8220c3d325405cbc464a5f9a688642
+    fromPortIndex: 0
+  nodes:
+  - {fileID: -8975406774262123426}
+  - {fileID: -3597690346280350963}
+  - {fileID: 4099260659790227584}
+  - {fileID: 58546497364979383}
+  - {fileID: 7006841577754523572}
+  - {fileID: 8450915236858433852}
+  - {fileID: -5040312944183189131}
+  - {fileID: -549206539860310113}
+  - {fileID: -7895539805734489274}
+  - {fileID: -6188695700287408927}
+  - {fileID: 7545614662674160728}
+  - {fileID: -6248130793004885199}
+  - {fileID: 3698322974864152940}
+  - {fileID: 8579552193554619552}
+  - {fileID: 3539349606388317029}
+  - {fileID: -6696374140818399804}
+  choiceNodes:
+  - {fileID: 7950873442623495453}
+  - {fileID: 8341995582829351779}
+  - {fileID: -1827509756245955061}
+  - {fileID: 5993013522643754360}
+  - {fileID: 4885869838444302524}
+  - {fileID: 130915251198491089}
+  - {fileID: -5958005646624961554}
+  - {fileID: -8696352555570103817}
+  actionNodes: []
+  startGuid: deaf634d30ae42028a0383475c99c2cb
+  startPosition: {x: -1105.6, y: 73.6}
+  startInitialized: 1
+  endGuid: 15d6c8ff118649f69c8dc1d8e3fe7970
+  endPosition: {x: 4332.8, y: -535.2}
+  endInitialized: 1
+--- !u!114 &58546497364979383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 25ea13303b1d4e94ab247aff0cfc4b6f
+  nodePosition: {x: 927.2, y: 463.19998}
+  speakerName: Bhansen
+  speakerPortrait: {fileID: 0}
+  questionText: Fellow musician!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &130915251198491089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 85f19fb0d3dd4591bffe8d72cdb117f2
+  nodePosition: {x: 2380, y: 55.199997}
+  text: 
+  choices:
+  - answerText: I have wonderful music that we should play together
+    nextNodeGUID: 35c2fd1c9cd64b818f22174701cc5ce2
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &3539349606388317029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: eb5de6e2591d430886208aaf320e6599
+  nodePosition: {x: 3744, y: -16}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: You want us to play it?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &3698322974864152940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 35c2fd1c9cd64b818f22174701cc5ce2
+  nodePosition: {x: 2833.6, y: -3.2000008}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Show me?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &4099260659790227584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 3a46811d5dda41a8844b5d289efcf8ff
+  nodePosition: {x: -215.2, y: 449.6}
+  speakerName: Bhansen
+  speakerPortrait: {fileID: 0}
+  questionText: My music?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &4885869838444302524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 19b6fd3522844dd5b97d4acf9a2bce6e
+  nodePosition: {x: 1302.4, y: 91.99999}
+  text: 
+  choices:
+  - answerText: For the music anthem of the world
+    nextNodeGUID: d2863f4d746847b988a47de01d54ea0d
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: He thinkls you are wonderful
+    nextNodeGUID: 4049b193717c448f94c062e6d048c900
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &5993013522643754360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: d73932976cc84059b4be134151864bdf
+  nodePosition: {x: 2687.2, y: 370.4}
+  text: 
+  choices:
+  - answerText: What instrument were you all playing?
+    nextNodeGUID: 0b729dedb48d4eaa82013a13b1637f95
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &7006841577754523572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: e6726dca4ef84e8a82916efc9e63996c
+  nodePosition: {x: 1372.8, y: 513.6}
+  speakerName: Bhansen
+  speakerPortrait: {fileID: 0}
+  questionText: Should we play together?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &7545614662674160728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 4049b193717c448f94c062e6d048c900
+  nodePosition: {x: 1893.6, y: 33.6}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: Quit joking, what is it?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &7950873442623495453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 339f8b03bd084d8eb230f1cdf56d6a8d
+  nodePosition: {x: -295.2, y: 127.200005}
+  text: 
+  choices:
+  - answerText: Your music is melodious
+    nextNodeGUID: 21f02e09e46e4c5b835c910082090554
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: Nice sounds!
+    nextNodeGUID: 3a46811d5dda41a8844b5d289efcf8ff
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &8341995582829351779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: 7172a3bea5b64d588208e0d899d42d69
+  nodePosition: {x: 314.4, y: 414.4}
+  text: 
+  choices:
+  - answerText: Your guru asked me to seek you.
+    nextNodeGUID: 2c4dc5a6410e4026a70135d24908368d
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+  - answerText: I make music as well.
+    nextNodeGUID: 25ea13303b1d4e94ab247aff0cfc4b6f
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &8450915236858433852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: cb05758dfbd4429cb7286b434def0b3e
+  nodePosition: {x: 2244, y: 429.6}
+  speakerName: Bhansen
+  speakerPortrait: {fileID: 0}
+  questionText: Ask away!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &8579552193554619552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Node
+  m_EditorClassIdentifier: 
+  GUID: 12048fcbca8d4c92bf6687d3c7b83b25
+  nodePosition: {x: 3300.8, y: -14.400002}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: The Music anthem of the world?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
