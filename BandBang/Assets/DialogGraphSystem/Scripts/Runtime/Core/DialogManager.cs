@@ -455,9 +455,10 @@ namespace DialogSystem.Runtime.Core
         }
         public int choiceIndexOfText(string text)
         {
-            if (currentChoice == null) {
+            if (currentChoice == null)
+            {
                 Debug.Log("Esto no deberia pasar");
-               
+
                 return -1;
             }
             for (int i = 0; i < currentChoice.choices.Count; i++)
@@ -467,7 +468,7 @@ namespace DialogSystem.Runtime.Core
                     return i;
                 }
             }
-           
+
             return -1;
         }
         public string GetLastChoiceText()
@@ -537,9 +538,9 @@ namespace DialogSystem.Runtime.Core
             if (InputHelper.WasSubmitPressedThisFrame() ||
                 InputHelper.WasLetterPressedThisFrame(choiceSettings.keyboardConfirmLetter[0]))
             {
-                // int pick = _selectedChoiceIndex;not needed
-                // if (pick < 0 && _choiceViews.Count > 0) pick = 0;
-                // if (pick >= 0 && pick < _choiceViews.Count) { OnChoiceSelected(pick); return; }
+                int pick = _selectedChoiceIndex;
+                if (pick < 0 && _choiceViews.Count > 0) pick = 0;
+                if (pick >= 0 && pick < _choiceViews.Count) { uiPanel.ActivateChoiceInput(pick); return; }
             }
         }
 
@@ -589,7 +590,7 @@ namespace DialogSystem.Runtime.Core
 
         public void OnChoiceSelected(int index)
         {
-            if(doDebug) Debug.Log($"[DialogManager] Choice selected: index={index}");
+            if (doDebug) Debug.Log($"[DialogManager] Choice selected: index={index}");
             var choiceNode = pendingChoiceFromDialog != null ? pendingChoiceFromDialog : currentChoice;
             if (choiceNode == null) return;
             if (index < 0 || index >= choiceNode.choices.Count) return;
@@ -1074,7 +1075,7 @@ namespace DialogSystem.Runtime.Core
         {
             //aqui está el problema para cambiar el texto
 
-           var translator = FindObjectOfType<Translator>();
+            var translator = FindObjectOfType<Translator>();
             if (translator != null)
                 line = translator.TranslateTextToSymbolsReal(line);
 
