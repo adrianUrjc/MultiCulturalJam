@@ -9,7 +9,6 @@ public class TestingMusic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        NPCMusicPlayer.PlayNPCs(m_NPCsToPlayAtStart.ToArray());
     }
     public void Play()
     {

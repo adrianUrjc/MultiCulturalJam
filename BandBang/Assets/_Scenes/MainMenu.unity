@@ -843,7 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604837a9d88eb5b40b03e017414005af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NPCsToPlayAtStart: 00000000
+  m_NPCsToPlayAtStart: 000000000400000005000000
 --- !u!4 &502371324
 Transform:
   m_ObjectHideFlags: 0
