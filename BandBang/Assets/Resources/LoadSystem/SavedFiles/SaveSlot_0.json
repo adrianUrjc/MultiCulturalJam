@@ -184,7 +184,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": "<sprite=0>,<sprite=8>"
+                    "value": ""
                 }
             },
             {
@@ -195,7 +195,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": "dog,banana,****,****,,"
+                    "value": "****,****,****,****,"
                 }
             },
             {
@@ -206,7 +206,7 @@
                     "asm": "Assembly-CSharp"
                 },
                 "data": {
-                    "value": "<sprite=0>,<sprite=8>,<sprite=13>,<sprite=15>,,"
+                    "value": "<sprite=0>,<sprite=8>,<sprite=13>,<sprite=15>,"
                 }
             },
             {
