@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c45c6e4622be54698e67e4868db7e5, type: 3}
+  m_Name: country_1_Bookshop_kid
+  m_EditorClassIdentifier: 
+  links:
+  - fromGuid: 70a63f2604324f5194d0898ff426d701
+    toGuid: 55044ab94b8d4b2f9b769899e3a50ddd
+    fromPortIndex: 0
+  - fromGuid: 55044ab94b8d4b2f9b769899e3a50ddd
+    toGuid: 11f5079ed89446d88906c972aa10b502
+    fromPortIndex: 0
+  nodes:
+  - {fileID: 8244688859558507223}
+  choiceNodes: []
+  actionNodes: []
+  startGuid: 70a63f2604324f5194d0898ff426d701
+  startPosition: {x: -320, y: 80}
+  startInitialized: 1
+  endGuid: 11f5079ed89446d88906c972aa10b502
+  endPosition: {x: 720, y: 80}
+  endInitialized: 1
+--- !u!114 &8244688859558507223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 55044ab94b8d4b2f9b769899e3a50ddd
+  nodePosition: {x: -26.417969, y: 183.73203}
+  speakerName: 
+  speakerPortrait: {fileID: 0}
+  questionText: I want book!
+  dialogAudio: {fileID: 0}
+  displayTime: 0

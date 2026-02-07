@@ -162,7 +162,7 @@ MonoBehaviour:
   - {fileID: -6154656630177347557}
   - {fileID: -8937667966531746129}
   startGuid: b78102a54b2e4d7fae1d6f0526066476
-  startPosition: {x: -517.3333, y: -17.333332}
+  startPosition: {x: -392.8, y: 122.399994}
   startInitialized: 1
   endGuid: 901ea5937c964fdfbb0cdf98437c1d2b
   endPosition: {x: 1937.3334, y: -168}

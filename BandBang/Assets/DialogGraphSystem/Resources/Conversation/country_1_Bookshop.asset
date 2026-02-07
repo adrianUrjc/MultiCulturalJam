@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4677457136391290662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 263ba3d96a58482185b498df7c2c5bcf
+  nodePosition: {x: -7.2, y: 76}
+  speakerName: Shopkeeper
+  speakerPortrait: {fileID: 0}
+  questionText: Hello!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c45c6e4622be54698e67e4868db7e5, type: 3}
+  m_Name: country_1_Bookshop
+  m_EditorClassIdentifier: 
+  links:
+  - fromGuid: 1f107d997b6748f88c07968293ba7eeb
+    toGuid: 263ba3d96a58482185b498df7c2c5bcf
+    fromPortIndex: 0
+  - fromGuid: 263ba3d96a58482185b498df7c2c5bcf
+    toGuid: 735018343f7d49a98b7a1eeb4a25680f
+    fromPortIndex: 0
+  - fromGuid: 735018343f7d49a98b7a1eeb4a25680f
+    toGuid: 758df700cf974d069cf9afab6da5cd79
+    fromPortIndex: 0
+  nodes:
+  - {fileID: -4677457136391290662}
+  - {fileID: 7246080520666708934}
+  choiceNodes: []
+  actionNodes: []
+  startGuid: 1f107d997b6748f88c07968293ba7eeb
+  startPosition: {x: -320, y: 80}
+  startInitialized: 1
+  endGuid: 758df700cf974d069cf9afab6da5cd79
+  endPosition: {x: 1101.6, y: 236.79999}
+  endInitialized: 1
+--- !u!114 &7246080520666708934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 735018343f7d49a98b7a1eeb4a25680f
+  nodePosition: {x: 541.6, y: 236}
+  speakerName: Shopkeeper
+  speakerPortrait: {fileID: 0}
+  questionText: you want book?
+  dialogAudio: {fileID: 0}
+  displayTime: 0

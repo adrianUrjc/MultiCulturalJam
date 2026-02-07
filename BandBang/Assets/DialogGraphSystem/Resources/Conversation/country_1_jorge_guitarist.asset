@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8008261606382244890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 5d8f7855aab3458e94deb6a9069edf8d
+  nodePosition: {x: -100.8, y: 74.399994}
+  speakerName: Jorge
+  speakerPortrait: {fileID: 0}
+  questionText: Hello!
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c45c6e4622be54698e67e4868db7e5, type: 3}
+  m_Name: country_1_jorge_guitarist
+  m_EditorClassIdentifier: 
+  links:
+  - fromGuid: 5d8f7855aab3458e94deb6a9069edf8d
+    toGuid: 9023b27a9e474d9abae70bdb5200c5b7
+    fromPortIndex: 0
+  - fromGuid: 9023b27a9e474d9abae70bdb5200c5b7
+    toGuid: 2f17fddb7a5c48a1b79b21eb56844bae
+    fromPortIndex: 0
+  - fromGuid: 2f17fddb7a5c48a1b79b21eb56844bae
+    toGuid: e3ba82ee5c8a4c9c830c0b7a9f41f602
+    fromPortIndex: 0
+  - fromGuid: e3ba82ee5c8a4c9c830c0b7a9f41f602
+    toGuid: 680ec2de499a496689bcd5ca21b88eec
+    fromPortIndex: 0
+  nodes:
+  - {fileID: 3009120260404313562}
+  - {fileID: -8008261606382244890}
+  - {fileID: 8125481657416044657}
+  choiceNodes:
+  - {fileID: 6279473839041020567}
+  actionNodes: []
+  startGuid: dcc450b65a184a2db2aa2aeb0b79e377
+  startPosition: {x: -320, y: 80}
+  startInitialized: 1
+  endGuid: 680ec2de499a496689bcd5ca21b88eec
+  endPosition: {x: 2271.2, y: 512}
+  endInitialized: 1
+--- !u!114 &3009120260404313562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 2f17fddb7a5c48a1b79b21eb56844bae
+  nodePosition: {x: 871.2, y: 227.20001}
+  speakerName: Jorge
+  speakerPortrait: {fileID: 0}
+  questionText: You like Spanish guitar?
+  dialogAudio: {fileID: 0}
+  displayTime: 0
+--- !u!114 &6279473839041020567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52acda426e52d1744a92ee97a9757272, type: 3}
+  m_Name: ChoiceNode
+  m_EditorClassIdentifier: 
+  GUID: e3ba82ee5c8a4c9c830c0b7a9f41f602
+  nodePosition: {x: 1425.6, y: 350.4}
+  text: 
+  choices:
+  - answerText: 
+    nextNodeGUID: 680ec2de499a496689bcd5ca21b88eec
+    onSelected:
+      m_PersistentCalls:
+        m_Calls: []
+    tooltipOrSubLabel: 
+--- !u!114 &8125481657416044657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55265cca116f3b342880f5f5267e3a6c, type: 3}
+  m_Name: Node_New Dialog
+  m_EditorClassIdentifier: 
+  GUID: 9023b27a9e474d9abae70bdb5200c5b7
+  nodePosition: {x: 400.8, y: 202.4}
+  speakerName: jorge
+  speakerPortrait: {fileID: 0}
+  questionText: I play Spanish guitar!
+  dialogAudio: {fileID: 0}
+  displayTime: 0

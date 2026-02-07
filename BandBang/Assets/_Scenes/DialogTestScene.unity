@@ -4184,6 +4184,10 @@ PrefabInstance:
       propertyPath: outsideObjects.Array.data[1]
       value: 
       objectReference: {fileID: 1743336920}
+    - target: {fileID: 7984075037089634432, guid: 803319f7f18c186498224c2223e67fab, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 69da756c3147cd34eb56c447f0157ba5, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
