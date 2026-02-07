@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2573594521723177510}
   - component: {fileID: 1967632165980765798}
   - component: {fileID: 389323432591141055}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnglishNPC(William)
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 4353858778430133208}
   - component: {fileID: 7540415999939754729}
   - component: {fileID: 4156857619150282109}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPCSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

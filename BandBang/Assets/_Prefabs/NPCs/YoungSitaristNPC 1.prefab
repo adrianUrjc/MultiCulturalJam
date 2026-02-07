@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2281871757990760315}
   - component: {fileID: 631336334977290764}
   - component: {fileID: 1893002664320915095}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: NPCSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4927e118a2cce4142bb1537fed2304af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c442d72955a4549609fca71a01013d1a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,8 +126,8 @@ GameObject:
   - component: {fileID: 567586350242069664}
   - component: {fileID: 3137567250376691736}
   - component: {fileID: 4542295097800953729}
-  m_Layer: 7
-  m_Name: IndianSitaristNPC
+  m_Layer: 0
+  m_Name: YoungSitaristNPC 1
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

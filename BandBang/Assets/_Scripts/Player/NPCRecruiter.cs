@@ -13,7 +13,7 @@ public class NPCRecruiter : MonoBehaviour
     }
     public void LoadNpcs()
     {
-        string npcs = GameManager.Instance.GetComponent<SaveSlot>()
+        string npcs = GameManager.Instance.GetComponentInChildren<SaveSlot>()
             .loader.GetValue<string>("NPCsRecruited");
 
         string[] npcsArray = npcs.Split(',');
@@ -21,12 +21,14 @@ public class NPCRecruiter : MonoBehaviour
         foreach (var npc in npcsArray)
         {
             string trimmed = npc.Trim(); // MUY IMPORTANTE
+            if (trimmed == "") continue;
             npcsRecruited.Add(StringToNpc(trimmed));
         }
     }
 
     public NPCs StringToNpc(string npc)
     {
+        
         if (System.Enum.TryParse(npc, out NPCs result))
             return result;
 
@@ -47,7 +49,7 @@ public class NPCRecruiter : MonoBehaviour
     {
 
         RecruitNPC((NPCs)npc);
-        GameManager.Instance.GetComponent<SaveSlot>().loader.SetValue<string>("NPCsRecruited", NpcsListToString());
+        GameManager.Instance.GetComponentInChildren<SaveSlot>().loader.SetValue<string>("NPCsRecruited", NpcsListToString());
     }
     public void PlayNPCMusic()
     {
