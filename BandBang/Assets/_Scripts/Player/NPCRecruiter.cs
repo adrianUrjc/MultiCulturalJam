@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCRecruiter : MonoBehaviour
 {
     [SerializeField]
-    List<NPCs> npcsRecruited=new();
+   public List<NPCs> npcsRecruited=new();
    public void RecruitNPC(NPCs npc)
     {
         if (npcsRecruited.Contains(npc))
