@@ -15,4 +15,14 @@ MonoBehaviour:
   NPCAudioMixer: {fileID: 24100000, guid: e8f7ee94b902ed242ae1b793e4a255d8, type: 2}
   npcMusicEntries:
   - npc: 0
-    musicClip: {fileID: 0}
+    musicClip: {fileID: 8300000, guid: 3305b5620853d4781a0f272e8e16624c, type: 3}
+  - npc: 1
+    musicClip: {fileID: 8300000, guid: b3875837b60af4b1b8401959e8e2eaaa, type: 3}
+  - npc: 2
+    musicClip: {fileID: 8300000, guid: 07959cd96dbd04b1d96b86697b589704, type: 3}
+  - npc: 3
+    musicClip: {fileID: 8300000, guid: 32fcb12ebc3e84a1890228b488616618, type: 3}
+  - npc: 4
+    musicClip: {fileID: 8300000, guid: 820c26fa64bea4972b6b9d431e745edc, type: 3}
+  - npc: 5
+    musicClip: {fileID: 8300000, guid: 2db3b12aea9a24936aa0cb795749c45a, type: 3}

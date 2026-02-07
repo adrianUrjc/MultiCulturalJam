@@ -2622,6 +2622,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: e281a2de02a017f42aebeaf7b71865a2, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 401052d2a599aea47a114cae98a2aa7a, type: 2}
     - target: {fileID: 8362883712107209494, guid: e281a2de02a017f42aebeaf7b71865a2, type: 3}
       propertyPath: m_Name
       value: SpanishNPC(Jorge)
@@ -3423,7 +3427,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fed8dcb97b114e499dab358bcd5d9b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wordText: {fileID: 0}
+  journal: {fileID: 0}
   occupied: 0
+  word: 
+  symbol: 
 --- !u!224 &1305914282 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4660626986096813946, guid: 8e0d8d6889f23ca48b23b257e94eabda, type: 3}
