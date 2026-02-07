@@ -14,8 +14,10 @@ public class PlayerJournal : MonoBehaviour
 
     public List<string> discoveredSymbols = new();
     public UnityEvent<string> OnNewDiscoveredSymbol=new();
-    
-    
+    public UnityEvent JournalInitialized = new();
+
+
+
 
     private void Start()
     {
@@ -31,7 +33,7 @@ public class PlayerJournal : MonoBehaviour
             if (!englishToSymbol.ContainsKey(key))
                 englishToSymbol[key] = "*** (unkown, trying to guess " + key + ") ";
         }
-
+        JournalInitialized?.Invoke();
     }
     public void discoverSymbol(string symbol)
     {

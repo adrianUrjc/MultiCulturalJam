@@ -14,8 +14,7 @@ public class JournalDiscoverWords : MonoBehaviour
 
     private void Start()
     {
-        playerJournal.OnNewDiscoveredSymbol.AddListener(DiscoverWord);
-        InitSlots();
+        
     }
     public void DiscoverWord(string symbol)
     {
@@ -25,15 +24,47 @@ public class JournalDiscoverWords : MonoBehaviour
         newWord.GetComponentInChildren<DraggableUISnapCenter>().bounds = JournalContainer;
 
     }
-    void InitSlots()
+    public void OnJournalInitHandler()
     {
+        foreach(var symbol in playerJournal.discoveredSymbols)
+        {
+            DiscoverWord(symbol);
+        }
         foreach (var english in playerJournal.realDict.EnglishToSymbol.Keys)
         {
             var newSlot = Instantiate(wordSlotPrefab, WordsGrid);
-            newSlot.GetComponentInChildren<UISnapPoint>().Word = english;
-            Debug.Log("Initializing slot for English word: " + english );
+            var snapUI = newSlot.GetComponentInChildren<UISnapPoint>();
+            snapUI.Word = english;
+            Debug.Log("Initializing slot for English word: " + english);
+
+
+            //If the player has a guess for this word
+            if ( ! playerJournal.englishToSymbol[english].Contains('*'))
+            {
+                snapUI.occupied = true;
+                snapUI.symbol = playerJournal.englishToSymbol[english];
+
+                MoveSymbolToSnapPoint(snapUI.symbol, snapUI.gameObject);
+            }
+        }
+
+
+
+        playerJournal.OnNewDiscoveredSymbol.AddListener(DiscoverWord);
+    }
+    public void MoveSymbolToSnapPoint(string symbol, GameObject snapPoint)
+    {
+        var temp = SymbolsGrid.GetComponentsInChildren<WordUI>();
+        foreach (var word in temp)
+        {
+            if (word.word == symbol)
+            {
+                word.transform.position = snapPoint.transform.position;
+                return;
+            }
         }
     }
+
 
 
 }
