@@ -66,7 +66,7 @@ public class SpriteAnimator2D : MonoBehaviour
         originalRotation = newRotation;
     }
 
-    public void SetAnimacion(SpriteAnim anim)
+    public void SetAnimation(SpriteAnim anim)
     {
         currentAnim = anim;
         PlayAnimation();
@@ -78,7 +78,7 @@ public class SpriteAnimator2D : MonoBehaviour
             Debug.LogError("Índice de animación fuera de rango: " + idx);
             return;
         }
-        SetAnimacion((SpriteAnim)idx);
+        SetAnimation((SpriteAnim)idx);
     }
 
     [ContextMenu("Test Animacion")]

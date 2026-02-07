@@ -4,28 +4,34 @@ using UnityEngine;
 
 public class HighlightReceiver : MonoBehaviour
 {
-    [SerializeField]
-    private SpriteRenderer objectRenderer;
-    [SerializeField]
-    private Color highlightColor = Color.yellow;
-    private Color originalColor;
+   
+
+    [SerializeField] private float scaleMultiplier = 1.2f; // cuánto escalar
+    [SerializeField] private float scaleDuration = 0.2f; // tiempo de la animación
+
+    private Vector3 originalScale;
+
     void Start()
     {
-        if (objectRenderer == null)
-        {
-            objectRenderer = GetComponent<SpriteRenderer>();
-        }
-        if (objectRenderer != null)
-        {
-            originalColor = objectRenderer.color;
-        }
+
+     
+
+        originalScale = transform.localScale; // guardamos la escala original
     }
+
     public void Highlight()
     {
-        objectRenderer.color = highlightColor;
+       
+
+        // Escalar con LeanTween
+        LeanTween.scale(gameObject, originalScale * scaleMultiplier, scaleDuration).setEaseOutBack();
     }
+
     public void UnHighlight()
     {
-        objectRenderer.color = originalColor;
+     
+
+        // Volver a la escala original
+        LeanTween.scale(gameObject, originalScale, scaleDuration).setEaseInOutBack();
     }
 }
