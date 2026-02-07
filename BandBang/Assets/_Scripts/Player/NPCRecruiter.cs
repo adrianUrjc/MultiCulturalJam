@@ -13,7 +13,7 @@ public class NPCRecruiter : MonoBehaviour
     }
     public void LoadNpcs()
     {
-        string npcs = GameManager.Instance.GetComponent<SaveSlot>()
+        string npcs = GameManager.Instance.GetComponentInChildren<SaveSlot>()
             .loader.GetValue<string>("NPCsRecruited");
 
         string[] npcsArray = npcs.Split(',');
