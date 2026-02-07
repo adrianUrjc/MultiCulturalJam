@@ -24,6 +24,7 @@ public class Translator : MonoBehaviour
     public string TranslateTextToSymbolsReal(string dialogOption)
     {
         var temp = TranslateWithDict(dialogOption, realDictionary.EnglishToSymbol);
+        DiscorverSymbols(temp);
         return temp;
     }
     /// <summary>
@@ -54,7 +55,7 @@ public class Translator : MonoBehaviour
     /// </summary>
     public void DiscorverSymbols(string NPCDialog)
     {
-     
+        Debug.Log("Trying to discor symbols" + NPCDialog);
         var keys = realDictionary.SymbolToEnglish.Keys
         .OrderByDescending(k => k.Length)
         .Select(Regex.Escape);
@@ -71,6 +72,7 @@ public class Translator : MonoBehaviour
             .Select(m => m.Value);
         foreach (var symbol in result)
         {
+            Debug.Log("Discovered symbol: " + symbol);
             playerJournal.discoverSymbol(symbol);
         }
        
