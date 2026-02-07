@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: ActionNode
   m_EditorClassIdentifier: 
   GUID: 577516f7e4b3482799be389d05b4426b
-  nodePosition: {x: -3619.2, y: -994.4}
+  nodePosition: {x: -3564.6667, y: -828.6666}
   actionId: play music
   payloadJson: 
   waitForCompletion: 0
@@ -340,12 +340,6 @@ MonoBehaviour:
   - fromGuid: 8c70f00eaa204c96a74563addf01553b
     toGuid: eda270f5ad1940b89b46f760190fe46c
     fromPortIndex: 0
-  - fromGuid: eca499acf7fb4490839ba67185f53f29
-    toGuid: d9e9ca14e01c45cca3bf984162e26f27
-    fromPortIndex: 0
-  - fromGuid: d9e9ca14e01c45cca3bf984162e26f27
-    toGuid: 8c70f00eaa204c96a74563addf01553b
-    fromPortIndex: 0
   - fromGuid: aa4248584a02495f8dc980a4356072ca
     toGuid: 8c70f00eaa204c96a74563addf01553b
     fromPortIndex: 0
@@ -374,10 +368,10 @@ MonoBehaviour:
   - {fileID: -198544683414012697}
   - {fileID: 0}
   startGuid: 7e6297f86823467cb82f7d27f04d0211
-  startPosition: {x: -4662.4, y: -901.60004}
+  startPosition: {x: -4662.6665, y: -902}
   startInitialized: 1
   endGuid: 6d969e0e45d7492e9c083fdb3d9ed9d7
-  endPosition: {x: 2420.8, y: -1358.4}
+  endPosition: {x: 2420.6667, y: -1358.6667}
   endInitialized: 1
 --- !u!114 &73547893517324493
 MonoBehaviour:
@@ -412,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUID: 0774573f262b4bb98629c24eefcc9b47
   nodePosition: {x: 230.4, y: -1537.6}
-  speakerName: 
+  speakerName: Teacher
   speakerPortrait: {fileID: 0}
   questionText: Get in line students
   dialogAudio: {fileID: 0}
