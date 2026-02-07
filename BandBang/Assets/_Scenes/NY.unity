@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 102900000, guid: c844df9c14f37ec488147fad7461b865, type: 3}
     - target: {fileID: 993435782438405731, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.3199997
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1979887614057526944, guid: 04ab53c0c733d8b42a273ab75bfdebc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -503,100 +503,15 @@ MonoBehaviour:
     bindings: []
     handlers: []
   conversations:
-  - conversationKey: DemoActionDialog
+  - conversationKey: RecruitSaxophon
     bindings:
-    - actionId: Red
+    - actionId: RecruitNPC
       onInvoke:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - actionId: Green
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - actionId: Blue
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - actionId: Countup
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - actionId: Toggle_sprite
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: DialogSystem.Runtime.Actions.DemoUnityEventActions,
-              DialogSystem.Runtime
-            m_MethodName: Toggle_Target
-            m_Mode: 0
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    handlers:
-    - {fileID: 0}
-  - conversationKey: TranslationActionDialogDemo
-    bindings:
-    - actionId: WrongAnswer
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: SideToSideOnce, Assembly-CSharp
-            m_MethodName: StartSide
+          - m_Target: {fileID: 759060535}
+            m_TargetAssemblyTypeName: NPCRecruitMe, Assembly-CSharp
+            m_MethodName: RecruitMe
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -606,13 +521,28 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-    - actionId: RightAnswer
+          - m_Target: {fileID: 1743610557}
+            m_TargetAssemblyTypeName: SymbolDiscoveredAnimation, Assembly-CSharp
+            m_MethodName: EnqueueSymbols
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: SaxophonistRecruited
+              m_BoolArgument: 0
+            m_CallState: 2
+    handlers: []
+  - conversationKey: RecruitDrummer
+    bindings:
+    - actionId: RecruitNPC
       onInvoke:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: BounceOnce, Assembly-CSharp
-            m_MethodName: StartBounce
+          - m_Target: {fileID: 960012980}
+            m_TargetAssemblyTypeName: NPCRecruitMe, Assembly-CSharp
+            m_MethodName: RecruitMe
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -622,8 +552,19 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-    handlers:
-    - {fileID: 0}
+          - m_Target: {fileID: 1743610557}
+            m_TargetAssemblyTypeName: SymbolDiscoveredAnimation, Assembly-CSharp
+            m_MethodName: EnqueueSymbols
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: DrummerRecruited
+              m_BoolArgument: 0
+            m_CallState: 2
+    handlers: []
   useGlobalFallback: 0
 --- !u!4 &107982410
 Transform:
@@ -1846,6 +1787,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: c281077138aec4701a5783d19251dbef, type: 3}
+      propertyPath: dialogGraph.dialogID
+      value: RecruitSaxophon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: c281077138aec4701a5783d19251dbef, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 76966130b76835146b59851c69e240e9, type: 2}
     - target: {fileID: 8362883712107209494, guid: c281077138aec4701a5783d19251dbef, type: 3}
       propertyPath: m_Name
       value: NYNPCSaxophonist
@@ -1855,6 +1804,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c281077138aec4701a5783d19251dbef, type: 3}
+--- !u!114 &759060535 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4225932900721478978, guid: c281077138aec4701a5783d19251dbef, type: 3}
+  m_PrefabInstance: {fileID: 759060534}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b81fa4b71c55a4dbf99bbd8abd4699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &806935740
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,6 +2151,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2000056229}
     m_Modifications:
+    - target: {fileID: 1035203209930902198, guid: 27116abc8c3d64a33826dc2da6a2a493, type: 3}
+      propertyPath: dialogGraph.dialogID
+      value: RecruitDrummer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035203209930902198, guid: 27116abc8c3d64a33826dc2da6a2a493, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 76966130b76835146b59851c69e240e9, type: 2}
     - target: {fileID: 2646438064098623840, guid: 27116abc8c3d64a33826dc2da6a2a493, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7531903
@@ -2246,6 +2214,11 @@ PrefabInstance:
 --- !u!4 &960012979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2646438064098623840, guid: 27116abc8c3d64a33826dc2da6a2a493, type: 3}
+  m_PrefabInstance: {fileID: 960012978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &960012980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5897966681599277496, guid: 27116abc8c3d64a33826dc2da6a2a493, type: 3}
   m_PrefabInstance: {fileID: 960012978}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &968897761
@@ -3026,6 +2999,10 @@ PrefabInstance:
     - target: {fileID: 2655506815928988897, guid: 4ec4221a858a3405c97e990171a0ee80, type: 3}
       propertyPath: m_Name
       value: NYBuilding2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059659466883809291, guid: 4ec4221a858a3405c97e990171a0ee80, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4576,6 +4553,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce4f70d9511459540a88f33345c45b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1743610557 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8859373468870355501, guid: 509c2bdd75451dd4b9493f4c7c3847e8, type: 3}
+  m_PrefabInstance: {fileID: 1743610554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c534351770eda0a41ba99c6220a37dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1754945006

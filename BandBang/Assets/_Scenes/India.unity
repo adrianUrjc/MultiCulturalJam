@@ -642,100 +642,15 @@ MonoBehaviour:
     bindings: []
     handlers: []
   conversations:
-  - conversationKey: DemoActionDialog
+  - conversationKey: RecruitShenaist
     bindings:
-    - actionId: Red
+    - actionId: RecruitNPC
       onInvoke:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - actionId: Green
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - actionId: Blue
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - actionId: Countup
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - actionId: Toggle_sprite
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: DialogSystem.Runtime.Actions.DemoUnityEventActions,
-              DialogSystem.Runtime
-            m_MethodName: Toggle_Target
-            m_Mode: 0
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    handlers:
-    - {fileID: 0}
-  - conversationKey: TranslationActionDialogDemo
-    bindings:
-    - actionId: WrongAnswer
-      onInvoke:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: SideToSideOnce, Assembly-CSharp
-            m_MethodName: StartSide
+          - m_Target: {fileID: 1291895906}
+            m_TargetAssemblyTypeName: NPCRecruitMe, Assembly-CSharp
+            m_MethodName: RecruitMe
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -745,13 +660,28 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-    - actionId: RightAnswer
+          - m_Target: {fileID: 173692431}
+            m_TargetAssemblyTypeName: SymbolDiscoveredAnimation, Assembly-CSharp
+            m_MethodName: EnqueueSymbols
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: Shenaist Recruited
+              m_BoolArgument: 0
+            m_CallState: 2
+    handlers: []
+  - conversationKey: RecruitSitarist
+    bindings:
+    - actionId: RecruitNPC
       onInvoke:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: BounceOnce, Assembly-CSharp
-            m_MethodName: StartBounce
+          - m_Target: {fileID: 1135052050}
+            m_TargetAssemblyTypeName: NPCRecruitMe, Assembly-CSharp
+            m_MethodName: RecruitMe
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -761,8 +691,19 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-    handlers:
-    - {fileID: 0}
+          - m_Target: {fileID: 173692431}
+            m_TargetAssemblyTypeName: SymbolDiscoveredAnimation, Assembly-CSharp
+            m_MethodName: EnqueueSymbols
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: Sitarist Recruited
+              m_BoolArgument: 0
+            m_CallState: 2
+    handlers: []
   useGlobalFallback: 0
 --- !u!4 &107982410
 Transform:
@@ -1128,6 +1069,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce4f70d9511459540a88f33345c45b7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &173692431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8859373468870355501, guid: 509c2bdd75451dd4b9493f4c7c3847e8, type: 3}
+  m_PrefabInstance: {fileID: 173692428}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c534351770eda0a41ba99c6220a37dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &211290956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1446,6 +1398,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: 735cfad0c999543d0852a11fc7e009bc, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 4efff3390e6e0e246b17291fe1d54932, type: 2}
     - target: {fileID: 7494074605924681476, guid: 735cfad0c999543d0852a11fc7e009bc, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -3707,6 +3663,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: 300bee0b178d8445899ae871a2f93771, type: 3}
+      propertyPath: dialogGraph.dialogID
+      value: RecruitSitarist
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: 300bee0b178d8445899ae871a2f93771, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 76966130b76835146b59851c69e240e9, type: 2}
     - target: {fileID: 7870176331308922455, guid: 300bee0b178d8445899ae871a2f93771, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -3747,6 +3711,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 152338b2158ca684b963a8892aeaaaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1135052050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4542295097800953729, guid: 300bee0b178d8445899ae871a2f93771, type: 3}
+  m_PrefabInstance: {fileID: 1135052046}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b81fa4b71c55a4dbf99bbd8abd4699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1268848663
@@ -3994,6 +3969,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: 4845b4d0338514f1ea7a1d3d5016a263, type: 3}
+      propertyPath: dialogGraph.dialogID
+      value: RecruitShenaist
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137567250376691736, guid: 4845b4d0338514f1ea7a1d3d5016a263, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: 76966130b76835146b59851c69e240e9, type: 2}
     - target: {fileID: 8362883712107209494, guid: 4845b4d0338514f1ea7a1d3d5016a263, type: 3}
       propertyPath: m_Name
       value: IndianShenaistNPC
@@ -4021,6 +4004,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 152338b2158ca684b963a8892aeaaaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1291895906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8737493930401591416, guid: 4845b4d0338514f1ea7a1d3d5016a263, type: 3}
+  m_PrefabInstance: {fileID: 1291895903}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b81fa4b71c55a4dbf99bbd8abd4699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &1305914282 stripped
@@ -4176,6 +4170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndianBuilding2
       objectReference: {fileID: 0}
+    - target: {fileID: 5077762464348495030, guid: 15684085c14e94ec5a4f98ef006b9fe3, type: 3}
+      propertyPath: dialogGraph.dialogGraph
+      value: 
+      objectReference: {fileID: 11400000, guid: cf91a4f8181e2b24b9dc68d7c172fdcf, type: 2}
     - target: {fileID: 5403455111487350373, guid: 15684085c14e94ec5a4f98ef006b9fe3, type: 3}
       propertyPath: m_IsActive
       value: 0
