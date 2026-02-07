@@ -346,7 +346,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!58 &796110843296769832
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -616,6 +616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2880878937859842257}
   - component: {fileID: 5211592674461920615}
+  - component: {fileID: 422408689318071339}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -681,7 +682,7 @@ SpriteRenderer:
   m_SortingOrder: 576
   m_Sprite: {fileID: 21300000, guid: e7cb4c11cb1a1459085eb1418a1682ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -690,6 +691,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &422408689318071339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4423136193098263546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07223c7dda96634c930694c33419121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1483701147859006572}
+  moveThreshold: 0.05
+  bobScale: 9000
+  tiltAngle: 3
+  animSpeed: 15
 --- !u!1 &5292818531475038989
 GameObject:
   m_ObjectHideFlags: 0

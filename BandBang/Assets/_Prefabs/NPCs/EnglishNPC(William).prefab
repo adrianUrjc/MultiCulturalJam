@@ -214,6 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4353858778430133208}
   - component: {fileID: 7540415999939754729}
+  - component: {fileID: 4156857619150282109}
   m_Layer: 0
   m_Name: NPCSprite
   m_TagString: Untagged
@@ -288,3 +289,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4156857619150282109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3977723906075289771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4562d06345772ea4a85ed8e58600b694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAnim: 1
+  idleEscalaFactor: 1.05
+  idleRotacionFactor: 3
+  idleDuracion: 1.5
+  hablarEscalaY: 1.2
+  hablarDuracion: 0.3
+  saltoAltura: 2
+  saltoDuracion: 0.5
+  nodAngulo: 30
+  nodDuracion: 0.3
+  noOffsetX: 0.5
+  noDuracion: 0.2
