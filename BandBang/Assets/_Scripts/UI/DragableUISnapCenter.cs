@@ -80,16 +80,17 @@ public class DraggableUISnapCenter : MonoBehaviour,
             // rect.anchoredPosition = canvasPos;
 
             SnapToPoint(best);
-            best.Occupy(GetComponent<WordUI>().word ?? string.Empty);
-            currentSnap = best;
+
             return true;
         }
         return false;
 
     }
-    void SnapToPoint(UISnapPoint uISnap)
+    public void SnapToPoint(UISnapPoint uISnap)
     {
         rect.position = uISnap.rect.TransformPoint(uISnap.rect.rect.center);
+        uISnap.Occupy(GetComponent<WordUI>().word ?? string.Empty);
+        currentSnap = uISnap;
     }
     Vector2 CanvasToParentLocal(Vector2 canvasPos, RectTransform parent)
     {
